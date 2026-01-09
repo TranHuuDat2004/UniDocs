@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài liệu môn học - UniDocs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Viewers Libs -->
+    <script src="https://unpkg.com/jszip/dist/jszip.min.js"></script>
+    <script src="https://unpkg.com/docx-preview/dist/docx-preview.min.js"></script>
+    <script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pptxjs/1.21.1/css/pptxjs.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pptxjs/1.21.1/js/pptxjs.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Be Vietnam Pro', sans-serif; background-color: #f8fafc; }
+        .glass-panel { background: rgba(255, 255, 255, 0.95); border-right: 1px solid #e2e8f0; }
+        .nav-item.active { background-color: #e0e7ff; color: #4338ca; font-weight: 600; }
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-thumb { background: rgba(156, 163, 175, 0.5); border-radius: 3px; }
+    </style>
+</head>
+
+<body class="text-slate-700 h-screen flex overflow-hidden">
+
+    <!-- SIDEBAR -->
+    <aside class="w-72 glass-panel h-full hidden md:flex flex-col relative z-20 shadow-lg">
+        <!-- Logo -->
+        <div class="p-6 cursor-pointer" onclick="window.location.href='index.html'">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center text-white shadow-lg">
+                    <i class="ph-bold ph-books text-xl"></i>
+                </div>
+                <span class="font-bold text-xl text-slate-800">UniDocs</span>
+            </div>
+        </div>
+
+        <!-- Danh sách môn (Load từ JSON) -->
+        <div class="flex-1 overflow-y-auto px-4 py-2">
+            <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3 pl-2">Chọn môn học</div>
+            <nav id="sidebarList" class="space-y-1">
+                <div class="text-center text-sm p-4"><i class="ph ph-spinner animate-spin"></i> Đang tải menu...</div>
+            </nav>
+        </div>
+        
+        <div class="p-4 border-t border-slate-200">
+            <a href="index.html" class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:text-indigo-600 transition rounded-xl">
+                <i class="ph ph-arrow-left text-lg"></i> Trang chủ
+            </a>
+        </div>
+    </aside>
+
+    <!-- CONTENT -->
+    <div class="flex-1 flex flex-col h-full relative z-10 overflow-hidden">
+        
+        <!-- Header -->
+        <header class="h-16 border-b border-slate-200 bg-white flex items-center justify-between px-6 shrink-0 shadow-sm">
+            <h1 class="text-lg font-bold text-slate-800 flex items-center gap-2" id="pageTitle">
+                Loading...
+            </h1>
+        </header>
+
+        <main class="flex-1 flex overflow-hidden">
+            <!-- File List (Left) -->
+            <div class="w-full md:w-1/3 max-w-md border-r border-slate-200 bg-white flex flex-col">
+                <div class="p-3 border-b border-slate-50 bg-slate-50/50 flex justify-between text-xs font-semibold text-slate-500 uppercase">
+                    <span>Tên file</span>
+                    <span>Ngày</span>
+                </div>
+                <div class="flex-1 overflow-y-auto p-3 space-y-1" id="fileList">
+                    <!-- Files will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Preview (Right) -->
+            <div class="flex-1 bg-slate-100 relative flex flex-col">
+                <div id="emptyState" class="absolute inset-0 flex flex-col items-center justify-center text-slate-400">
+                    <i class="ph ph-files text-5xl mb-4 text-slate-300"></i>
+                    <p>Chọn tài liệu để xem</p>
+                </div>
+                
+                <div id="viewerContainer" class="hidden flex-1 flex flex-col h-full bg-slate-200 relative">
+                     <!-- Toolbar -->
+                    <div class="h-12 bg-white border-b flex items-center justify-between px-4 shrink-0">
+                        <span id="previewName" class="font-medium text-sm truncate max-w-xs">Filename</span>
+                        <div class="flex gap-2">
+                            <a id="downloadBtn" href="#" class="p-2 hover:bg-slate-100 rounded"><i class="ph ph-download-simple"></i></a>
+                            <button onclick="closePreview()" class="p-2 hover:bg-red-50 text-red-500 rounded"><i class="ph ph-x"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Viewers -->
+                    <div class="flex-1 relative overflow-hidden">
+                        <iframe id="pdfFrame" class="w-full h-full hidden bg-white"></iframe>
+                        <div id="docxFrame" class="w-full h-full hidden bg-white overflow-auto p-8"></div>
+                        <div id="excelFrame" class="w-full h-full hidden bg-white overflow-auto p-4"></div>
+                        <div id="pptFrame" class="w-full h-full hidden bg-white"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            // 1. Lấy ID từ URL (Ví dụ: subject.html?id=web -> lấy được 'web')
+            const params = new URLSearchParams(window.location.search);
+            const subjectId = params.get('id');
+
+            // 2. Load Sidebar (Chỉ tải danh sách tên môn - Rất nhẹ)
+            await loadSidebar(subjectId);
+
+            // 3. Load File chi tiết (Chỉ tải đúng file json của môn này)
+            if (subjectId) {
+                loadSubjectDetails(subjectId);
+            } else {
+                document.getElementById('pageTitle').innerText = "Vui lòng chọn môn học";
+                document.getElementById('fileList').innerHTML = '<div class="p-4 text-center text-slate-400">Chọn môn học bên trái</div>';
+            }
+        });
+
+        // --- LOAD SIDEBAR ---
+        async function loadSidebar(activeId) {
+            try {
+                // Tải file subjects.json nhẹ hều
+                const res = await fetch('data/subjects.json');
+                const subjects = await res.json();
+                
+                const container = document.getElementById('sidebarList');
+                container.innerHTML = '';
+
+                subjects.forEach(sub => {
+                    const isActive = sub.id === activeId;
+                    // Chú ý: href trỏ về chính file này nhưng đổi tham số ?id=...
+                    const link = document.createElement('a');
+                    link.href = `subject.html?id=${sub.id}`;
+                    link.className = `flex items-center gap-3 px-4 py-3 rounded-xl transition mb-1 ${isActive ? 'bg-indigo-50 text-indigo-700 font-semibold' : 'text-slate-500 hover:bg-slate-50'}`;
+                    link.innerHTML = `
+                        <i class="${sub.icon || 'ph-folder'} text-lg"></i>
+                        <span class="truncate">${sub.name}</span>
+                    `;
+                    container.appendChild(link);
+                });
+            } catch (e) {
+                console.error("Lỗi tải sidebar:", e);
+            }
+        }
+
+        // --- LOAD CHI TIẾT MÔN HỌC ---
+        async function loadSubjectDetails(id) {
+            const list = document.getElementById('fileList');
+            list.innerHTML = '<div class="p-4 text-center"><i class="ph ph-spinner animate-spin"></i> Đang tải dữ liệu...</div>';
+
+            try {
+                // QUAN TRỌNG: Chỉ fetch file json của môn đó
+                const res = await fetch(`data/details/${id}.json`);
+                
+                if (!res.ok) throw new Error("Không tìm thấy môn học");
+                
+                const data = await res.json();
+                
+                // Cập nhật giao diện
+                document.title = `${data.name} - UniDocs`;
+                document.getElementById('pageTitle').innerHTML = `<i class="ph-fill ph-folder-open text-indigo-600"></i> ${data.name}`;
+                
+                // Render Files
+                list.innerHTML = '';
+                if(data.files.length === 0) {
+                    list.innerHTML = '<div class="p-4 text-center text-slate-400">Chưa có tài liệu.</div>';
+                    return;
+                }
+
+                data.files.forEach(file => {
+                    const icon = getIcon(file.type);
+                    const el = document.createElement('div');
+                    el.className = 'p-3 rounded-lg cursor-pointer hover:bg-indigo-50 transition flex items-center justify-between group border-b border-slate-50 last:border-0';
+                    el.onclick = () => previewFile(file);
+                    el.innerHTML = `
+                        <div class="flex items-center gap-3 overflow-hidden">
+                            <div class="w-8 h-8 rounded ${icon.bg} ${icon.text} flex items-center justify-center shrink-0">
+                                <i class="${icon.class}"></i>
+                            </div>
+                            <div class="truncate">
+                                <div class="text-sm font-medium text-slate-700 truncate">${file.name}</div>
+                                <div class="text-[10px] text-slate-400">${file.size || 'Unknown'}</div>
+                            </div>
+                        </div>
+                    `;
+                    list.appendChild(el);
+                });
+
+            } catch (e) {
+                list.innerHTML = `<div class="p-4 text-center text-red-400">Lỗi: Không tìm thấy dữ liệu cho môn "${id}"</div>`;
+            }
+        }
+
+        // --- PREVIEW LOGIC (Tích hợp sẵn code của bạn) ---
+        async function previewFile(file) {
+            const container = document.getElementById('viewerContainer');
+            const empty = document.getElementById('emptyState');
+            
+            empty.classList.add('hidden');
+            container.classList.remove('hidden');
+            
+            document.getElementById('previewName').innerText = file.name;
+            document.getElementById('downloadBtn').href = file.url;
+
+            // Reset frames
+            ['pdfFrame', 'docxFrame', 'excelFrame', 'pptFrame'].forEach(id => {
+                const el = document.getElementById(id);
+                el.style.display = 'none';
+                el.innerHTML = ''; // Clear content
+                if(id === 'pdfFrame') el.src = '';
+            });
+
+            const loading = `<div class="flex h-full items-center justify-center text-slate-400 gap-2"><i class="ph ph-spinner animate-spin"></i> Đang tải...</div>`;
+
+            if (file.type === 'pdf') {
+                const f = document.getElementById('pdfFrame');
+                f.style.display = 'block';
+                f.src = file.url;
+            } 
+            else if (file.type === 'word') {
+                const f = document.getElementById('docxFrame');
+                f.style.display = 'block';
+                f.innerHTML = loading;
+                try {
+                    const blob = await (await fetch(file.url)).blob();
+                    f.innerHTML = '';
+                    await docx.renderAsync(blob, f, null, { inWrapper: false });
+                } catch(e) { f.innerHTML = 'Lỗi tải Word'; }
+            }
+            else if (file.type === 'excel') {
+                const f = document.getElementById('excelFrame');
+                f.style.display = 'block';
+                f.innerHTML = loading;
+                try {
+                    const ab = await (await fetch(file.url)).arrayBuffer();
+                    const wb = XLSX.read(ab);
+                    const html = XLSX.utils.sheet_to_html(wb.Sheets[wb.SheetNames[0]]);
+                    f.innerHTML = html;
+                    f.querySelector('table').style.borderCollapse = 'collapse'; // Basic style fix
+                } catch(e) { f.innerHTML = 'Lỗi tải Excel'; }
+            }
+            else if (file.type === 'ppt') {
+                 const f = document.getElementById('pptFrame');
+                 f.style.display = 'block';
+                 f.innerHTML = `<div id="pptx-target"></div>`;
+                 $("#pptx-target").pptxToHtml({
+                    pptxFileUrl: file.url,
+                    slidesScale: "100%",
+                    slideMode: false,
+                    keyBoardShortCut: false
+                 });
+            }
+        }
+
+        function closePreview() {
+            document.getElementById('viewerContainer').classList.add('hidden');
+            document.getElementById('emptyState').classList.remove('hidden');
+            document.getElementById('pdfFrame').src = 'about:blank';
+        }
+
+        function getIcon(type) {
+            if(type === 'pdf') return { class: 'ph-fill ph-file-pdf', bg: 'bg-rose-100', text: 'text-rose-600' };
+            if(type === 'word') return { class: 'ph-fill ph-file-doc', bg: 'bg-blue-100', text: 'text-blue-600' };
+            if(type === 'excel') return { class: 'ph-fill ph-file-xls', bg: 'bg-emerald-100', text: 'text-emerald-600' };
+            if(type === 'ppt') return { class: 'ph-fill ph-file-ppt', bg: 'bg-orange-100', text: 'text-orange-600' };
+            return { class: 'ph-fill ph-file', bg: 'bg-slate-100', text: 'text-slate-600' };
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "web",
+    "name": "Lập trình Web",
+    "icon": "ph-globe"
+  },
+  { 
+    "id": "calculus", 
+    "name": "Giải tích (Calculus)", 
+    "icon": "ph-function" 
+  }
+]

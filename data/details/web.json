@@ -1,0 +1,7 @@
+{
+  "name": "Lập trình Web",
+  "files": [
+    { "name": "Bai-1.pdf", "type": "pdf", "url": "docs/web/b1.pdf", "date": "10/01" },
+    { "name": "Bai-2.docx", "type": "word", "url": "docs/web/b2.docx", "date": "12/01" }
+  ]
+}

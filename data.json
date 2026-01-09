@@ -1,0 +1,30 @@
+{
+  "subjects": [
+    {
+      "id": "lap-trinh-web",
+      "name": "Lập trình Web",
+      "icon": "ph-globe",
+      "files": [
+        { "name": "Bai-giang-HTML5.pdf", "type": "pdf", "size": "2.4 MB", "date": "10/01/2024", "url": "docs/web/html5.pdf" },
+        { "name": "Lab-CSS-Flexbox.docx", "type": "word", "size": "1.1 MB", "date": "12/01/2024", "url": "docs/web/lab1.docx" }
+      ]
+    },
+    {
+      "id": "toan-cao-cap",
+      "name": "Toán Cao Cấp",
+      "icon": "ph-function",
+      "files": [
+        { "name": "Giao-trinh-Tich-phan.pdf", "type": "pdf", "size": "5.0 MB", "date": "05/01/2024", "url": "docs/math/tichphan.pdf" },
+        { "name": "Bang-tinh-Xac-suat.xlsx", "type": "excel", "size": "500 KB", "date": "08/01/2024", "url": "docs/math/data.xlsx" }
+      ]
+    },
+    {
+      "id": "triet-hoc",
+      "name": "Triết học Mác - Lênin",
+      "icon": "ph-book-bookmark",
+      "files": [
+        { "name": "Slide-Chuong-1.pptx", "type": "ppt", "size": "3.2 MB", "date": "02/01/2024", "url": "docs/triet/chap1.pptx" }
+      ]
+    }
+  ]
+}
