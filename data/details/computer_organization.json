@@ -1,0 +1,196 @@
+{
+    "id": "computer_organization",
+    "name": "Tổ chức máy tính",
+    "files": [
+                {
+            "name": "[1 new]Digital_Design_5th_Edition_M._Morris_Man.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/[1 new]Digital_Design_5th_Edition_M._Morris_Man.pdf",
+            "size": "2.99 MB",
+            "date": "01/09/2022"
+        },
+        {
+            "name": "CS161_ MIPS Instruction Reference.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/CS161_ MIPS Instruction Reference.pdf",
+            "size": "218 KB",
+            "date": "05/09/2022"
+        },
+        {
+            "name": "Chapter 1.1 - Introduction.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 1.1 - Introduction.pdf",
+            "size": "1.82 MB",
+            "date": "08/09/2022"
+        },
+        {
+            "name": "Chapter 1.2 - Number systems and Codes.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 1.2 - Number systems and Codes.pdf",
+            "size": "715 KB",
+            "date": "10/09/2022"
+        },
+        {
+            "name": "Chapter 1.3 - Number systems supplimentary notes.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 1.3 - Number systems supplimentary notes.pdf",
+            "size": "188 KB",
+            "date": "15/09/2022"
+        },
+        
+        {
+            "name": "Chapter 2 - Boolean algebra.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 2 - Boolean algebra.pdf",
+            "size": "301 KB",
+            "date": "18/09/2022"
+        },
+        {
+            "name": "Chapter 3 - Logic gates and circuits.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 3 - Logic gates and circuits.pdf",
+            "size": "539 KB",
+            "date": "22/09/2022"
+        },
+        {
+            "name": "Chapter 4.1 - Karnaugh-Maps.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 4.1 - Karnaugh-Maps.pdf",
+            "size": "604 KB",
+            "date": "29/09/2022"
+        },
+        {
+            "name": "Chapter 4.2 -  Quine-McCluskey.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 4.2 -  Quine-McCluskey.pdf",
+            "size": "297 KB",
+            "date": "03/10/2022"
+        },
+        {
+            "name": "Chapter 5 - Combinational-Circuits.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 5 - Combinational-Circuits.pdf",
+            "size": "699 KB",
+            "date": "08/10/2022"
+        },
+        {
+            "name": "Chapter 6 - Sequential-Logic.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 6 - Sequential-Logic.pdf",
+            "size": "921 KB",
+            "date": "15/10/2022"
+        },
+        {
+            "name": "Chapter 7 - Computer Organisation.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 7 - Computer Organisation.pdf",
+            "size": "2.00 MB",
+            "date": "22/10/2022"
+        },
+        {
+            "name": "Chapter 8 - Computer Performance.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 8 - Computer Performance.pdf",
+            "size": "1.10 MB",
+            "date": "29/10/2022"
+        },
+        {
+            "name": "Chapter 9.0 - MSI Components.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 9.0 - MSI Components.pdf",
+            "size": "1.57 MB",
+            "date": "01/11/2022"
+        },
+        {
+            "name": "Chapter 9.1 - MIPS Introduction.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 9.1 - MIPS Introduction.pdf",
+            "size": "1.01 MB",
+            "date": "04/11/2022"
+        },
+        {
+            "name": "Chapter 9.2 - MIPS II - More Instructions.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 9.2 - MIPS II - More Instructions.pdf",
+            "size": "1.02 MB",
+            "date": "06/11/2022"
+        },
+        {
+            "name": "Chapter 9.3 - MIPS III - Format _ Encoding.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 9.3 - MIPS III - Format _ Encoding.pdf",
+            "size": "973 KB",
+            "date": "08/11/2022"
+        },
+        {
+            "name": "Chapter 10 - Instruction Set Architecture (ISA).pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 10 - Instruction Set Architecture (ISA).pdf",
+            "size": "819 KB",
+            "date": "10/11/2022"
+        },
+        {
+            "name": "Chapter 11.1 - Bộ xử lí.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 11.1 - Bộ xử lí.pdf",
+            "size": "2.42 MB",
+            "date": "16/11/2022"
+        },
+        {
+            "name": "Chapter 11.1 - Processor DataPath.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 11.1 - Processor DataPath.pdf",
+            "size": "1.00 MB",
+            "date": "16/11/2022"
+        },
+        {
+            "name": "Chapter 11.2 - Processor Control.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 11.2 - Processor Control.pdf",
+            "size": "1.16 MB",
+            "date": "20/11/2022"
+        },
+        {
+            "name": "Chapter 12 - Pipelining.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 12 - Pipelining.pdf",
+            "size": "3.31 MB",
+            "date": "25/11/2022"
+        },
+        {
+            "name": "Chapter 13.1 - Cache Part I.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 13.1 - Cache Part I.pdf",
+            "size": "2.35 MB",
+            "date": "02/12/2022"
+        },
+        {
+            "name": "Chapter 13.2 - Cache Part II.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 13.2 - Cache Part II.pdf",
+            "size": "2.08 MB",
+            "date": "05/12/2022"
+        },
+        {
+            "name": "Chapter 14.1 - Virtual memory (Own Reading Only).pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 14.1 - Virtual memory (Own Reading Only).pdf",
+            "size": "763 KB",
+            "date": "12/12/2022"
+        },
+        {
+            "name": "Chapter 14.2 - IO (Own Reading Only).pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/Chapter 14.2 - IO (Own Reading Only).pdf",
+            "size": "912 KB",
+            "date": "15/12/2022"
+        },
+        {
+            "name": "TO CHUC MAY TINH GK1.pdf",
+            "type": "pdf",
+            "url": "documents/computer_organization/TO CHUC MAY TINH GK1.pdf",
+            "size": "491 KB",
+            "date": "28/11/2022"
+        }
+    ]
+}

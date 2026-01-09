@@ -1,7 +1,75 @@
 {
+  "id": "web",
   "name": "Lập trình Web",
   "files": [
-    { "name": "Bai-1.pdf", "type": "pdf", "url": "docs/web/b1.pdf", "date": "10/01" },
-    { "name": "Bai-2.docx", "type": "word", "url": "docs/web/b2.docx", "date": "12/01" }
+    {
+      "name": "1. Introduction.pdf",
+      "type": "pdf",
+      "url": "documents/web/1. Introduction.pdf",
+      "date": "05/01/2024"
+    },
+    {
+      "name": "2. HTML.pdf",
+      "type": "pdf",
+      "url": "documents/web/2. HTML.pdf",
+      "size": "9.68 MB",
+      "date": "12/01/2024"
+    },
+    {
+      "name": "3. CSS.pdf",
+      "type": "pdf",
+      "url": "documents/web/3. CSS.pdf",
+      "size": "2.23 MB",
+      "date": "20/01/2024"
+    },
+    {
+      "name": "4. Javascript.pdf",
+      "type": "pdf",
+      "url": "documents/web/4. Javascript.pdf",
+      "size": "3.51 MB",
+      "date": "01/02/2024"
+    },
+    {
+      "name": "5. Bootstrap.pdf",
+      "type": "pdf",
+      "url": "documents/web/5. Bootstrap.pdf",
+      "size": "2.23 MB",
+      "date": "10/02/2024"
+    },
+    {
+      "name": "6. Slide - Basic PHP.pdf",
+      "type": "pdf",
+      "url": "documents/web/6. Slide - Basic PHP.pdf",
+      "size": "3.22 MB",
+      "date": "25/02/2024"
+    },
+    {
+      "name": "7. Slide - Advanced PHP.pdf",
+      "type": "pdf",
+      "url": "documents/web/7. Slide - Advanced PHP.pdf",
+      "size": "6.77 MB",
+      "date": "05/03/2024"
+    },
+    {
+      "name": "8. Slide - PHP MySQL.pdf",
+      "type": "pdf",
+      "url": "documents/web/8. Slide - PHP MySQL.pdf",
+      "size": "3.76 MB",
+      "date": "15/03/2024"
+    },
+    {
+      "name": "9. Slide - Web Services.pdf",
+      "type": "pdf",
+      "url": "documents/web/9. Slide - Web Services.pdf",
+      "size": "4.97 MB",
+      "date": "01/04/2024"
+    },
+    {
+      "name": "10. Slide - Final.pdf",
+      "type": "pdf",
+      "url": "documents/web/10. Slide - Final.pdf",
+      "size": "2.11 MB",
+      "date": "10/04/2024"
+    }
   ]
 }

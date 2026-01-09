@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tài liệu môn học - UniDocs</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    
+
     <!-- Viewers Libs -->
     <script src="https://unpkg.com/jszip/dist/jszip.min.js"></script>
     <script src="https://unpkg.com/docx-preview/dist/docx-preview.min.js"></script>
@@ -17,12 +18,32 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap');
-        body { font-family: 'Be Vietnam Pro', sans-serif; background-color: #f8fafc; }
-        .glass-panel { background: rgba(255, 255, 255, 0.95); border-right: 1px solid #e2e8f0; }
-        .nav-item.active { background-color: #e0e7ff; color: #4338ca; font-weight: 600; }
+
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #f8fafc;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.95);
+            border-right: 1px solid #e2e8f0;
+        }
+
+        .nav-item.active {
+            background-color: #e0e7ff;
+            color: #4338ca;
+            font-weight: 600;
+        }
+
         /* Scrollbar */
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-thumb { background: rgba(156, 163, 175, 0.5); border-radius: 3px; }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(156, 163, 175, 0.5);
+            border-radius: 3px;
+        }
     </style>
 </head>
 
@@ -47,9 +68,10 @@
                 <div class="text-center text-sm p-4"><i class="ph ph-spinner animate-spin"></i> Đang tải menu...</div>
             </nav>
         </div>
-        
+
         <div class="p-4 border-t border-slate-200">
-            <a href="index.html" class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:text-indigo-600 transition rounded-xl">
+            <a href="index.html"
+                class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:text-indigo-600 transition rounded-xl">
                 <i class="ph ph-arrow-left text-lg"></i> Trang chủ
             </a>
         </div>
@@ -57,9 +79,10 @@
 
     <!-- CONTENT -->
     <div class="flex-1 flex flex-col h-full relative z-10 overflow-hidden">
-        
+
         <!-- Header -->
-        <header class="h-16 border-b border-slate-200 bg-white flex items-center justify-between px-6 shrink-0 shadow-sm">
+        <header
+            class="h-16 border-b border-slate-200 bg-white flex items-center justify-between px-6 shrink-0 shadow-sm">
             <h1 class="text-lg font-bold text-slate-800 flex items-center gap-2" id="pageTitle">
                 Loading...
             </h1>
@@ -68,7 +91,8 @@
         <main class="flex-1 flex overflow-hidden">
             <!-- File List (Left) -->
             <div class="w-full md:w-1/3 max-w-md border-r border-slate-200 bg-white flex flex-col">
-                <div class="p-3 border-b border-slate-50 bg-slate-50/50 flex justify-between text-xs font-semibold text-slate-500 uppercase">
+                <div
+                    class="p-3 border-b border-slate-50 bg-slate-50/50 flex justify-between text-xs font-semibold text-slate-500 uppercase">
                     <span>Tên file</span>
                     <span>Ngày</span>
                 </div>
@@ -83,17 +107,19 @@
                     <i class="ph ph-files text-5xl mb-4 text-slate-300"></i>
                     <p>Chọn tài liệu để xem</p>
                 </div>
-                
+
                 <div id="viewerContainer" class="hidden flex-1 flex flex-col h-full bg-slate-200 relative">
-                     <!-- Toolbar -->
+                    <!-- Toolbar -->
                     <div class="h-12 bg-white border-b flex items-center justify-between px-4 shrink-0">
                         <span id="previewName" class="font-medium text-sm truncate max-w-xs">Filename</span>
                         <div class="flex gap-2">
-                            <a id="downloadBtn" href="#" class="p-2 hover:bg-slate-100 rounded"><i class="ph ph-download-simple"></i></a>
-                            <button onclick="closePreview()" class="p-2 hover:bg-red-50 text-red-500 rounded"><i class="ph ph-x"></i></button>
+                            <a id="downloadBtn" href="#" class="p-2 hover:bg-slate-100 rounded"><i
+                                    class="ph ph-download-simple"></i></a>
+                            <button onclick="closePreview()" class="p-2 hover:bg-red-50 text-red-500 rounded"><i
+                                    class="ph ph-x"></i></button>
                         </div>
                     </div>
-                    
+
                     <!-- Viewers -->
                     <div class="flex-1 relative overflow-hidden">
                         <iframe id="pdfFrame" class="w-full h-full hidden bg-white"></iframe>
@@ -131,7 +157,7 @@
                 // Tải file subjects.json nhẹ hều
                 const res = await fetch('data/subjects.json');
                 const subjects = await res.json();
-                
+
                 const container = document.getElementById('sidebarList');
                 container.innerHTML = '';
 
@@ -160,39 +186,70 @@
             try {
                 // QUAN TRỌNG: Chỉ fetch file json của môn đó
                 const res = await fetch(`data/details/${id}.json`);
-                
+
                 if (!res.ok) throw new Error("Không tìm thấy môn học");
-                
+
                 const data = await res.json();
-                
+
                 // Cập nhật giao diện
                 document.title = `${data.name} - UniDocs`;
                 document.getElementById('pageTitle').innerHTML = `<i class="ph-fill ph-folder-open text-indigo-600"></i> ${data.name}`;
-                
+
                 // Render Files
                 list.innerHTML = '';
-                if(data.files.length === 0) {
+                if (data.files.length === 0) {
                     list.innerHTML = '<div class="p-4 text-center text-slate-400">Chưa có tài liệu.</div>';
                     return;
                 }
 
-                data.files.forEach(file => {
+                data.files.forEach((file, index) => {
                     const icon = getIcon(file.type);
                     const el = document.createElement('div');
+                    const sizeId = 'size-' + index;
+
                     el.className = 'p-3 rounded-lg cursor-pointer hover:bg-indigo-50 transition flex items-center justify-between group border-b border-slate-50 last:border-0';
                     el.onclick = () => previewFile(file);
                     el.innerHTML = `
-                        <div class="flex items-center gap-3 overflow-hidden">
-                            <div class="w-8 h-8 rounded ${icon.bg} ${icon.text} flex items-center justify-center shrink-0">
-                                <i class="${icon.class}"></i>
-                            </div>
-                            <div class="truncate">
-                                <div class="text-sm font-medium text-slate-700 truncate">${file.name}</div>
-                                <div class="text-[10px] text-slate-400">${file.size || 'Unknown'}</div>
-                            </div>
-                        </div>
-                    `;
+    <!-- Bên trái: Icon + Tên file -->
+    <div class="flex items-center gap-3 overflow-hidden">
+        <div class="w-8 h-8 rounded ${icon.bg} ${icon.text} flex items-center justify-center shrink-0">
+            <i class="${icon.class}"></i>
+        </div>
+        <div class="truncate">
+            <div class="text-sm font-medium text-slate-700 truncate">${file.name}</div>
+            <div id="${sizeId}" class="text-[10px] text-slate-400">${file.size || 'Checking...'}</div>
+        </div>
+    </div>
+
+    <!-- Bên phải: Ngày tháng -->
+    <span class="text-xs text-slate-400 whitespace-nowrap ml-2 font-medium bg-slate-50 px-2 py-1 rounded">
+        ${file.date || ''}
+    </span>
+`;
                     list.appendChild(el);
+
+                    // --- TỰ ĐỘNG LẤY SIZE ---
+                    if (file.size) {
+                        // Đã có size thì không làm gì (hoặc gán lại cho chắc)
+                        document.getElementById(sizeId).innerText = file.size;
+                    } else {
+                        fetch(file.url, { method: 'HEAD' })
+                            .then(response => {
+                                if (response.ok) {
+                                    const bytes = response.headers.get('content-length');
+                                    if (bytes) {
+                                        document.getElementById(sizeId).innerText = formatBytes(bytes);
+                                    } else {
+                                        document.getElementById(sizeId).innerText = 'Unknown';
+                                    }
+                                } else {
+                                    document.getElementById(sizeId).innerText = 'Error';
+                                }
+                            })
+                            .catch(() => {
+                                document.getElementById(sizeId).innerText = 'Error';
+                            });
+                    }
                 });
 
             } catch (e) {
@@ -204,10 +261,10 @@
         async function previewFile(file) {
             const container = document.getElementById('viewerContainer');
             const empty = document.getElementById('emptyState');
-            
+
             empty.classList.add('hidden');
             container.classList.remove('hidden');
-            
+
             document.getElementById('previewName').innerText = file.name;
             document.getElementById('downloadBtn').href = file.url;
 
@@ -216,7 +273,7 @@
                 const el = document.getElementById(id);
                 el.style.display = 'none';
                 el.innerHTML = ''; // Clear content
-                if(id === 'pdfFrame') el.src = '';
+                if (id === 'pdfFrame') el.src = '';
             });
 
             const loading = `<div class="flex h-full items-center justify-center text-slate-400 gap-2"><i class="ph ph-spinner animate-spin"></i> Đang tải...</div>`;
@@ -225,7 +282,7 @@
                 const f = document.getElementById('pdfFrame');
                 f.style.display = 'block';
                 f.src = file.url;
-            } 
+            }
             else if (file.type === 'word') {
                 const f = document.getElementById('docxFrame');
                 f.style.display = 'block';
@@ -234,7 +291,7 @@
                     const blob = await (await fetch(file.url)).blob();
                     f.innerHTML = '';
                     await docx.renderAsync(blob, f, null, { inWrapper: false });
-                } catch(e) { f.innerHTML = 'Lỗi tải Word'; }
+                } catch (e) { f.innerHTML = 'Lỗi tải Word'; }
             }
             else if (file.type === 'excel') {
                 const f = document.getElementById('excelFrame');
@@ -246,18 +303,18 @@
                     const html = XLSX.utils.sheet_to_html(wb.Sheets[wb.SheetNames[0]]);
                     f.innerHTML = html;
                     f.querySelector('table').style.borderCollapse = 'collapse'; // Basic style fix
-                } catch(e) { f.innerHTML = 'Lỗi tải Excel'; }
+                } catch (e) { f.innerHTML = 'Lỗi tải Excel'; }
             }
             else if (file.type === 'ppt') {
-                 const f = document.getElementById('pptFrame');
-                 f.style.display = 'block';
-                 f.innerHTML = `<div id="pptx-target"></div>`;
-                 $("#pptx-target").pptxToHtml({
+                const f = document.getElementById('pptFrame');
+                f.style.display = 'block';
+                f.innerHTML = `<div id="pptx-target"></div>`;
+                $("#pptx-target").pptxToHtml({
                     pptxFileUrl: file.url,
                     slidesScale: "100%",
                     slideMode: false,
                     keyBoardShortCut: false
-                 });
+                });
             }
         }
 
@@ -268,12 +325,22 @@
         }
 
         function getIcon(type) {
-            if(type === 'pdf') return { class: 'ph-fill ph-file-pdf', bg: 'bg-rose-100', text: 'text-rose-600' };
-            if(type === 'word') return { class: 'ph-fill ph-file-doc', bg: 'bg-blue-100', text: 'text-blue-600' };
-            if(type === 'excel') return { class: 'ph-fill ph-file-xls', bg: 'bg-emerald-100', text: 'text-emerald-600' };
-            if(type === 'ppt') return { class: 'ph-fill ph-file-ppt', bg: 'bg-orange-100', text: 'text-orange-600' };
+            if (type === 'pdf') return { class: 'ph-fill ph-file-pdf', bg: 'bg-rose-100', text: 'text-rose-600' };
+            if (type === 'word') return { class: 'ph-fill ph-file-doc', bg: 'bg-blue-100', text: 'text-blue-600' };
+            if (type === 'excel') return { class: 'ph-fill ph-file-xls', bg: 'bg-emerald-100', text: 'text-emerald-600' };
+            if (type === 'ppt') return { class: 'ph-fill ph-file-ppt', bg: 'bg-orange-100', text: 'text-orange-600' };
             return { class: 'ph-fill ph-file', bg: 'bg-slate-100', text: 'text-slate-600' };
+        }
+
+        function formatBytes(bytes, decimals = 2) {
+            if (!+bytes) return '0 Bytes';
+            const k = 1024;
+            const dm = decimals < 0 ? 0 : decimals;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return `${parseFloat((bytes / Math.pow(k, i)).toFixed(dm))} ${sizes[i]}`;
         }
     </script>
 </body>
+
 </html>

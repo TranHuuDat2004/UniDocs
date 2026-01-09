@@ -1,12 +1,20 @@
 [
   {
+    "id": "calculus",
+    "name": "Giải tích (Calculus)",
+    "icon": "ph-function",
+    "description": "Bao gồm giáo trình MA1521, bài tập về giới hạn, đạo hàm và tích phân."
+  },
+  {
+    "id": "computer_organization",
+    "name": "Tổ chức máy tính",
+    "icon": "ph-cpu",
+    "description": "Slide bài giảng, hợp ngữ MIPS và các bài lab thực hành."
+  },
+  {
     "id": "web",
     "name": "Lập trình Web",
-    "icon": "ph-globe"
-  },
-  { 
-    "id": "calculus", 
-    "name": "Giải tích (Calculus)", 
-    "icon": "ph-function" 
+    "icon": "ph-globe",
+    "description": "Tài liệu HTML5, CSS3, JS và các framework phổ biến."
   }
 ]
