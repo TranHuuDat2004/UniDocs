@@ -86,6 +86,10 @@
             <h1 class="text-lg font-bold text-slate-800 flex items-center gap-2" id="pageTitle">
                 Loading...
             </h1>
+            <button id="downloadAllBtn"
+                class="hidden bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition items-center gap-2">
+                <i class="ph-bold ph-download-simple"></i> Tải trọn bộ (.zip)
+            </button>
         </header>
 
         <main class="flex-1 flex overflow-hidden">
@@ -193,7 +197,19 @@
 
                 // Cập nhật giao diện
                 document.title = `${data.name} - UniDocs`;
+                document.title = `${data.name} - UniDocs`;
                 document.getElementById('pageTitle').innerHTML = `<i class="ph-fill ph-folder-open text-indigo-600"></i> ${data.name}`;
+
+                // --- SETUP DOWNLOAD ALL BUTTON ---
+                const dlBtn = document.getElementById('downloadAllBtn');
+                if (data.files && data.files.length > 0) {
+                    dlBtn.classList.remove('hidden');
+                    dlBtn.classList.add('flex');
+                    dlBtn.onclick = () => downloadAllWithZip(data);
+                } else {
+                    dlBtn.classList.add('hidden');
+                    dlBtn.classList.remove('flex');
+                }
 
                 // Render Files
                 list.innerHTML = '';
@@ -322,6 +338,55 @@
             document.getElementById('viewerContainer').classList.add('hidden');
             document.getElementById('emptyState').classList.remove('hidden');
             document.getElementById('pdfFrame').src = 'about:blank';
+        }
+
+        async function downloadAllWithZip(data) {
+            const btn = document.getElementById('downloadAllBtn');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = `<i class="ph ph-spinner animate-spin"></i> Đang nén...`;
+            btn.disabled = true;
+
+            try {
+                const zip = new JSZip();
+                // Create a folder inside the zip with the subject name
+                const folder = zip.folder(data.name);
+
+                // Helper to fetch valid files
+                const fetchFile = async (file) => {
+                    try {
+                        const response = await fetch(file.url);
+                        if (!response.ok) throw new Error('Network error');
+                        const blob = await response.blob();
+                        folder.file(file.name, blob);
+                    } catch (e) {
+                        console.error(`Lỗi tải file ${file.name}:`, e);
+                        // Optional: Write an error log file in the zip
+                        folder.file(`ERROR_${file.name}.txt`, `Không thể tải file này: ${e.message}`);
+                    }
+                };
+
+                // Execute all fetches in parallel
+                await Promise.all(data.files.map(fetchFile));
+
+                // Generate ZIP
+                const content = await zip.generateAsync({ type: "blob" });
+
+                // Trigger Download
+                const a = document.createElement("a");
+                a.href = URL.createObjectURL(content);
+                a.download = `${data.name}.zip`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(a.href);
+
+            } catch (e) {
+                console.error("Zip Error:", e);
+                alert("Có lỗi xảy ra khi tạo file nén. Vui lòng thử lại.");
+            } finally {
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+            }
         }
 
         function getIcon(type) {
