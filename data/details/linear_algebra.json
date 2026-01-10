@@ -1,0 +1,144 @@
+{
+    "id": "linear_algebra",
+    "name": "Đại số tuyến tính",
+    "files": [
+        {
+            "name": "Lecture 01.pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/Lecture 01.pdf",
+            "date": "05/01/2023"
+        },
+        {
+            "name": "Lecture 02.pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/Lecture 02.pdf",
+            "date": "10/01/2023"
+        },
+        {
+            "name": "Lecture 03.pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/Lecture 03.pdf",
+            "date": "15/01/2023"
+        },
+        {
+            "name": "Lecture 04.pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/Lecture 04.pdf",
+            "date": "20/01/2023"
+        },
+        {
+            "name": "Lecture 05.pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/Lecture 05.pdf",
+            "date": "02/02/2023"
+        },
+        {
+            "name": "Lecture 06.pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/Lecture 06.pdf",
+            "date": "05/02/2023"
+        },
+        {
+            "name": "Lecture 07.pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/Lecture 07.pdf",
+            "date": "12/02/2023"
+        },
+        {
+            "name": "Lecture 08.pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/Lecture 08.pdf",
+            "date": "15/02/2023"
+        },
+        {
+            "name": "Lecture 09.pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/Lecture 09.pdf",
+            "date": "20/02/2023"
+        },
+        {
+            "name": "Lecture 10.pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/Lecture 10.pdf",
+            "date": "01/03/2023"
+        },
+        {
+            "name": "Lecture 11.pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/Lecture 11.pdf",
+            "date": "05/03/2023"
+        },
+        {
+            "name": "Lecture 12.pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/Lecture 12.pdf",
+            "date": "10/03/2023"
+        },
+        {
+            "name": "Lecture 13.pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/Lecture 13.pdf",
+            "date": "15/03/2023"
+        },
+        {
+            "name": "Lecture 14.pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/Lecture 14.pdf",
+            "date": "20/03/2023"
+        },
+        {
+            "name": "Lecture 15 .pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/Lecture 15 .pdf",
+            "date": "01/04/2023"
+        },
+        {
+            "name": "Lecture 16.pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/Lecture 16.pdf",
+            "date": "05/04/2023"
+        },
+        {
+            "name": "Lecture 17.pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/Lecture 17.pdf",
+            "date": "10/04/2023"
+        },
+        {
+            "name": "Lecture 18.pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/Lecture 18.pdf",
+            "date": "15/04/2023"
+        },
+        {
+            "name": "Lecture 19.pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/Lecture 19.pdf",
+            "date": "20/04/2023"
+        },
+        {
+            "name": "Lecture 20.pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/Lecture 20.pdf",
+            "date": "01/05/2023"
+        },
+        {
+            "name": "Lecture 21.pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/Lecture 21.pdf",
+            "date": "05/05/2023"
+        },
+        {
+            "name": "Lecture 22 (Revision).pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/Lecture 22 (Revision).pdf",
+            "date": "10/05/2023"
+        },
+        {
+            "name": "dai_so-tuyen_tinh.pdf",
+            "type": "pdf",
+            "url": "documents/linear_algebra/dai_so-tuyen_tinh.pdf",
+            "date": "15/05/2023"
+        }
+    ]
+}

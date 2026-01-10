@@ -12,6 +12,30 @@
     "description": "Slide bài giảng, hợp ngữ MIPS và các bài lab thực hành."
   },
   {
+    "id": "programming_methodology",
+    "name": "Phương pháp lập trình",
+    "icon": "ph-code",
+    "description": "Tư duy lập trình, giải thuật, cấu trúc dữ liệu và lập trình C/C++ căn bản."
+  },
+  {
+    "id": "linear_algebra",
+    "name": "Đại số tuyến tính",
+    "icon": "ph-matrix-logo",
+    "description": "Ma trận, định thức, hệ phương trình tuyến tính và không gian vector."
+  },
+  {
+    "id": "oop",
+    "name": "Lập trình hướng đối tượng",
+    "icon": "ph-cube",
+    "description": "Lớp, đối tượng, kế thừa, đa hình và các nguyên lý SOLID trong C++."
+  },
+  {
+    "id": "os",
+    "name": "Nhập môn hệ điều hành",
+    "icon": "ph-desktop",
+    "description": "Quản lý tiến trình, bộ nhớ, file system và lập trình hệ thống."
+  },
+  {
     "id": "web",
     "name": "Lập trình Web",
     "icon": "ph-globe",
@@ -46,11 +70,5 @@
     "name": "Phân tích thiết kế yêu cầu",
     "icon": "ph-clipboard-text",
     "description": "Thu thập yêu cầu, phân tích nghiệp vụ và thiết kế hệ thống phần mềm."
-  },
-  {
-    "id": "programming_methodology",
-    "name": "Phương pháp lập trình",
-    "icon": "ph-code",
-    "description": "Tư duy lập trình, giải thuật, cấu trúc dữ liệu và lập trình C/C++ căn bản."
   }
 ]

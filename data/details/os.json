@@ -1,0 +1,78 @@
+{
+    "id": "os",
+    "name": "Nhập môn hệ điều hành",
+    "files": [
+        {
+            "name": "ch1 - Intro to OS.pdf",
+            "type": "pdf",
+            "url": "documents/OS/ch1 - Intro to OS.pdf",
+            "date": "05/01/2023"
+        },
+        {
+            "name": "ch10 - Virtual Memory.pdf",
+            "type": "pdf",
+            "url": "documents/OS/ch10 - Virtual Memory.pdf",
+            "date": "10/01/2023"
+        },
+        {
+            "name": "ch2 - OS structure.pdf",
+            "type": "pdf",
+            "url": "documents/OS/ch2 - OS structure.pdf",
+            "date": "20/01/2023"
+        },
+        {
+            "name": "ch3A - Process.pdf",
+            "type": "pdf",
+            "url": "documents/OS/ch3A - Process.pdf",
+            "date": "02/02/2023"
+        },
+        {
+            "name": "ch3B - Interprocess communication.pdf",
+            "type": "pdf",
+            "url": "documents/OS/ch3B - Interprocess communication.pdf",
+            "date": "15/02/2023"
+        },
+        {
+            "name": "ch4 - Threads.pdf",
+            "type": "pdf",
+            "url": "documents/OS/ch4 - Threads.pdf",
+            "date": "25/02/2023"
+        },
+        {
+            "name": "ch5 - CPU Scheduling.pdf",
+            "type": "pdf",
+            "url": "documents/OS/ch5 - CPU Scheduling.pdf",
+            "date": "05/03/2023"
+        },
+        {
+            "name": "ch5_B - CPU Scheduling.pdf",
+            "type": "pdf",
+            "url": "documents/OS/ch5_B - CPU Scheduling.pdf",
+            "date": "15/03/2023"
+        },
+        {
+            "name": "ch6 - Synchronization Tools.pdf",
+            "type": "pdf",
+            "url": "documents/OS/ch6 - Synchronization Tools.pdf",
+            "date": "25/03/2023"
+        },
+        {
+            "name": "ch7 - Synchronization Examples.pdf",
+            "type": "pdf",
+            "url": "documents/OS/ch7 - Synchronization Examples.pdf",
+            "date": "05/04/2023"
+        },
+        {
+            "name": "ch8 - Deadlocks.pdf",
+            "type": "pdf",
+            "url": "documents/OS/ch8 - Deadlocks.pdf",
+            "date": "15/04/2023"
+        },
+        {
+            "name": "ch9 - Main Memory.pdf",
+            "type": "pdf",
+            "url": "documents/OS/ch9 - Main Memory.pdf",
+            "date": "25/04/2023"
+        }
+    ]
+}
