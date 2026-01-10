@@ -1,0 +1,144 @@
+{
+    "id": "mobile_app",
+    "name": "Phát triển ứng dụng di động",
+    "files": [
+        {
+            "name": "503074_00. Course Introduction.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_00. Course Introduction.pdf",
+            "date": "02/01/2025"
+        },
+        {
+            "name": "503074_01. Introduction to Android.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_01. Introduction to Android.pdf",
+            "date": "08/01/2025"
+        },
+        {
+            "name": "503074_02. Create Your First Android App.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_02. Create Your First Android App.pdf",
+            "date": "15/01/2025"
+        },
+        {
+            "name": "503074_03. Activity lifecycle and state.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_03. Activity lifecycle and state.pdf",
+            "date": "22/01/2025"
+        },
+        {
+            "name": "503074_04. Graphical User Interfaces.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_04. Graphical User Interfaces.pdf",
+            "date": "29/01/2025"
+        },
+        {
+            "name": "503074_05-1. Selection-Widgets - Part1.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_05-1. Selection-Widgets - Part1.pdf",
+            "date": "05/02/2025"
+        },
+        {
+            "name": "503074_05-2. Selection-Widgets - Part2.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_05-2. Selection-Widgets - Part2.pdf",
+            "date": "08/02/2025"
+        },
+        {
+            "name": "503074_05-3. Recycler View.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_05-3. Recycler View.pdf",
+            "date": "12/02/2025"
+        },
+        {
+            "name": "503074_05-4. Android Fragments.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_05-4. Android Fragments.pdf",
+            "date": "15/02/2025"
+        },
+        {
+            "name": "503074_05-5. ActionBar  Menus.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_05-5. ActionBar  Menus.pdf",
+            "date": "19/02/2025"
+        },
+        {
+            "name": "503074_06-1. Activities and Intents.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_06-1. Activities and Intents.pdf",
+            "date": "22/02/2025"
+        },
+        {
+            "name": "503074_06-2. Starting Activities with Implicit Intents.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_06-2. Starting Activities with Implicit Intents.pdf",
+            "date": "26/02/2025"
+        },
+        {
+            "name": "503074_07-1. AsyncTask and AsyncTaskLoader.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_07-1. AsyncTask and AsyncTaskLoader.pdf",
+            "date": "01/03/2025"
+        },
+        {
+            "name": "503074_07-2. Efficient data transfer and JobScheduler.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_07-2. Efficient data transfer and JobScheduler.pdf",
+            "date": "05/03/2025"
+        },
+        {
+            "name": "503074_08-1. Storing Data.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_08-1. Storing Data.pdf",
+            "date": "08/03/2025"
+        },
+        {
+            "name": "503074_08-2. Shared Preferences.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_08-2. Shared Preferences.pdf",
+            "date": "12/03/2025"
+        },
+        {
+            "name": "503074_08-3. SQLite Database.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_08-3. SQLite Database.pdf",
+            "date": "15/03/2025"
+        },
+        {
+            "name": "503074_08-4. Room LiveData and ViewModel.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_08-4. Room LiveData and ViewModel.pdf",
+            "date": "19/03/2025"
+        },
+        {
+            "name": "503074_09. Internet connection.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_09. Internet connection.pdf",
+            "date": "02/04/2025"
+        },
+        {
+            "name": "503074_10-1. Broadcasts.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_10-1. Broadcasts.pdf",
+            "date": "15/04/2025"
+        },
+        {
+            "name": "503074_10-2. Services.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_10-2. Services.pdf",
+            "date": "25/04/2025"
+        },
+        {
+            "name": "503074_11-1. Notifications.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_11-1. Notifications.pdf",
+            "date": "10/05/2025"
+        },
+        {
+            "name": "503074_11-2. Location.pdf",
+            "type": "pdf",
+            "url": "documents/mobile_app/503074_11-2. Location.pdf",
+            "date": "20/05/2025"
+        }
+    ]
+}

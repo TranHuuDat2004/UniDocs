@@ -90,6 +90,18 @@
     "description": "Nguyên lý thiết kế, wireframe, prototype và trải nghiệm người dùng."
   },
   {
+    "id": "information_security",
+    "name": "Bảo mật thông tin",
+    "icon": "ph-shield-check",
+    "description": "Mật mã học, xác thực, kiểm soát truy cập và an ninh mạng."
+  },
+  {
+    "id": "mobile_app",
+    "name": "Phát triển ứng dụng di động",
+    "icon": "ph-device-mobile",
+    "description": "Android với Java/Kotlin, Activity, Fragment và SQLite."
+  },
+  {
     "id": "java_web",
     "name": "Lập trình web với Java (JSP - Servlet)",
     "icon": "ph-coffee",

@@ -1,0 +1,30 @@
+{
+    "id": "information_security",
+    "name": "Bảo mật thông tin",
+    "files": [
+        {
+            "name": "502049_Introduction to Information Security_Chapter 1_Security management concepts and principles.pdf",
+            "type": "pdf",
+            "url": "documents/information_security/502049_Introduction to Information Security_Chapter 1_Security management concepts and principles.pdf",
+            "date": "05/01/2025"
+        },
+        {
+            "name": "502049_Introduction to Information Security_Chapter 2_Attacks.pdf",
+            "type": "pdf",
+            "url": "documents/information_security/502049_Introduction to Information Security_Chapter 2_Attacks.pdf",
+            "date": "15/01/2025"
+        },
+        {
+            "name": "Lec 3_Identification and Authentication.pdf",
+            "type": "pdf",
+            "url": "documents/information_security/Lec 3_Identification and Authentication.pdf",
+            "date": "25/02/2025"
+        },
+        {
+            "name": "[01_GiaoTrinh]_Computer Security Wiley.pdf",
+            "type": "pdf",
+            "url": "documents/information_security/[01_GiaoTrinh]_Computer Security Wiley.pdf",
+            "date": "10/03/2025"
+        }
+    ]
+}
