@@ -1,0 +1,66 @@
+{
+    "id": "ui_ux",
+    "name": "Thiết kế giao diện người dùng",
+    "files": [
+        {
+            "name": "503108 - 01 - Introduction.pdf",
+            "type": "pdf",
+            "url": "documents/ui_ux/503108 - 01 - Introduction.pdf",
+            "date": "05/09/2024"
+        },
+        {
+            "name": "503108 - 02 - Establishing Requirements.pdf",
+            "type": "pdf",
+            "url": "documents/ui_ux/503108 - 02 - Establishing Requirements.pdf",
+            "date": "15/09/2024"
+        },
+        {
+            "name": "503108 - 03 - Personas.pdf",
+            "type": "pdf",
+            "url": "documents/ui_ux/503108 - 03 - Personas.pdf",
+            "date": "20/09/2024"
+        },
+        {
+            "name": "503108 - 04 - Transition From Defining to Designing.pdf",
+            "type": "pdf",
+            "url": "documents/ui_ux/503108 - 04 - Transition From Defining to Designing.pdf",
+            "date": "05/10/2024"
+        },
+        {
+            "name": "503108 - 05 - Design Principles.pdf",
+            "type": "pdf",
+            "url": "documents/ui_ux/503108 - 05 - Design Principles.pdf",
+            "date": "10/10/2024"
+        },
+        {
+            "name": "503108 - 06 - Sitemap and Taskflow.pdf",
+            "type": "pdf",
+            "url": "documents/ui_ux/503108 - 06 - Sitemap and Taskflow.pdf",
+            "date": "20/10/2024"
+        },
+        {
+            "name": "503108 - 07 - Wireframes.pdf",
+            "type": "pdf",
+            "url": "documents/ui_ux/503108 - 07 - Wireframes.pdf",
+            "date": "25/10/2024"
+        },
+        {
+            "name": "503108 - 08 - Mockup and Prototype.pdf",
+            "type": "pdf",
+            "url": "documents/ui_ux/503108 - 08 - Mockup and Prototype.pdf",
+            "date": "05/11/2024"
+        },
+        {
+            "name": "503108 - 09 - HTML CSS Javascript.pdf",
+            "type": "pdf",
+            "url": "documents/ui_ux/503108 - 09 - HTML CSS Javascript.pdf",
+            "date": "15/11/2024"
+        },
+        {
+            "name": "503108 - 10 - Design Testing.pdf",
+            "type": "pdf",
+            "url": "documents/ui_ux/503108 - 10 - Design Testing.pdf",
+            "date": "25/11/2024"
+        }
+    ]
+}

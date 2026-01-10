@@ -1,0 +1,78 @@
+{
+    "id": "daa",
+    "name": "Phân tích và thiết kế thuật toán",
+    "files": [
+        {
+            "name": "ch01n.pdf",
+            "type": "pdf",
+            "url": "documents/design_analysis_algorithm/ch01n.pdf",
+            "date": "05/09/2024"
+        },
+        {
+            "name": "ch02n.pdf",
+            "type": "pdf",
+            "url": "documents/design_analysis_algorithm/ch02n.pdf",
+            "date": "15/09/2024"
+        },
+        {
+            "name": "ch03n.pdf",
+            "type": "pdf",
+            "url": "documents/design_analysis_algorithm/ch03n.pdf",
+            "date": "20/09/2024"
+        },
+        {
+            "name": "ch04n.pdf",
+            "type": "pdf",
+            "url": "documents/design_analysis_algorithm/ch04n.pdf",
+            "date": "05/10/2024"
+        },
+        {
+            "name": "ch05n.pdf",
+            "type": "pdf",
+            "url": "documents/design_analysis_algorithm/ch05n.pdf",
+            "date": "10/10/2024"
+        },
+        {
+            "name": "ch06n.pdf",
+            "type": "pdf",
+            "url": "documents/design_analysis_algorithm/ch06n.pdf",
+            "date": "20/10/2024"
+        },
+        {
+            "name": "ch07n.pdf",
+            "type": "pdf",
+            "url": "documents/design_analysis_algorithm/ch07n.pdf",
+            "date": "25/10/2024"
+        },
+        {
+            "name": "ch08n.pdf",
+            "type": "pdf",
+            "url": "documents/design_analysis_algorithm/ch08n.pdf",
+            "date": "05/11/2024"
+        },
+        {
+            "name": "ch09n.pdf",
+            "type": "pdf",
+            "url": "documents/design_analysis_algorithm/ch09n.pdf",
+            "date": "15/11/2024"
+        },
+        {
+            "name": "ch10n.pdf",
+            "type": "pdf",
+            "url": "documents/design_analysis_algorithm/ch10n.pdf",
+            "date": "25/11/2024"
+        },
+        {
+            "name": "ch11n.pdf",
+            "type": "pdf",
+            "url": "documents/design_analysis_algorithm/ch11n.pdf",
+            "date": "05/12/2024"
+        },
+        {
+            "name": "ch12n.pdf",
+            "type": "pdf",
+            "url": "documents/design_analysis_algorithm/ch12n.pdf",
+            "date": "15/12/2024"
+        }
+    ]
+}

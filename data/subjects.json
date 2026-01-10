@@ -66,22 +66,34 @@
     "description": "Logic, tập hợp, lý thuyết đồ thị và các cấu trúc toán học trong KHMT."
   },
   {
+    "id": "web",
+    "name": "Lập trình Web (HTML, CSS, JS)",
+    "icon": "ph-globe",
+    "description": "Tài liệu HTML5, CSS3, JS và các framework phổ biến."
+  },
+  {
     "id": "nodejs",
     "name": "Lập trình web với Nodejs",
     "icon": "ph-file-code",
     "description": "Backend với Node.js, Express, xử lý form, cookie và RESTful API."
   },
   {
+    "id": "daa",
+    "name": "Phân tích và thiết kế thuật toán",
+    "icon": "ph-chart-line-up",
+    "description": "Chia để trị, quy hoạch động, tham lam và các bài toán đồ thị nâng cao."
+  },
+  {
+    "id": "ui_ux",
+    "name": "Thiết kế giao diện người dùng",
+    "icon": "ph-paint-brush",
+    "description": "Nguyên lý thiết kế, wireframe, prototype và trải nghiệm người dùng."
+  },
+  {
     "id": "java_web",
     "name": "Lập trình web với Java (JSP - Servlet)",
     "icon": "ph-coffee",
     "description": "JSP, Servlet, JDBC, Hibernate và Spring Framework cơ bản."
-  },
-  {
-    "id": "web",
-    "name": "Lập trình Web",
-    "icon": "ph-globe",
-    "description": "Tài liệu HTML5, CSS3, JS và các framework phổ biến."
   },
   {
     "id": "game_dev",
