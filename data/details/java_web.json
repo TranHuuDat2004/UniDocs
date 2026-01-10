@@ -1,0 +1,60 @@
+{
+    "id": "java_web",
+    "name": "Lập trình web với Java (JSP - Servlet)",
+    "files": [
+        {
+            "name": "503111_Java Technology_Chapter 0. Introduction to the course.pdf",
+            "type": "pdf",
+            "url": "documents/java_web/503111_Java Technology_Chapter 0. Introduction to the course.pdf",
+            "date": "05/01/2025"
+        },
+        {
+            "name": "503111_Java Technology_Chapter 1. Introduction to Java Development.pdf",
+            "type": "pdf",
+            "url": "documents/java_web/503111_Java Technology_Chapter 1. Introduction to Java Development.pdf",
+            "date": "15/01/2025"
+        },
+        {
+            "name": "503111_Java Technology_Chapter 2. JDBC.pdf",
+            "type": "pdf",
+            "url": "documents/java_web/503111_Java Technology_Chapter 2. JDBC.pdf",
+            "date": "25/01/2025"
+        },
+        {
+            "name": "503111_Java Technology_Chapter 3. Hibernate.pdf",
+            "type": "pdf",
+            "url": "documents/java_web/503111_Java Technology_Chapter 3. Hibernate.pdf",
+            "date": "05/02/2025"
+        },
+        {
+            "name": "503111_Java Technology_Chapter 4-5. Servlet and JSP.pdf",
+            "type": "pdf",
+            "url": "documents/java_web/503111_Java Technology_Chapter 4-5. Servlet and JSP.pdf",
+            "date": "15/02/2025"
+        },
+        {
+            "name": "503111_Java Technology_Chapter 6. Spring Framework.pdf",
+            "type": "pdf",
+            "url": "documents/java_web/503111_Java Technology_Chapter 6. Spring Framework.pdf",
+            "date": "25/02/2025"
+        },
+        {
+            "name": "503111_Java Technology_Chapter 7. Spring Data JPA.pdf",
+            "type": "pdf",
+            "url": "documents/java_web/503111_Java Technology_Chapter 7. Spring Data JPA.pdf",
+            "date": "10/03/2025"
+        },
+        {
+            "name": "503111_Java Technology_Chapter 8-9. Spring MVC.pdf",
+            "type": "pdf",
+            "url": "documents/java_web/503111_Java Technology_Chapter 8-9. Spring MVC.pdf",
+            "date": "25/03/2025"
+        },
+        {
+            "name": "503111_Java Technology_Chapter 10. Spring Security.pdf",
+            "type": "pdf",
+            "url": "documents/java_web/503111_Java Technology_Chapter 10. Spring Security.pdf",
+            "date": "10/04/2025"
+        }
+    ]
+}

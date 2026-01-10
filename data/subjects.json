@@ -66,6 +66,18 @@
     "description": "Logic, tập hợp, lý thuyết đồ thị và các cấu trúc toán học trong KHMT."
   },
   {
+    "id": "nodejs",
+    "name": "Lập trình web với Nodejs",
+    "icon": "ph-file-code",
+    "description": "Backend với Node.js, Express, xử lý form, cookie và RESTful API."
+  },
+  {
+    "id": "java_web",
+    "name": "Lập trình web với Java (JSP - Servlet)",
+    "icon": "ph-coffee",
+    "description": "JSP, Servlet, JDBC, Hibernate và Spring Framework cơ bản."
+  },
+  {
     "id": "web",
     "name": "Lập trình Web",
     "icon": "ph-globe",
