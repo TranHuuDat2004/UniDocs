@@ -1,0 +1,83 @@
+{
+    "id": "game_dev",
+    "name": "Phát triển game Unity",
+    "files": [
+        {
+            "name": "Lecture00- Introduction.pptx",
+            "type": "ppt",
+            "url": "documents/game_dev/Lecture00- Introduction.pptx",
+            "size": "2.15 MB",
+            "date": "05/09/2025"
+        },
+        {
+            "name": "lecture01 Introduction. C# and Unity3D Basics.pdf",
+            "type": "pdf",
+            "url": "documents/game_dev/lecture01 Introduction.pdf",
+            "size": "864 KB",
+            "date": "12/09/2025"
+        },
+        {
+            "name": "lecture02 3D Games and User Input.pdf",
+            "type": "pdf",
+            "url": "documents/game_dev/lecture02 3D Games and User Input.pdf",
+            "size": "2.22 MB",
+            "date": "18/09/2025"
+        },
+        {
+            "name": "lecture03 3D Games Models and Physics.pdf",
+            "type": "pdf",
+            "url": "documents/game_dev/lecture03 3D Games Models and Physics.pdf",
+            "size": "2.89 MB",
+            "date": "25/09/2025"
+        },
+        {
+            "name": "lecture04 Cameras, Audio, Lights and Shadows.pdf",
+            "type": "pdf",
+            "url": "documents/game_dev/lecture04 Cameras, Audio, Lights and Shadows.pdf",
+            "size": "2.22 MB",
+            "date": "02/10/2025"
+        },
+        {
+            "name": "lecture05 Terrains.pdf",
+            "type": "pdf",
+            "url": "documents/game_dev/lecture05 Terrains.pdf",
+            "size": "6.71 MB",
+            "date": "10/10/2025"
+        },
+        {
+            "name": "lecture06 GUIs, Menus and Particle Systems.pdf",
+            "type": "pdf",
+            "url": "documents/game_dev/lecture06 GUIs, Menus and Particle Systems.pdf",
+            "size": "1.29 MB",
+            "date": "20/10/2025"
+        },
+        {
+            "name": "lecture07 Persistance and Animations.pdf",
+            "type": "pdf",
+            "url": "documents/game_dev/lecture07 Persistance and Animations.pdf",
+            "size": "1.06 MB",
+            "date": "30/10/2025"
+        },
+        {
+            "name": "lecture08 Steering and Navigation.pdf",
+            "type": "pdf",
+            "url": "documents/game_dev/lecture08 Steering and Navigation.pdf",
+            "size": "1.41 MB",
+            "date": "08/11/2025"
+        },
+        {
+            "name": "lecture09 Game AI Decision Making.pdf",
+            "type": "pdf",
+            "url": "documents/game_dev/lecture09 Game AI Decision Making.pdf",
+            "size": "1.14 MB",
+            "date": "15/11/2025"
+        },
+        {
+            "name": "lecture10 2D Games.pdf",
+            "type": "pdf",
+            "url": "documents/game_dev/lecture10 2D Games.pdf",
+            "size": "1.36 MB",
+            "date": "25/11/2025"
+        }
+    ]
+}

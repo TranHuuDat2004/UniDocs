@@ -16,5 +16,17 @@
     "name": "Lập trình Web",
     "icon": "ph-globe",
     "description": "Tài liệu HTML5, CSS3, JS và các framework phổ biến."
+  },
+  {
+    "id": "game_dev",
+    "name": "Phát triển game Unity",
+    "icon": "ph-game-controller",
+    "description": "Tài liệu lập trình game 3D với Unity, C# và thiết kế game."
+  },
+  {
+    "id": "software_engineering",
+    "name": "Công nghệ phần mềm",
+    "icon": "ph-gear",
+    "description": "Slide bài giảng, quy trình phần mềm (Agile, Waterfall), UML và kiểm thử."
   }
 ]

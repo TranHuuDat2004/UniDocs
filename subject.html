@@ -324,7 +324,12 @@
             else if (file.type === 'ppt') {
                 const f = document.getElementById('pptFrame');
                 f.style.display = 'block';
-                f.innerHTML = `<div id="pptx-target"></div>`;
+                f.innerHTML = `
+                    <div class="p-3 text-center text-amber-700 bg-amber-50 border-b border-amber-100 text-sm">
+                        <i class="ph-bold ph-warning-circle"></i> Trình duyệt không hỗ trợ hiển thị trực tiếp file pptx, vui lòng tải xuống để xem nội dung chi tiết
+                    </div>
+                    <div id="pptx-target"></div>
+                `;
                 $("#pptx-target").pptxToHtml({
                     pptxFileUrl: file.url,
                     slidesScale: "100%",
