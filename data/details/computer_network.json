@@ -1,0 +1,54 @@
+{
+    "id": "computer_network",
+    "name": "Mạng máy tính",
+    "files": [
+        {
+            "name": "Lecture 0 - Course introduction (IT)-2019.pdf",
+            "type": "pdf",
+            "url": "documents/computer_network/Lecture 0 - Course introduction (IT)-2019.pdf",
+            "date": "05/09/2023"
+        },
+        {
+            "name": "Lecture 1 - Introduction (IT).pdf",
+            "type": "pdf",
+            "url": "documents/computer_network/Lecture 1 - Introduction (IT).pdf",
+            "date": "15/09/2023"
+        },
+        {
+            "name": "Lecture 2 - Applications (IT)-2021.pdf",
+            "type": "pdf",
+            "url": "documents/computer_network/Lecture 2 - Applications (IT)-2021.pdf",
+            "date": "25/09/2023"
+        },
+        {
+            "name": "Lecture 3 - Transport layer (IT).pdf",
+            "type": "pdf",
+            "url": "documents/computer_network/Lecture 3 - Transport layer (IT).pdf",
+            "date": "05/10/2023"
+        },
+        {
+            "name": "Lecture 4 - IP Addressing (IT).pdf",
+            "type": "pdf",
+            "url": "documents/computer_network/Lecture 4 - IP Addressing (IT).pdf",
+            "date": "15/10/2023"
+        },
+        {
+            "name": "Lecture 5 - Network layer (IT).pdf",
+            "type": "pdf",
+            "url": "documents/computer_network/Lecture 5 - Network layer (IT).pdf",
+            "date": "25/10/2023"
+        },
+        {
+            "name": "Lecture 6 - Datalink layer (IT).pdf",
+            "type": "pdf",
+            "url": "documents/computer_network/Lecture 6 - Datalink layer (IT).pdf",
+            "date": "10/11/2023"
+        },
+        {
+            "name": "Lecture 7 - Wireless and Mobile Networks.pdf",
+            "type": "pdf",
+            "url": "documents/computer_network/Lecture 7 - Wireless and Mobile Networks.pdf",
+            "date": "25/11/2023"
+        }
+    ]
+}

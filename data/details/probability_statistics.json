@@ -1,0 +1,48 @@
+{
+    "id": "probability_statistics",
+    "name": "Xác suất thống kê",
+    "files": [
+        {
+            "name": "502061_APPLIED PROBABILITY AND STATISTICS FOR IT_ch00.pdf",
+            "type": "pdf",
+            "url": "documents/probability_statistics/502061_APPLIED PROBABILITY AND STATISTICS FOR IT_ch00.pdf",
+            "date": "05/06/2023"
+        },
+        {
+            "name": "502061_APPLIED PROBABILITY AND STATISTICS FOR IT_ch01.pdf",
+            "type": "pdf",
+            "url": "documents/probability_statistics/502061_APPLIED PROBABILITY AND STATISTICS FOR IT_ch01.pdf",
+            "date": "15/06/2023"
+        },
+        {
+            "name": "502061_APPLIED PROBABILITY AND STATISTICS FOR IT_ch02.pdf",
+            "type": "pdf",
+            "url": "documents/probability_statistics/502061_APPLIED PROBABILITY AND STATISTICS FOR IT_ch02.pdf",
+            "date": "25/06/2023"
+        },
+        {
+            "name": "502061_APPLIED PROBABILITY AND STATISTICS FOR IT_ch03.pdf",
+            "type": "pdf",
+            "url": "documents/probability_statistics/502061_APPLIED PROBABILITY AND STATISTICS FOR IT_ch03.pdf",
+            "date": "10/07/2023"
+        },
+        {
+            "name": "502061_APPLIED PROBABILITY AND STATISTICS FOR IT_ch04.pdf",
+            "type": "pdf",
+            "url": "documents/probability_statistics/502061_APPLIED PROBABILITY AND STATISTICS FOR IT_ch04.pdf",
+            "date": "20/07/2023"
+        },
+        {
+            "name": "502061_APPLIED PROBABILITY AND STATISTICS FOR IT_ch05.pdf",
+            "type": "pdf",
+            "url": "documents/probability_statistics/502061_APPLIED PROBABILITY AND STATISTICS FOR IT_ch05.pdf",
+            "date": "05/08/2023"
+        },
+        {
+            "name": "502061_APPLIED PROBABILITY AND STATISTICS FOR IT_ch06.pdf",
+            "type": "pdf",
+            "url": "documents/probability_statistics/502061_APPLIED PROBABILITY AND STATISTICS FOR IT_ch06.pdf",
+            "date": "15/08/2023"
+        }
+    ]
+}

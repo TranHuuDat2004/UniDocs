@@ -48,6 +48,24 @@
     "description": "Mô hình quan hệ, đại số quan hệ, SQL và chuẩn hóa dữ liệu."
   },
   {
+    "id": "probability_statistics",
+    "name": "Xác suất thống kê",
+    "icon": "ph-chart-bar",
+    "description": "Không gian mẫu, biến ngẫu nhiên, phân phối xác suất và kiểm định giả thuyết."
+  },
+  {
+    "id": "computer_network",
+    "name": "Mạng máy tính",
+    "icon": "ph-globe-stand",
+    "description": "Mô hình OSI-TCP/IP, giao thức mạng, định tuyến và bảo mật mạng."
+  },
+  {
+    "id": "discrete_structures",
+    "name": "Cấu trúc rời rạc",
+    "icon": "ph-graph",
+    "description": "Logic, tập hợp, lý thuyết đồ thị và các cấu trúc toán học trong KHMT."
+  },
+  {
     "id": "web",
     "name": "Lập trình Web",
     "icon": "ph-globe",

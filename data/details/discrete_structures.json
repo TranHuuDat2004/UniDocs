@@ -1,0 +1,84 @@
+{
+    "id": "discrete_structures",
+    "name": "Cấu trúc rời rạc",
+    "files": [
+        {
+            "name": "501044-DiscreteStructures-10_Functions.pdf",
+            "type": "pdf",
+            "url": "documents/discrete_structures/501044-DiscreteStructures-10_Functions.pdf",
+            "date": "05/01/2024"
+        },
+        {
+            "name": "501044-DiscreteStructures-11_Cardinality.pdf",
+            "type": "pdf",
+            "url": "documents/discrete_structures/501044-DiscreteStructures-11_Cardinality.pdf",
+            "date": "15/01/2024"
+        },
+        {
+            "name": "501044-DiscreteStructures-12_Counting_and_Probability_1.pdf",
+            "type": "pdf",
+            "url": "documents/discrete_structures/501044-DiscreteStructures-12_Counting_and_Probability_1.pdf",
+            "date": "20/01/2024"
+        },
+        {
+            "name": "501044-DiscreteStructures-13_Counting_and_Probability_2.pdf",
+            "type": "pdf",
+            "url": "documents/discrete_structures/501044-DiscreteStructures-13_Counting_and_Probability_2.pdf",
+            "date": "28/01/2024"
+        },
+        {
+            "name": "501044-DiscreteStructures-14_Graphs_and_Trees_1.pdf",
+            "type": "pdf",
+            "url": "documents/discrete_structures/501044-DiscreteStructures-14_Graphs_and_Trees_1.pdf",
+            "date": "05/02/2024"
+        },
+        {
+            "name": "501044-DiscreteStructures-15_Graphs_and_Trees_2 (1).pdf",
+            "type": "pdf",
+            "url": "documents/discrete_structures/501044-DiscreteStructures-15_Graphs_and_Trees_2 (1).pdf",
+            "date": "12/02/2024"
+        },
+        {
+            "name": "501044-DiscreteStructures-1_PropositionalLogic.pdf",
+            "type": "pdf",
+            "url": "documents/discrete_structures/501044-DiscreteStructures-1_PropositionalLogic.pdf",
+            "date": "20/02/2024"
+        },
+        {
+            "name": "501044-DiscreteStructures-2-FirstOrderLogic.pdf",
+            "type": "pdf",
+            "url": "documents/discrete_structures/501044-DiscreteStructures-2-FirstOrderLogic.pdf",
+            "date": "28/02/2024"
+        },
+        {
+            "name": "501044-DiscreteStructures-3_Proof_Techniques.pdf",
+            "type": "pdf",
+            "url": "documents/discrete_structures/501044-DiscreteStructures-3_Proof_Techniques.pdf",
+            "date": "05/03/2024"
+        },
+        {
+            "name": "501044-DiscreteStructures-4_5_NumberTheory.pdf",
+            "type": "pdf",
+            "url": "documents/discrete_structures/501044-DiscreteStructures-4_5_NumberTheory.pdf",
+            "date": "15/03/2024"
+        },
+        {
+            "name": "501044-DiscreteStructures-6_7_Sequences_and_Recursion.pdf",
+            "type": "pdf",
+            "url": "documents/discrete_structures/501044-DiscreteStructures-6_7_Sequences_and_Recursion.pdf",
+            "date": "22/03/2024"
+        },
+        {
+            "name": "501044-DiscreteStructures-9_Relations1.pdf",
+            "type": "pdf",
+            "url": "documents/discrete_structures/501044-DiscreteStructures-9_Relations1.pdf",
+            "date": "02/04/2024"
+        },
+        {
+            "name": "501044-DiscreteStructures-9_Relations2.pdf",
+            "type": "pdf",
+            "url": "documents/discrete_structures/501044-DiscreteStructures-9_Relations2.pdf",
+            "date": "10/04/2024"
+        }
+    ]
+}
