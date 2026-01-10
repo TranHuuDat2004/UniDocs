@@ -1,0 +1,78 @@
+{
+    "id": "artificial_intelligence",
+    "name": "Nhập môn trí tuệ nhân tạo",
+    "files": [
+        {
+            "name": "AI-lec01-Introduction.pdf",
+            "type": "pdf",
+            "url": "documents/artificial_intelligence/AI-lec01-Introduction.pdf",
+            "date": "05/01/2024"
+        },
+        {
+            "name": "AI-lec02-IntelligentAgents.pdf",
+            "type": "pdf",
+            "url": "documents/artificial_intelligence/AI-lec02-IntelligentAgents.pdf",
+            "date": "12/01/2024"
+        },
+        {
+            "name": "AI-lec03-ProblemSolvingUsingSearching.pdf",
+            "type": "pdf",
+            "url": "documents/artificial_intelligence/AI-lec03-ProblemSolvingUsingSearching.pdf",
+            "date": "20/01/2024"
+        },
+        {
+            "name": "AI-lec04-UninformedSearch.pdf",
+            "type": "pdf",
+            "url": "documents/artificial_intelligence/AI-lec04-UninformedSearch.pdf",
+            "date": "02/02/2024"
+        },
+        {
+            "name": "AI-lec05-InformedSearch.pdf",
+            "type": "pdf",
+            "url": "documents/artificial_intelligence/AI-lec05-InformedSearch.pdf",
+            "date": "10/02/2024"
+        },
+        {
+            "name": "AI-lec06-LocalSearch.pdf",
+            "type": "pdf",
+            "url": "documents/artificial_intelligence/AI-lec06-LocalSearch.pdf",
+            "date": "15/02/2024"
+        },
+        {
+            "name": "AI-lec07-Adversarial Search.pdf",
+            "type": "pdf",
+            "url": "documents/artificial_intelligence/AI-lec07-Adversarial Search.pdf",
+            "date": "25/02/2024"
+        },
+        {
+            "name": "AI-lec08-CSPs.pdf",
+            "type": "pdf",
+            "url": "documents/artificial_intelligence/AI-lec08-CSPs.pdf",
+            "date": "05/03/2024"
+        },
+        {
+            "name": "AI-lec09-Logical Agents - Propositional Logic.pdf",
+            "type": "pdf",
+            "url": "documents/artificial_intelligence/AI-lec09-Logical Agents - Propositional Logic.pdf",
+            "date": "15/03/2024"
+        },
+        {
+            "name": "AI-lec10-First Order Logic.pdf",
+            "type": "pdf",
+            "url": "documents/artificial_intelligence/AI-lec10-First Order Logic.pdf",
+            "date": "25/03/2024"
+        },
+        {
+            "name": "AI-lec11-Bayesian Networks.pdf",
+            "type": "pdf",
+            "url": "documents/artificial_intelligence/AI-lec11-Bayesian Networks.pdf",
+            "date": "05/04/2024"
+        },
+        {
+            "name": "AI-lec12-Basic-Machine-Learning.pdf",
+            "type": "pdf",
+            "url": "documents/artificial_intelligence/AI-lec12-Basic-Machine-Learning.pdf",
+            "date": "15/04/2024"
+        }
+    ]
+}

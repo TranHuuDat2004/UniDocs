@@ -28,5 +28,11 @@
     "name": "Công nghệ phần mềm",
     "icon": "ph-gear",
     "description": "Slide bài giảng, quy trình phần mềm (Agile, Waterfall), UML và kiểm thử."
+  },
+  {
+    "id": "artificial_intelligence",
+    "name": "Nhập môn trí tuệ nhân tạo",
+    "icon": "ph-brain",
+    "description": "Các khái niệm cơ bản về AI, tác tử thông minh, tìm kiếm và học máy."
   }
 ]

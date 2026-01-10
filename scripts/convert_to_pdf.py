@@ -38,5 +38,11 @@ def convert_folder(folder_path):
         powerpoint.Quit()
 
 if __name__ == "__main__":
-    target_folder = r"d:\Huu Dat\UniDocs\documents\software_engineering"
+    if len(sys.argv) > 1:
+        target_folder = sys.argv[1]
+    else:
+        # Default or prompt
+        print("Usage: python convert_to_pdf.py <folder_path>")
+        sys.exit(1)
+        
     convert_folder(target_folder)
