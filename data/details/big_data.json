@@ -1,0 +1,126 @@
+{
+    "id": "big_data",
+    "name": "Xử lí dữ liệu lớn",
+    "files": [
+        {
+            "name": "01-intro.pdf",
+            "type": "pdf",
+            "url": "documents/big_data/01-intro.pdf",
+            "date": "02/01/2025"
+        },
+        {
+            "name": "02-assocrules.pdf",
+            "type": "pdf",
+            "url": "documents/big_data/02-assocrules.pdf",
+            "date": "08/01/2025"
+        },
+        {
+            "name": "03-lsh.pdf",
+            "type": "pdf",
+            "url": "documents/big_data/03-lsh.pdf",
+            "date": "15/01/2025"
+        },
+        {
+            "name": "04-lsh_theory.pdf",
+            "type": "pdf",
+            "url": "documents/big_data/04-lsh_theory.pdf",
+            "date": "22/01/2025"
+        },
+        {
+            "name": "05-clustering.pdf",
+            "type": "pdf",
+            "url": "documents/big_data/05-clustering.pdf",
+            "date": "29/01/2025"
+        },
+        {
+            "name": "06-dim_red.pdf",
+            "type": "pdf",
+            "url": "documents/big_data/06-dim_red.pdf",
+            "date": "05/02/2025"
+        },
+        {
+            "name": "07-recsys1.pdf",
+            "type": "pdf",
+            "url": "documents/big_data/07-recsys1.pdf",
+            "date": "12/02/2025"
+        },
+        {
+            "name": "08-recsys2.pdf",
+            "type": "pdf",
+            "url": "documents/big_data/08-recsys2.pdf",
+            "date": "19/02/2025"
+        },
+        {
+            "name": "09-pagerank.pdf",
+            "type": "pdf",
+            "url": "documents/big_data/09-pagerank.pdf",
+            "date": "26/02/2025"
+        },
+        {
+            "name": "10-spam.pdf",
+            "type": "pdf",
+            "url": "documents/big_data/10-spam.pdf",
+            "date": "05/03/2025"
+        },
+        {
+            "name": "11-graphs1.pdf",
+            "type": "pdf",
+            "url": "documents/big_data/11-graphs1.pdf",
+            "date": "12/03/2025"
+        },
+        {
+            "name": "12-graphs2.pdf",
+            "type": "pdf",
+            "url": "documents/big_data/12-graphs2.pdf",
+            "date": "19/03/2025"
+        },
+        {
+            "name": "13-GNNs.pdf",
+            "type": "pdf",
+            "url": "documents/big_data/13-GNNs.pdf",
+            "date": "26/03/2025"
+        },
+        {
+            "name": "13-dt.pdf",
+            "type": "pdf",
+            "url": "documents/big_data/13-dt.pdf",
+            "date": "02/04/2025"
+        },
+        {
+            "name": "14-learning_emb.pdf",
+            "type": "pdf",
+            "url": "documents/big_data/14-learning_emb.pdf",
+            "date": "09/04/2025"
+        },
+        {
+            "name": "15-streams.pdf",
+            "type": "pdf",
+            "url": "documents/big_data/15-streams.pdf",
+            "date": "16/04/2025"
+        },
+        {
+            "name": "17-matrix_sketching.pdf",
+            "type": "pdf",
+            "url": "documents/big_data/17-matrix_sketching.pdf",
+            "date": "23/04/2025"
+        },
+        {
+            "name": "18-advertising.pdf",
+            "type": "pdf",
+            "url": "documents/big_data/18-advertising.pdf",
+            "date": "30/04/2025"
+        },
+        {
+            "name": "19-bandits.pdf",
+            "type": "pdf",
+            "url": "documents/big_data/19-bandits.pdf",
+            "date": "07/05/2025"
+        },
+        {
+            "name": "20-submodular.pdf",
+            "type": "pdf",
+            "url": "documents/big_data/20-submodular.pdf",
+            "date": "14/05/2025"
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "id": "flutter",
+    "name": "Phát triển ứng dụng đa nền tảng",
+    "files": [
+        {
+            "name": "502071_Chapter 0. Introduction to the course.pdf",
+            "type": "pdf",
+            "url": "documents/flutter/502071_Chapter 0. Introduction to the course.pdf",
+            "date": "02/01/2025"
+        },
+        {
+            "name": "502071_Chapter 1. Introduction to Dart.pdf",
+            "type": "pdf",
+            "url": "documents/flutter/502071_Chapter 1. Introduction to Dart.pdf",
+            "date": "10/01/2025"
+        },
+        {
+            "name": "502071_Chapter 2. Getting Started to Flutter.pdf",
+            "type": "pdf",
+            "url": "documents/flutter/502071_Chapter 2. Getting Started to Flutter.pdf",
+            "date": "18/01/2025"
+        },
+        {
+            "name": "502071_Chapter 3. Layout widgets.pdf",
+            "type": "pdf",
+            "url": "documents/flutter/502071_Chapter 3. Layout widgets.pdf",
+            "date": "25/01/2025"
+        },
+        {
+            "name": "502071_Chapter 4. List-based widgets.pdf",
+            "type": "pdf",
+            "url": "documents/flutter/502071_Chapter 4. List-based widgets.pdf",
+            "date": "05/02/2025"
+        },
+        {
+            "name": "502071_Chapter 5. Material Navigation Widgets.pdf",
+            "type": "pdf",
+            "url": "documents/flutter/502071_Chapter 5. Material Navigation Widgets.pdf",
+            "date": "15/02/2025"
+        },
+        {
+            "name": "502071_Chapter 6. Working with Forms in Flutter.pdf",
+            "type": "pdf",
+            "url": "documents/flutter/502071_Chapter 6. Working with Forms in Flutter.pdf",
+            "date": "25/02/2025"
+        },
+        {
+            "name": "502071_Chapter 7. Navigation and Routing.pdf",
+            "type": "pdf",
+            "url": "documents/flutter/502071_Chapter 7. Navigation and Routing.pdf",
+            "date": "10/03/2025"
+        },
+        {
+            "name": "502071_Chapter 8. Dialogs.pdf",
+            "type": "pdf",
+            "url": "documents/flutter/502071_Chapter 8. Dialogs.pdf",
+            "date": "25/03/2025"
+        },
+        {
+            "name": "502071_Chapter 9. Persistence.pdf",
+            "type": "pdf",
+            "url": "documents/flutter/502071_Chapter 9. Persistence.pdf",
+            "date": "10/04/2025"
+        },
+        {
+            "name": "502071_Chapter 10. Networking.pdf",
+            "type": "pdf",
+            "url": "documents/flutter/502071_Chapter 10. Networking.pdf",
+            "date": "25/04/2025"
+        }
+    ]
+}

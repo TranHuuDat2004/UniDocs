@@ -102,6 +102,18 @@
     "description": "Android với Java/Kotlin, Activity, Fragment và SQLite."
   },
   {
+    "id": "flutter",
+    "name": "Phát triển ứng dụng đa nền tảng",
+    "icon": "ph-device-tablet-camera",
+    "description": "Flutter framework, Dart language, UI widgets và state management."
+  },
+  {
+    "id": "big_data",
+    "name": "Xử lí dữ liệu lớn",
+    "icon": "ph-database",
+    "description": "Hadoop, Spark, MapReduce và phân tích dữ liệu quy mô lớn."
+  },
+  {
     "id": "java_web",
     "name": "Lập trình web với Java (JSP - Servlet)",
     "icon": "ph-coffee",
