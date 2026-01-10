@@ -136,6 +136,50 @@
         </main>
     </div>
 
+    <!-- CONFIRMATION MODAL -->
+    <div id="confirmModal" class="fixed inset-0 z-50 hidden">
+        <div class="absolute inset-0 bg-slate-900/50 backdrop-blur-sm transition-opacity" onclick="closeConfirmModal()">
+        </div>
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md bg-white rounded-2xl shadow-xl p-6 transition-all transform scale-100">
+            <div class="text-center">
+                <div
+                    class="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="ph-bold ph-warning text-2xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Xác nhận tải xuống</h3>
+                <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                    Hệ thống chuẩn bị tải xuống trọn bộ tài liệu môn <br> <span id="confirmSubjectName"
+                        class="font-bold text-indigo-600"></span>.
+                    <br><br>
+                    <span class="block bg-orange-50 text-orange-800 p-3 rounded-lg border border-orange-100 text-left">
+                        <i class="ph-bold ph-info mr-1"></i> <strong>Lưu ý:</strong> Dung lượng file có thể lớn. Vui
+                        lòng ưu tiên sử dụng <b>Wi-Fi</b> để tránh gián đoạn hoặc phát sinh cước phí dữ liệu di động
+                        (3G/4G).
+                    </span>
+                </p>
+
+                <div class="flex items-center justify-center gap-2 mb-6">
+                    <input type="checkbox" id="dontShowAgain"
+                        class="w-4 h-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500">
+                    <label for="dontShowAgain" class="text-sm text-slate-600 select-none">Không nhắc lại thông báo
+                        này</label>
+                </div>
+
+                <div class="flex gap-3">
+                    <button onclick="closeConfirmModal()"
+                        class="flex-1 px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium rounded-xl transition">
+                        Hủy
+                    </button>
+                    <button id="confirmBtn"
+                        class="flex-1 px-4 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-xl transition shadow-lg shadow-indigo-200">
+                        Tải xuống
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- JAVASCRIPT LOGIC -->
     <script>
         document.addEventListener('DOMContentLoaded', async () => {
@@ -205,7 +249,7 @@
                 if (data.files && data.files.length > 0) {
                     dlBtn.classList.remove('hidden');
                     dlBtn.classList.add('flex');
-                    dlBtn.onclick = () => downloadAllWithZip(data);
+                    dlBtn.onclick = () => handleDownloadClick(data);
                 } else {
                     dlBtn.classList.add('hidden');
                     dlBtn.classList.remove('flex');
@@ -345,7 +389,41 @@
             document.getElementById('pdfFrame').src = 'about:blank';
         }
 
-        async function downloadAllWithZip(data) {
+        function handleDownloadClick(data) {
+            const dontShow = localStorage.getItem('hideDownloadConfirm');
+            if (dontShow === 'true') {
+                performDownload(data);
+            } else {
+                showConfirmModal(data);
+            }
+        }
+
+        function showConfirmModal(data) {
+            const modal = document.getElementById('confirmModal');
+            const nameSpan = document.getElementById('confirmSubjectName');
+            const confirmBtn = document.getElementById('confirmBtn');
+
+            nameSpan.innerText = data.name;
+            modal.classList.remove('hidden');
+
+            // Reset checkbox
+            document.getElementById('dontShowAgain').checked = false;
+
+            confirmBtn.onclick = () => {
+                const isChecked = document.getElementById('dontShowAgain').checked;
+                if (isChecked) {
+                    localStorage.setItem('hideDownloadConfirm', 'true');
+                }
+                closeConfirmModal();
+                performDownload(data);
+            };
+        }
+
+        function closeConfirmModal() {
+            document.getElementById('confirmModal').classList.add('hidden');
+        }
+
+        async function performDownload(data) {
             const btn = document.getElementById('downloadAllBtn');
             const originalText = btn.innerHTML;
             btn.innerHTML = `<i class="ph ph-spinner animate-spin"></i> Đang nén...`;

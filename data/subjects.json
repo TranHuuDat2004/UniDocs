@@ -60,6 +60,12 @@
     "description": "Mô hình OSI-TCP/IP, giao thức mạng, định tuyến và bảo mật mạng."
   },
   {
+    "id": "software_engineering",
+    "name": "Công nghệ phần mềm",
+    "icon": "ph-gear",
+    "description": "Slide bài giảng, quy trình phần mềm (Agile, Waterfall), UML và kiểm thử."
+  },
+  {
     "id": "discrete_structures",
     "name": "Cấu trúc rời rạc",
     "icon": "ph-graph",
@@ -72,10 +78,22 @@
     "description": "Tài liệu HTML5, CSS3, JS và các framework phổ biến."
   },
   {
+    "id": "java_web",
+    "name": "Lập trình web với Java (JSP - Servlet)",
+    "icon": "ph-coffee",
+    "description": "JSP, Servlet, JDBC, Hibernate và Spring Framework cơ bản."
+  },
+  {
     "id": "nodejs",
     "name": "Lập trình web với Nodejs",
     "icon": "ph-file-code",
     "description": "Backend với Node.js, Express, xử lý form, cookie và RESTful API."
+  },
+  {
+    "id": "requirements_analysis_design",
+    "name": "Phân tích thiết kế yêu cầu",
+    "icon": "ph-clipboard-text",
+    "description": "Thu thập yêu cầu, phân tích nghiệp vụ và thiết kế hệ thống phần mềm."
   },
   {
     "id": "daa",
@@ -108,30 +126,6 @@
     "description": "Flutter framework, Dart language, UI widgets và state management."
   },
   {
-    "id": "big_data",
-    "name": "Xử lí dữ liệu lớn",
-    "icon": "ph-database",
-    "description": "Hadoop, Spark, MapReduce và phân tích dữ liệu quy mô lớn."
-  },
-  {
-    "id": "java_web",
-    "name": "Lập trình web với Java (JSP - Servlet)",
-    "icon": "ph-coffee",
-    "description": "JSP, Servlet, JDBC, Hibernate và Spring Framework cơ bản."
-  },
-  {
-    "id": "game_dev",
-    "name": "Phát triển game Unity",
-    "icon": "ph-game-controller",
-    "description": "Tài liệu lập trình game 3D với Unity, C# và thiết kế game."
-  },
-  {
-    "id": "software_engineering",
-    "name": "Công nghệ phần mềm",
-    "icon": "ph-gear",
-    "description": "Slide bài giảng, quy trình phần mềm (Agile, Waterfall), UML và kiểm thử."
-  },
-  {
     "id": "artificial_intelligence",
     "name": "Nhập môn trí tuệ nhân tạo",
     "icon": "ph-brain",
@@ -144,9 +138,21 @@
     "description": "Hồi quy tuyến tính, cây quyết định, SVM, mạng nơ-ron và Deep Learning."
   },
   {
-    "id": "requirements_analysis_design",
-    "name": "Phân tích thiết kế yêu cầu",
-    "icon": "ph-clipboard-text",
-    "description": "Thu thập yêu cầu, phân tích nghiệp vụ và thiết kế hệ thống phần mềm."
+    "id": "big_data",
+    "name": "Xử lí dữ liệu lớn",
+    "icon": "ph-database",
+    "description": "Hadoop, Spark, MapReduce và phân tích dữ liệu quy mô lớn."
+  },
+  {
+    "id": "computer_vision",
+    "name": "Thị giác máy tính",
+    "icon": "ph-eye",
+    "description": "Xử lý ảnh, trích xuất đặc trưng, nhận dạng đối tượng và CNN."
+  },
+  {
+    "id": "game_dev",
+    "name": "Phát triển game Unity",
+    "icon": "ph-game-controller",
+    "description": "Tài liệu lập trình game 3D với Unity, C# và thiết kế game."
   }
 ]

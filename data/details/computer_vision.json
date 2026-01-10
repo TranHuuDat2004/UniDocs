@@ -1,0 +1,114 @@
+{
+    "id": "computer_vision",
+    "name": "Thị giác máy tính",
+    "files": [
+        {
+            "name": "lecture_1_part_1.pdf",
+            "type": "pdf",
+            "url": "documents/computer_vision/lecture_1_part_1.pdf",
+            "date": "05/08/2025"
+        },
+        {
+            "name": "lecture_1_part_2.pdf",
+            "type": "pdf",
+            "url": "documents/computer_vision/lecture_1_part_2.pdf",
+            "date": "06/08/2025"
+        },
+        {
+            "name": "lecture_2.pdf",
+            "type": "pdf",
+            "url": "documents/computer_vision/lecture_2.pdf",
+            "date": "12/08/2025"
+        },
+        {
+            "name": "lecture_3.pdf",
+            "type": "pdf",
+            "url": "documents/computer_vision/lecture_3.pdf",
+            "date": "19/08/2025"
+        },
+        {
+            "name": "lecture_4.pdf",
+            "type": "pdf",
+            "url": "documents/computer_vision/lecture_4.pdf",
+            "date": "26/08/2025"
+        },
+        {
+            "name": "lecture_5.pdf",
+            "type": "pdf",
+            "url": "documents/computer_vision/lecture_5.pdf",
+            "date": "05/09/2025"
+        },
+        {
+            "name": "lecture_6.pdf",
+            "type": "pdf",
+            "url": "documents/computer_vision/lecture_6.pdf",
+            "date": "12/09/2025"
+        },
+        {
+            "name": "lecture_7.pdf",
+            "type": "pdf",
+            "url": "documents/computer_vision/lecture_7.pdf",
+            "date": "19/09/2025"
+        },
+        {
+            "name": "lecture_8.pdf",
+            "type": "pdf",
+            "url": "documents/computer_vision/lecture_8.pdf",
+            "date": "26/09/2025"
+        },
+        {
+            "name": "lecture_9.pdf",
+            "type": "pdf",
+            "url": "documents/computer_vision/lecture_9.pdf",
+            "date": "05/10/2025"
+        },
+        {
+            "name": "lecture_10.pdf",
+            "type": "pdf",
+            "url": "documents/computer_vision/lecture_10.pdf",
+            "date": "12/10/2025"
+        },
+        {
+            "name": "lecture_11.pdf",
+            "type": "pdf",
+            "url": "documents/computer_vision/lecture_11.pdf",
+            "date": "19/10/2025"
+        },
+        {
+            "name": "lecture_12.pdf",
+            "type": "pdf",
+            "url": "documents/computer_vision/lecture_12.pdf",
+            "date": "26/10/2025"
+        },
+        {
+            "name": "lecture_13.pdf",
+            "type": "pdf",
+            "url": "documents/computer_vision/lecture_13.pdf",
+            "date": "05/11/2025"
+        },
+        {
+            "name": "lecture_14.pdf",
+            "type": "pdf",
+            "url": "documents/computer_vision/lecture_14.pdf",
+            "date": "12/11/2025"
+        },
+        {
+            "name": "lecture_15.pdf",
+            "type": "pdf",
+            "url": "documents/computer_vision/lecture_15.pdf",
+            "date": "19/11/2025"
+        },
+        {
+            "name": "lecture_16.pdf",
+            "type": "pdf",
+            "url": "documents/computer_vision/lecture_16.pdf",
+            "date": "26/11/2025"
+        },
+        {
+            "name": "lecture_17.pdf",
+            "type": "pdf",
+            "url": "documents/computer_vision/lecture_17.pdf",
+            "date": "05/12/2025"
+        }
+    ]
+}
