@@ -1,0 +1,96 @@
+{
+    "id": "machine_learning",
+    "name": "Nhập môn Học máy",
+    "files": [
+        {
+            "name": "Lecture 0 - Introduction to ML-2023.pdf",
+            "type": "pdf",
+            "url": "documents/machine_learning/Lecture 0 - Introduction to ML-2023.pdf",
+            "date": "05/05/2024"
+        },
+        {
+            "name": "Lecture 1 - Data Preparation for ML.pdf",
+            "type": "pdf",
+            "url": "documents/machine_learning/Lecture 1 - Data Preparation for ML.pdf",
+            "date": "12/05/2024"
+        },
+        {
+            "name": "Lecture 2 - Principle of Machine Learning.pdf",
+            "type": "pdf",
+            "url": "documents/machine_learning/Lecture 2 - Principle of Machine Learning.pdf",
+            "date": "20/05/2024"
+        },
+        {
+            "name": "Lecture 3a - K-Nearest-Neighbors algorithm.pdf",
+            "type": "pdf",
+            "url": "documents/machine_learning/Lecture 3a - K-Nearest-Neighbors algorithm.pdf",
+            "date": "28/05/2024"
+        },
+        {
+            "name": "Lecture 3b - Evaluation .pdf",
+            "type": "pdf",
+            "url": "documents/machine_learning/Lecture 3b - Evaluation .pdf",
+            "date": "02/06/2024"
+        },
+        {
+            "name": "Lecture 4 - Decision tree.pdf",
+            "type": "pdf",
+            "url": "documents/machine_learning/Lecture 4 - Decision tree.pdf",
+            "date": "10/06/2024"
+        },
+        {
+            "name": "Lecture 5 -naive_bayes_classification.pdf",
+            "type": "pdf",
+            "url": "documents/machine_learning/Lecture 5 -naive_bayes_classification.pdf",
+            "date": "18/06/2024"
+        },
+        {
+            "name": "Lecture 6 - Unsupervised Learning and Clustering.pdf",
+            "type": "pdf",
+            "url": "documents/machine_learning/Lecture 6 - Unsupervised Learning and Clustering.pdf",
+            "date": "25/06/2024"
+        },
+        {
+            "name": "Lecture 7 - svm-kernel method.pdf",
+            "type": "pdf",
+            "url": "documents/machine_learning/Lecture 7 - svm-kernel method.pdf",
+            "date": "02/07/2024"
+        },
+        {
+            "name": "Lecture 8.3 - Classification with softmax function.pdf",
+            "type": "pdf",
+            "url": "documents/machine_learning/Lecture 8.3 - Classification with softmax function.pdf",
+            "date": "10/07/2024"
+        },
+        {
+            "name": "Lecture 9- Linear Regression and Gradient Descent.pdf",
+            "type": "pdf",
+            "url": "documents/machine_learning/Lecture 9- Linear Regression and Gradient Descent.pdf",
+            "date": "18/07/2024"
+        },
+        {
+            "name": "Lecture 10 - Neural Networks and Backpropagation Algorithm.pdf",
+            "type": "pdf",
+            "url": "documents/machine_learning/Lecture 10 - Neural Networks and Backpropagation Algorithm.pdf",
+            "date": "25/07/2024"
+        },
+        {
+            "name": "Lecture 11- Ensemble Learning.pdf",
+            "type": "pdf",
+            "url": "documents/machine_learning/Lecture 11- Ensemble Learning.pdf",
+            "date": "02/08/2024"
+        },
+        {
+            "name": "Lecture Overfiting.pdf",
+            "type": "pdf",
+            "url": "documents/machine_learning/Lecture Overfiting.pdf",
+            "date": "08/08/2024"
+        },
+        {
+            "name": "Seminar - DL Introduction 2.pdf",
+            "type": "pdf",
+            "url": "documents/machine_learning/Seminar - DL Introduction 2.pdf",
+            "date": "15/08/2024"
+        }
+    ]
+}

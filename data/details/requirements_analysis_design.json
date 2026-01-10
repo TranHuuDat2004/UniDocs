@@ -1,0 +1,66 @@
+{
+    "id": "requirements_analysis_design",
+    "name": "Phân tích thiết kế yêu cầu",
+    "files": [
+        {
+            "name": "ch01.pdf",
+            "type": "pdf",
+            "url": "documents/requirements_analysis_design/ch01.pdf",
+            "date": "05/03/2024"
+        },
+        {
+            "name": "ch02.pdf",
+            "type": "pdf",
+            "url": "documents/requirements_analysis_design/ch02.pdf",
+            "date": "12/03/2024"
+        },
+        {
+            "name": "ch03.pdf",
+            "type": "pdf",
+            "url": "documents/requirements_analysis_design/ch03.pdf",
+            "date": "25/03/2024"
+        },
+        {
+            "name": "ch04.pdf",
+            "type": "pdf",
+            "url": "documents/requirements_analysis_design/ch04.pdf",
+            "date": "02/04/2024"
+        },
+        {
+            "name": "ch05.pdf",
+            "type": "pdf",
+            "url": "documents/requirements_analysis_design/ch05.pdf",
+            "date": "15/04/2024"
+        },
+        {
+            "name": "ch06.pdf",
+            "type": "pdf",
+            "url": "documents/requirements_analysis_design/ch06.pdf",
+            "date": "28/04/2024"
+        },
+        {
+            "name": "ch07.pdf",
+            "type": "pdf",
+            "url": "documents/requirements_analysis_design/ch07.pdf",
+            "date": "10/05/2024"
+        },
+        {
+            "name": "ch08..pdf",
+            "type": "pdf",
+            "url": "documents/requirements_analysis_design/ch08..pdf",
+            "date": "22/05/2024"
+        },
+        {
+            "name": "ch09.pdf",
+            "type": "pdf",
+            "url": "documents/requirements_analysis_design/ch09.pdf",
+            "date": "15/06/2024"
+        },
+        {
+            "name": "ch10.pdf",
+            "type": "pdf",
+            "url": "documents/requirements_analysis_design/ch10.pdf",
+            "date": "10/07/2024"
+        }
+    ]
+}

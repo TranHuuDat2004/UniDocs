@@ -1,0 +1,258 @@
+{
+    "id": "programming_methodology",
+    "name": "Phương pháp lập trình",
+    "files": [
+        {
+            "name": "ADVANCED_Unit7_Testing_and_Debugging.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/ADVANCED_Unit7_Testing_and_Debugging.pdf",
+            "date": "05/08/2022"
+        },
+        {
+            "name": "PH_Open_Unit1_Computing_Fundamentals.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/PH_Open_Unit1_Computing_Fundamentals.pdf",
+            "date": "10/08/2022"
+        },
+        {
+            "name": "PH_Open_Unit2_Algorithmic_Problem_Solving.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/PH_Open_Unit2_Algorithmic_Problem_Solving.pdf",
+            "date": "15/08/2022"
+        },
+        {
+            "name": "PH_Open_Unit3_Extra.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/PH_Open_Unit3_Extra.pdf",
+            "date": "20/08/2022"
+        },
+        {
+            "name": "PH_Open_Unit3_Overview_of_C_Programming.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/PH_Open_Unit3_Overview_of_C_Programming.pdf",
+            "date": "25/08/2022"
+        },
+        {
+            "name": "PH_Open_Unit4_Top_Down_Design_and_Functions.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/PH_Open_Unit4_Top_Down_Design_and_Functions.pdf",
+            "date": "02/09/2022"
+        },
+        {
+            "name": "PH_Open_Unit5_Selection_Statements.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/PH_Open_Unit5_Selection_Statements.pdf",
+            "date": "06/09/2022"
+        },
+        {
+            "name": "PH_Unit8_Pointers.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/PH_Unit8_Pointers.pdf",
+            "date": "12/09/2022"
+        },
+        {
+            "name": "Unit10_Multidimensional_Arrays.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Unit10_Multidimensional_Arrays.pdf",
+            "date": "15/09/2022"
+        },
+        {
+            "name": "Unit11_Random_Numbers.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Unit11_Random_Numbers.pdf",
+            "date": "20/09/2022"
+        },
+        {
+            "name": "Unit12_UNIX_IO_Redirection.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Unit12_UNIX_IO_Redirection.pdf",
+            "date": "25/09/2022"
+        },
+        {
+            "name": "Unit14_Functions_with_Pointer_Parameters.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Unit14_Functions_with_Pointer_Parameters.pdf",
+            "date": "01/10/2022"
+        },
+        {
+            "name": "Unit15_File_Processing.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Unit15_File_Processing.pdf",
+            "date": "05/10/2022"
+        },
+        {
+            "name": "Unit16_Characters_and_Strings.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Unit16_Characters_and_Strings.pdf",
+            "date": "10/10/2022"
+        },
+        {
+            "name": "Unit16_Extra.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Unit16_Extra.pdf",
+            "date": "12/10/2022"
+        },
+        {
+            "name": "Unit17_Recursion.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Unit17_Recursion.pdf",
+            "date": "15/10/2022"
+        },
+        {
+            "name": "Unit17_Towers_of_Hanoi.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Unit17_Towers_of_Hanoi.pdf",
+            "date": "18/10/2022"
+        },
+        {
+            "name": "Unit18_Searching_and_Sorting.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Unit18_Searching_and_Sorting.pdf",
+            "date": "20/10/2022"
+        },
+        {
+            "name": "Unit19_Structures.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Unit19_Structures.pdf",
+            "date": "25/10/2022"
+        },
+        {
+            "name": "Unit20_C_to_Java.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Unit20_C_to_Java.pdf",
+            "date": "28/10/2022"
+        },
+        {
+            "name": "Unit6_Repetition_Statements.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Unit6_Repetition_Statements.pdf",
+            "date": "01/11/2022"
+        },
+        {
+            "name": "Unit9_Arrays.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Unit9_Arrays.pdf",
+            "date": "05/11/2022"
+        },
+        {
+            "name": "Updated_Unit10_Random_Numbers.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Updated_Unit10_Random_Numbers.pdf",
+            "date": "10/11/2022"
+        },
+        {
+            "name": "Updated_Unit11_UNIX_IO_Redirection.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Updated_Unit11_UNIX_IO_Redirection.pdf",
+            "date": "12/11/2022"
+        },
+        {
+            "name": "Updated_Unit12_Testing_and_Debugging.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Updated_Unit12_Testing_and_Debugging.pdf",
+            "date": "15/11/2022"
+        },
+        {
+            "name": "Updated_Unit13_Separate_Compilation.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Updated_Unit13_Separate_Compilation.pdf",
+            "date": "18/11/2022"
+        },
+        {
+            "name": "Updated_Unit14_Functions_with_Pointer_Parameters.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Updated_Unit14_Functions_with_Pointer_Parameters.pdf",
+            "date": "20/11/2022"
+        },
+        {
+            "name": "Updated_Unit15_Structures.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Updated_Unit15_Structures.pdf",
+            "date": "22/11/2022"
+        },
+        {
+            "name": "Updated_Unit16_Characters_and_Strings.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Updated_Unit16_Characters_and_Strings.pdf",
+            "date": "25/11/2022"
+        },
+        {
+            "name": "Updated_Unit17_Recursion.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Updated_Unit17_Recursion.pdf",
+            "date": "28/11/2022"
+        },
+        {
+            "name": "Updated_Unit17_Towers_of_Hanoi.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Updated_Unit17_Towers_of_Hanoi.pdf",
+            "date": "30/11/2022"
+        },
+        {
+            "name": "Updated_Unit18_More_about_Structures.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Updated_Unit18_More_about_Structures.pdf",
+            "date": "02/12/2022"
+        },
+        {
+            "name": "Updated_Unit19_File_Processing.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Updated_Unit19_File_Processing.pdf",
+            "date": "05/12/2022"
+        },
+        {
+            "name": "Updated_Unit20_Searching_and_Sorting.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Updated_Unit20_Searching_and_Sorting.pdf",
+            "date": "08/12/2022"
+        },
+        {
+            "name": "Updated_Unit20_Searching_and_Sorting_full.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Updated_Unit20_Searching_and_Sorting_full.pdf",
+            "date": "10/12/2022"
+        },
+        {
+            "name": "Updated_Unit21_C_to_Java.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Updated_Unit21_C_to_Java.pdf",
+            "date": "15/12/2022"
+        },
+        {
+            "name": "Updated_Unit4_Overview_of_C_Programming.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Updated_Unit4_Overview_of_C_Programming.pdf",
+            "date": "18/12/2022"
+        },
+        {
+            "name": "Updated_Unit5_Top_Down_Design_and_Functions.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Updated_Unit5_Top_Down_Design_and_Functions.pdf",
+            "date": "20/12/2022"
+        },
+        {
+            "name": "Updated_Unit6_Problem_Solving_with_Selection_and_Repetition.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Updated_Unit6_Problem_Solving_with_Selection_and_Repetition.pdf",
+            "date": "22/12/2022"
+        },
+        {
+            "name": "Updated_Unit7_Pointers.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Updated_Unit7_Pointers.pdf",
+            "date": "25/12/2022"
+        },
+        {
+            "name": "Updated_Unit8_Arrays.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Updated_Unit8_Arrays.pdf",
+            "date": "28/12/2022"
+        },
+        {
+            "name": "Updated_Unit9_Multidimensional_Arrays.pdf",
+            "type": "pdf",
+            "url": "documents/programming_methodology/Updated_Unit9_Multidimensional_Arrays.pdf",
+            "date": "30/12/2022"
+        }
+    ]
+}

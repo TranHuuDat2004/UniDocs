@@ -34,5 +34,23 @@
     "name": "Nhập môn trí tuệ nhân tạo",
     "icon": "ph-brain",
     "description": "Các khái niệm cơ bản về AI, tác tử thông minh, tìm kiếm và học máy."
+  },
+  {
+    "id": "machine_learning",
+    "name": "Nhập môn Học máy",
+    "icon": "ph-robot",
+    "description": "Hồi quy tuyến tính, cây quyết định, SVM, mạng nơ-ron và Deep Learning."
+  },
+  {
+    "id": "requirements_analysis_design",
+    "name": "Phân tích thiết kế yêu cầu",
+    "icon": "ph-clipboard-text",
+    "description": "Thu thập yêu cầu, phân tích nghiệp vụ và thiết kế hệ thống phần mềm."
+  },
+  {
+    "id": "programming_methodology",
+    "name": "Phương pháp lập trình",
+    "icon": "ph-code",
+    "description": "Tư duy lập trình, giải thuật, cấu trúc dữ liệu và lập trình C/C++ căn bản."
   }
 ]
