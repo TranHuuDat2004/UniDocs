@@ -1,0 +1,102 @@
+{
+    "id": "dsa",
+    "name": "Cấu trúc dữ liệu và giải thuật",
+    "files": [
+        {
+            "name": "01_ADT.pdf",
+            "type": "pdf",
+            "url": "documents/DSA/01_ADT.pdf",
+            "date": "05/01/2023"
+        },
+        {
+            "name": "02_Linked List.pdf",
+            "type": "pdf",
+            "url": "documents/DSA/02_Linked List.pdf",
+            "date": "10/01/2023"
+        },
+        {
+            "name": "03_Stack_Queue.pdf",
+            "type": "pdf",
+            "url": "documents/DSA/03_Stack_Queue.pdf",
+            "date": "20/01/2023"
+        },
+        {
+            "name": "04-Recursion.pdf",
+            "type": "pdf",
+            "url": "documents/DSA/04-Recursion.pdf",
+            "date": "02/02/2023"
+        },
+        {
+            "name": "05-Analysis-of-Algorithms.pdf",
+            "type": "pdf",
+            "url": "documents/DSA/05-Analysis-of-Algorithms.pdf",
+            "date": "10/02/2023"
+        },
+        {
+            "name": "06-Sorting.pdf",
+            "type": "pdf",
+            "url": "documents/DSA/06-Sorting.pdf",
+            "date": "15/02/2023"
+        },
+        {
+            "name": "07-Hashing.pdf",
+            "type": "pdf",
+            "url": "documents/DSA/07-Hashing.pdf",
+            "date": "25/02/2023"
+        },
+        {
+            "name": "08_BST.pdf",
+            "type": "pdf",
+            "url": "documents/DSA/08_BST.pdf",
+            "date": "05/03/2023"
+        },
+        {
+            "name": "09_AVL.pdf",
+            "type": "pdf",
+            "url": "documents/DSA/09_AVL.pdf",
+            "date": "12/03/2023"
+        },
+        {
+            "name": "0_Introduction.pdf",
+            "type": "pdf",
+            "url": "documents/DSA/0_Introduction.pdf",
+            "date": "20/03/2023"
+        },
+        {
+            "name": "10_PriorityQueue_BinaryMaxHeap.pdf",
+            "type": "pdf",
+            "url": "documents/DSA/10_PriorityQueue_BinaryMaxHeap.pdf",
+            "date": "02/04/2023"
+        },
+        {
+            "name": "11_Graph_Basic.pdf",
+            "type": "pdf",
+            "url": "documents/DSA/11_Graph_Basic.pdf",
+            "date": "10/04/2023"
+        },
+        {
+            "name": "12_BFS_DFS.pdf",
+            "type": "pdf",
+            "url": "documents/DSA/12_BFS_DFS.pdf",
+            "date": "20/04/2023"
+        },
+        {
+            "name": "13_MST.pdf",
+            "type": "pdf",
+            "url": "documents/DSA/13_MST.pdf",
+            "date": "01/05/2023"
+        },
+        {
+            "name": "14_Dijkstra.pdf",
+            "type": "pdf",
+            "url": "documents/DSA/14_Dijkstra.pdf",
+            "date": "05/05/2023"
+        },
+        {
+            "name": "15_BellmanFord.pdf",
+            "type": "pdf",
+            "url": "documents/DSA/15_BellmanFord.pdf",
+            "date": "10/05/2023"
+        }
+    ]
+}

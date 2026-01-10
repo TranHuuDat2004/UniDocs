@@ -1,0 +1,60 @@
+{
+    "id": "sql",
+    "name": "Hệ cơ sở dữ liệu",
+    "files": [
+        {
+            "name": "Chapter 1_What_s in a Database.pdf",
+            "type": "pdf",
+            "url": "documents/SQL/Chapter 1_What_s in a Database.pdf",
+            "date": "05/08/2023"
+        },
+        {
+            "name": "Chapter 2_relational model.pdf",
+            "type": "pdf",
+            "url": "documents/SQL/Chapter 2_relational model.pdf",
+            "date": "15/08/2023"
+        },
+        {
+            "name": "Chapter 4_Algebra.pdf",
+            "type": "pdf",
+            "url": "documents/SQL/Chapter 4_Algebra.pdf",
+            "date": "25/08/2023"
+        },
+        {
+            "name": "Chapter 5_SQL1.pdf",
+            "type": "pdf",
+            "url": "documents/SQL/Chapter 5_SQL1.pdf",
+            "date": "05/09/2023"
+        },
+        {
+            "name": "Chapter 5_SQL2.pdf",
+            "type": "pdf",
+            "url": "documents/SQL/Chapter 5_SQL2.pdf",
+            "date": "15/09/2023"
+        },
+        {
+            "name": "Chapter 6_advancedSQL.pdf",
+            "type": "pdf",
+            "url": "documents/SQL/Chapter 6_advancedSQL.pdf",
+            "date": "25/09/2023"
+        },
+        {
+            "name": "Chapter 7_conceptual modeling.pdf",
+            "type": "pdf",
+            "url": "documents/SQL/Chapter 7_conceptual modeling.pdf",
+            "date": "10/10/2023"
+        },
+        {
+            "name": "Chapter 8_Functional Dependencies.pdf",
+            "type": "pdf",
+            "url": "documents/SQL/Chapter 8_Functional Dependencies.pdf",
+            "date": "25/10/2023"
+        },
+        {
+            "name": "Chapter 8_normalization.pdf",
+            "type": "pdf",
+            "url": "documents/SQL/Chapter 8_normalization.pdf",
+            "date": "10/11/2023"
+        }
+    ]
+}

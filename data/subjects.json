@@ -30,10 +30,22 @@
     "description": "Lớp, đối tượng, kế thừa, đa hình và các nguyên lý SOLID trong C++."
   },
   {
+    "id": "dsa",
+    "name": "Cấu trúc dữ liệu và giải thuật",
+    "icon": "ph-tree-structure",
+    "description": "Các thuật toán sắp xếp, tìm kiếm, BST, AVL và đồ thị."
+  },
+  {
     "id": "os",
     "name": "Nhập môn hệ điều hành",
     "icon": "ph-desktop",
     "description": "Quản lý tiến trình, bộ nhớ, file system và lập trình hệ thống."
+  },
+  {
+    "id": "sql",
+    "name": "Hệ cơ sở dữ liệu",
+    "icon": "ph-database",
+    "description": "Mô hình quan hệ, đại số quan hệ, SQL và chuẩn hóa dữ liệu."
   },
   {
     "id": "web",
