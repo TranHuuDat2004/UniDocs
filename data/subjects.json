@@ -3,156 +3,182 @@
     "id": "calculus",
     "name": "Giải tích (Calculus)",
     "icon": "ph-function",
-    "description": "Bao gồm giáo trình MA1521, bài tập về giới hạn, đạo hàm và tích phân."
+    "description": "Bao gồm giáo trình MA1521, bài tập về giới hạn, đạo hàm và tích phân.",
+    "category": "math_basic"
   },
   {
     "id": "computer_organization",
     "name": "Tổ chức máy tính",
     "icon": "ph-cpu",
-    "description": "Slide bài giảng, hợp ngữ MIPS và các bài lab thực hành."
+    "description": "Slide bài giảng, hợp ngữ MIPS và các bài lab thực hành.",
+    "category": "system_network"
   },
   {
     "id": "programming_methodology",
     "name": "Phương pháp lập trình",
     "icon": "ph-code",
-    "description": "Tư duy lập trình, giải thuật, cấu trúc dữ liệu và lập trình C/C++ căn bản."
+    "description": "Tư duy lập trình, giải thuật, cấu trúc dữ liệu và lập trình C/C++ căn bản.",
+    "category": "programming_algo"
   },
   {
     "id": "linear_algebra",
     "name": "Đại số tuyến tính",
     "icon": "ph-matrix-logo",
-    "description": "Ma trận, định thức, hệ phương trình tuyến tính và không gian vector."
+    "description": "Ma trận, định thức, hệ phương trình tuyến tính và không gian vector.",
+    "category": "math_basic"
   },
   {
     "id": "oop",
     "name": "Lập trình hướng đối tượng",
     "icon": "ph-cube",
-    "description": "Lớp, đối tượng, kế thừa, đa hình và các nguyên lý SOLID trong C++."
+    "description": "Lớp, đối tượng, kế thừa, đa hình và các nguyên lý SOLID trong Java.",
+    "category": "programming_algo"
   },
   {
     "id": "dsa",
     "name": "Cấu trúc dữ liệu và giải thuật",
     "icon": "ph-tree-structure",
-    "description": "Các thuật toán sắp xếp, tìm kiếm, BST, AVL và đồ thị."
+    "description": "Các thuật toán sắp xếp, tìm kiếm, BST, AVL và đồ thị.",
+    "category": "programming_algo"
   },
   {
     "id": "os",
     "name": "Nhập môn hệ điều hành",
     "icon": "ph-desktop",
-    "description": "Quản lý tiến trình, bộ nhớ, file system và lập trình hệ thống."
+    "description": "Quản lý tiến trình, bộ nhớ, file system và lập trình hệ thống.",
+    "category": "system_network"
   },
   {
     "id": "sql",
     "name": "Hệ cơ sở dữ liệu",
     "icon": "ph-database",
-    "description": "Mô hình quan hệ, đại số quan hệ, SQL và chuẩn hóa dữ liệu."
+    "description": "Mô hình quan hệ, đại số quan hệ, SQL và chuẩn hóa dữ liệu.",
+    "category": "software_db"
   },
   {
     "id": "probability_statistics",
     "name": "Xác suất thống kê",
     "icon": "ph-chart-bar",
-    "description": "Không gian mẫu, biến ngẫu nhiên, phân phối xác suất và kiểm định giả thuyết."
+    "description": "Không gian mẫu, biến ngẫu nhiên, phân phối xác suất và kiểm định giả thuyết.",
+    "category": "math_basic"
   },
   {
     "id": "computer_network",
     "name": "Mạng máy tính",
     "icon": "ph-globe-stand",
-    "description": "Mô hình OSI-TCP/IP, giao thức mạng, định tuyến và bảo mật mạng."
+    "description": "Mô hình OSI-TCP/IP, giao thức mạng, định tuyến và bảo mật mạng.",
+    "category": "system_network"
   },
   {
     "id": "software_engineering",
     "name": "Công nghệ phần mềm",
     "icon": "ph-gear",
-    "description": "Slide bài giảng, quy trình phần mềm (Agile, Waterfall), UML và kiểm thử."
+    "description": "Slide bài giảng, quy trình phần mềm (Agile, Waterfall), UML và kiểm thử.",
+    "category": "software_db"
   },
   {
     "id": "discrete_structures",
     "name": "Cấu trúc rời rạc",
     "icon": "ph-graph",
-    "description": "Logic, tập hợp, lý thuyết đồ thị và các cấu trúc toán học trong KHMT."
+    "description": "Logic, tập hợp, lý thuyết đồ thị và các cấu trúc toán học trong KHMT.",
+    "category": "math_basic"
   },
   {
     "id": "web",
     "name": "Lập trình Web (HTML, CSS, JS)",
     "icon": "ph-globe",
-    "description": "Tài liệu HTML5, CSS3, JS và các framework phổ biến."
+    "description": "Tài liệu HTML5, CSS3, JS và các framework phổ biến.",
+    "category": "app_dev"
   },
   {
     "id": "java_web",
     "name": "Lập trình web với Java (JSP - Servlet)",
     "icon": "ph-coffee",
-    "description": "JSP, Servlet, JDBC, Hibernate và Spring Framework cơ bản."
+    "description": "JSP, Servlet, JDBC, Hibernate và Spring Framework cơ bản.",
+    "category": "app_dev"
   },
   {
     "id": "nodejs",
     "name": "Lập trình web với Nodejs",
     "icon": "ph-file-code",
-    "description": "Backend với Node.js, Express, xử lý form, cookie và RESTful API."
+    "description": "Backend với Node.js, Express, xử lý form, cookie và RESTful API.",
+    "category": "app_dev"
   },
   {
     "id": "requirements_analysis_design",
     "name": "Phân tích thiết kế yêu cầu",
     "icon": "ph-clipboard-text",
-    "description": "Thu thập yêu cầu, phân tích nghiệp vụ và thiết kế hệ thống phần mềm."
+    "description": "Thu thập yêu cầu, phân tích nghiệp vụ và thiết kế hệ thống phần mềm.",
+    "category": "software_db"
   },
   {
     "id": "daa",
     "name": "Phân tích và thiết kế thuật toán",
     "icon": "ph-chart-line-up",
-    "description": "Chia để trị, quy hoạch động, tham lam và các bài toán đồ thị nâng cao."
+    "description": "Chia để trị, quy hoạch động, tham lam và các bài toán đồ thị nâng cao.",
+    "category": "programming_algo"
   },
   {
     "id": "ui_ux",
     "name": "Thiết kế giao diện người dùng",
     "icon": "ph-paint-brush",
-    "description": "Nguyên lý thiết kế, wireframe, prototype và trải nghiệm người dùng."
+    "description": "Nguyên lý thiết kế, wireframe, prototype và trải nghiệm người dùng.",
+    "category": "app_dev"
   },
   {
     "id": "information_security",
     "name": "Bảo mật thông tin",
     "icon": "ph-shield-check",
-    "description": "Mật mã học, xác thực, kiểm soát truy cập và an ninh mạng."
+    "description": "Mật mã học, xác thực, kiểm soát truy cập và an ninh mạng.",
+    "category": "system_network"
   },
   {
     "id": "mobile_app",
     "name": "Phát triển ứng dụng di động",
     "icon": "ph-device-mobile",
-    "description": "Android với Java/Kotlin, Activity, Fragment và SQLite."
+    "description": "Android với Java/Kotlin, Activity, Fragment và SQLite.",
+    "category": "app_dev"
   },
   {
     "id": "flutter",
     "name": "Phát triển ứng dụng đa nền tảng",
     "icon": "ph-device-tablet-camera",
-    "description": "Flutter framework, Dart language, UI widgets và state management."
+    "description": "Flutter framework, Dart language, UI widgets và state management.",
+    "category": "app_dev"
   },
   {
     "id": "artificial_intelligence",
     "name": "Nhập môn trí tuệ nhân tạo",
     "icon": "ph-brain",
-    "description": "Các khái niệm cơ bản về AI, tác tử thông minh, tìm kiếm và học máy."
+    "description": "Các khái niệm cơ bản về AI, tác tử thông minh, tìm kiếm và học máy.",
+    "category": "ai"
   },
   {
     "id": "machine_learning",
     "name": "Nhập môn Học máy",
     "icon": "ph-robot",
-    "description": "Hồi quy tuyến tính, cây quyết định, SVM, mạng nơ-ron và Deep Learning."
+    "description": "Hồi quy tuyến tính, cây quyết định, SVM, mạng nơ-ron và Deep Learning.",
+    "category": "ai"
   },
   {
     "id": "big_data",
     "name": "Xử lí dữ liệu lớn",
     "icon": "ph-database",
-    "description": "Hadoop, Spark, MapReduce và phân tích dữ liệu quy mô lớn."
+    "description": "Hadoop, Spark, MapReduce và phân tích dữ liệu quy mô lớn.",
+    "category": "software_db"
   },
   {
     "id": "computer_vision",
     "name": "Thị giác máy tính",
     "icon": "ph-eye",
-    "description": "Xử lý ảnh, trích xuất đặc trưng, nhận dạng đối tượng và CNN."
+    "description": "Xử lý ảnh, trích xuất đặc trưng, nhận dạng đối tượng và CNN.",
+    "category": "ai"
   },
   {
     "id": "game_dev",
     "name": "Phát triển game Unity",
     "icon": "ph-game-controller",
-    "description": "Tài liệu lập trình game 3D với Unity, C# và thiết kế game."
+    "description": "Tài liệu lập trình game 3D với Unity, C# và thiết kế game.",
+    "category": "app_dev"
   }
 ]

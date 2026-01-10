@@ -62,7 +62,7 @@
         </div>
 
         <!-- Danh sách môn (Load từ JSON) -->
-        <div class="flex-1 overflow-y-auto px-4 py-2">
+        <div id="sidebarScrollContainer" class="flex-1 overflow-y-auto px-4 py-2">
             <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3 pl-2">Chọn môn học</div>
             <nav id="sidebarList" class="space-y-1">
                 <div class="text-center text-sm p-4"><i class="ph ph-spinner animate-spin"></i> Đang tải menu...</div>
@@ -221,6 +221,18 @@
                     `;
                     container.appendChild(link);
                 });
+
+                // Restore scroll position
+                const savedScroll = sessionStorage.getItem('sidebarScrollPos');
+                if (savedScroll) {
+                    document.getElementById('sidebarScrollContainer').scrollTop = parseInt(savedScroll);
+                }
+
+                // Add scroll listener
+                document.getElementById('sidebarScrollContainer').addEventListener('scroll', (e) => {
+                    sessionStorage.setItem('sidebarScrollPos', e.target.scrollTop);
+                });
+
             } catch (e) {
                 console.error("Lỗi tải sidebar:", e);
             }
