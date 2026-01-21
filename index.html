@@ -73,6 +73,28 @@
             class="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-50/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 z-0">
         </div>
 
+        <!-- TOP NAVIGATION -->
+        <nav class="container mx-auto px-6 py-6 relative z-20 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <span class="bg-indigo-600 text-white p-1.5 rounded-lg shadow-sm flex items-center justify-center">
+                    <i class="ph-bold ph-books text-lg"></i>
+                </span>
+                <span class="text-xl font-bold text-slate-800 tracking-tight">UniDocs</span>
+            </div>
+
+            <!-- GitHub Button -->
+            <a href="https://github.com/TranHuuDat2004/UniDocs" target="_blank"
+                class="flex items-center gap-2 bg-slate-900 text-white px-3 py-2 rounded-full text-sm font-medium hover:bg-slate-800 transition shadow-lg hover:shadow-xl group">
+                <i class="ph-bold ph-github-logo text-lg"></i>
+                <div class="h-4 w-[1px] bg-slate-700 mx-1"></div>
+                <div class="flex items-center gap-1.5 text-amber-400">
+                    <span id="repoStars" class="text-white group-hover:text-amber-400 transition font-bold">...</span>
+                    <i class="ph-fill ph-star"></i>
+                </div>
+            </a>
+        </nav>
+
         <div class="container mx-auto px-6 py-16 md:py-24 relative z-10">
             <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
 
@@ -309,7 +331,24 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             loadSubjects();
+            fetchGitHubStars();
         });
+
+        // --- GITHUB STARS API ---
+        async function fetchGitHubStars() {
+            try {
+                const res = await fetch('https://api.github.com/repos/TranHuuDat2004/UniDocs');
+                if (res.ok) {
+                    const data = await res.json();
+                    document.getElementById('repoStars').innerText = data.stargazers_count;
+                } else {
+                    document.getElementById('repoStars').innerText = '-';
+                }
+            } catch (e) {
+                console.error("Lỗi tải sao GitHub:", e);
+                document.getElementById('repoStars').innerText = '-';
+            }
+        }
 
         // --- CATEGORY CONFIG ---
         const CATEGORIES = {
@@ -386,8 +425,8 @@
                 const btn = document.createElement('button');
                 const isSelected = catKey === currentActive;
                 btn.className = `whitespace-nowrap px-4 py-3 text-sm font-semibold transition-all border-b-2 flex items-center gap-2 ${isSelected
-                        ? 'text-indigo-600 border-indigo-600'
-                        : 'text-slate-500 border-transparent hover:text-indigo-600 hover:border-indigo-100'
+                    ? 'text-indigo-600 border-indigo-600'
+                    : 'text-slate-500 border-transparent hover:text-indigo-600 hover:border-indigo-100'
                     }`;
                 btn.innerHTML = `<i class="ph-bold ${catInfo.icon}"></i> ${catInfo.name}`;
                 btn.onclick = () => switchTab(catKey);
@@ -419,8 +458,8 @@
             document.querySelectorAll('#categoryTabs button').forEach(btn => {
                 const isSelected = btn.dataset.tab === catKey;
                 btn.className = `whitespace-nowrap px-4 py-3 text-sm font-semibold transition-all border-b-2 flex items-center gap-2 ${isSelected
-                        ? 'text-indigo-600 border-indigo-600'
-                        : 'text-slate-500 border-transparent hover:text-indigo-600 hover:border-indigo-100'
+                    ? 'text-indigo-600 border-indigo-600'
+                    : 'text-slate-500 border-transparent hover:text-indigo-600 hover:border-indigo-100'
                     }`;
             });
 
