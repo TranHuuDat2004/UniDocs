@@ -1,0 +1,34 @@
+{
+    "id": "tsnn",
+    "name": "Tập sự nghề nghiệp",
+    "files": [
+        {
+            "name": "BM01_XacNhanThucTap.docx",
+            "url": "documents/TSNN/BM01_XacNhanThucTap.docx",
+            "type": "docx",
+            "date": "01/01/2026",
+            "size": "3.58 MB"
+        },
+        {
+            "name": "BM04_PhieuChamDiem_DoanhNghiep.docx",
+            "url": "documents/TSNN/BM04_PhieuChamDiem_DoanhNghiep.docx",
+            "type": "docx",
+            "date": "01/01/2026",
+            "size": "32.67 KB"
+        },
+        {
+            "name": "BM05_PhieuChamDiem_GVGS.docx",
+            "url": "documents/TSNN/BM05_PhieuChamDiem_GVGS.docx",
+            "type": "docx",
+            "date": "01/01/2026",
+            "size": "24.03 KB"
+        },
+        {
+            "name": "BM06_PhieuChamDiem_GVPB.docx",
+            "url": "documents/TSNN/BM06_PhieuChamDiem_GVPB.docx",
+            "type": "docx",
+            "date": "01/01/2026",
+            "size": "24.01 KB"
+        }
+    ]
+}

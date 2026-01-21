@@ -187,5 +187,19 @@
     "icon": "ph-briefcase",
     "description": "Tài liệu hướng dẫn, quy trình và biểu mẫu thực tập cho sinh viên.",
     "category": "other"
+  },
+  {
+    "id": "tsnn",
+    "name": "Tập sự nghề nghiệp",
+    "icon": "ph-briefcase",
+    "description": "Biểu mẫu và hướng dẫn cho môn Tập sự nghề nghiệp.",
+    "category": "other"
+  },
+  {
+    "id": "ktcn",
+    "name": "Kiến tập công nghiệp",
+    "icon": "ph-factory",
+    "description": "Biểu mẫu và hướng dẫn cho môn Kiến tập công nghiệp.",
+    "category": "other"
   }
 ]

@@ -397,7 +397,7 @@
                 f.style.display = 'block';
                 f.src = file.url;
             }
-            else if (file.type === 'word') {
+            else if (file.type === 'word' || file.type === 'docx') {
                 const f = document.getElementById('docxFrame');
                 f.style.display = 'block';
                 f.innerHTML = loading;

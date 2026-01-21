@@ -1,0 +1,48 @@
+{
+    "id": "ktcn",
+    "name": "Kiến tập công nghiệp",
+    "files": [
+        {
+            "name": "BM01_XacNhanThucTap.docx",
+            "url": "documents/KTCN/BM01_XacNhanThucTap.docx",
+            "type": "docx",
+            "date": "01/01/2026",
+            "size": "3.58 MB"
+        },
+        {
+            "name": "BM02_PhieuDiemDanh_DoanhNghiep.docx",
+            "url": "documents/KTCN/BM02_PhieuDiemDanh_DoanhNghiep.docx",
+            "type": "docx",
+            "date": "01/01/2026",
+            "size": "22.12 KB"
+        },
+        {
+            "name": "BM03_PhieuDiemDanh_GVGS.docx",
+            "url": "documents/KTCN/BM03_PhieuDiemDanh_GVGS.docx",
+            "type": "docx",
+            "date": "01/01/2026",
+            "size": "21.98 KB"
+        },
+        {
+            "name": "BM04_PhieuChamDiem_DoanhNghiep.docx",
+            "url": "documents/KTCN/BM04_PhieuChamDiem_DoanhNghiep.docx",
+            "type": "docx",
+            "date": "01/01/2026",
+            "size": "32.74 KB"
+        },
+        {
+            "name": "BM05_PhieuChamDiem_GVGS.docx",
+            "url": "documents/KTCN/BM05_PhieuChamDiem_GVGS.docx",
+            "type": "docx",
+            "date": "01/01/2026",
+            "size": "24.01 KB"
+        },
+        {
+            "name": "BM06_PhieuChamDiem_GVPB.docx",
+            "url": "documents/KTCN/BM06_PhieuChamDiem_GVPB.docx",
+            "type": "docx",
+            "date": "01/01/2026",
+            "size": "24.12 KB"
+        }
+    ]
+}
