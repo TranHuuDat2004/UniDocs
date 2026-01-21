@@ -311,6 +311,21 @@
 
                 // Render Files
                 list.innerHTML = '';
+
+                // --- NOTIFICATION FOR INTERNSHIP SUBJECTS ---
+                const internshipIds = ['internship', 'tsnn', 'ktcn'];
+                if (internshipIds.includes(id)) {
+                    const alert = document.createElement('div');
+                    alert.className = "mb-4 p-4 bg-amber-50 border border-amber-200 rounded-lg text-sm text-amber-800 flex gap-3";
+                    alert.innerHTML = `
+                         <i class="ph-fill ph-warning-circle text-lg shrink-0 mt-0.5"></i>
+                         <div>
+                             <strong>Lưu ý:</strong> Đây là biểu mẫu áp dụng cho <strong>HK2/2025-2026</strong>. <br/>
+                             Các học kỳ khác vui lòng chỉ tham khảo, biểu mẫu có thể thay đổi tùy theo quy định của Khoa tại từng thời điểm.
+                         </div>
+                     `;
+                    list.appendChild(alert);
+                }
                 if (data.files.length === 0) {
                     list.innerHTML = '<div class="p-4 text-center text-slate-400">Chưa có tài liệu.</div>';
                     return;
