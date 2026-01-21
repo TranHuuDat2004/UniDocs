@@ -180,5 +180,12 @@
     "icon": "ph-game-controller",
     "description": "Tài liệu lập trình game 3D với Unity, C# và thiết kế game.",
     "category": "app_dev"
+  },
+  {
+    "id": "internship",
+    "name": "Cẩm nang thực tập",
+    "icon": "ph-briefcase",
+    "description": "Tài liệu hướng dẫn, quy trình và biểu mẫu thực tập cho sinh viên.",
+    "category": "other"
   }
 ]

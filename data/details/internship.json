@@ -1,0 +1,20 @@
+{
+    "id": "internship",
+    "name": "Cẩm nang thực tập",
+    "files": [
+        {
+            "name": "KTCN-SinhVien.pdf",
+            "url": "documents/internship/KTCN-SinhVien.pdf",
+            "type": "pdf",
+            "date": "01/01/2026",
+            "size": "9.41 MB"
+        },
+        {
+            "name": "TSNN-SinhVien.pdf",
+            "url": "documents/internship/TSNN-SinhVien.pdf",
+            "type": "pdf",
+            "date": "01/01/2026",
+            "size": "8.35 MB"
+        }
+    ]
+}
