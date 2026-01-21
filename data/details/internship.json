@@ -15,6 +15,13 @@
             "type": "pdf",
             "date": "01/01/2026",
             "size": "8.35 MB"
+        },
+        {
+            "name": "Video-ThucTap.pdf",
+            "url": "documents/internship/Video-ThucTap.pdf",
+            "type": "pdf",
+            "date": "01/01/2026",
+            "size": "140 KB"
         }
     ]
 }
