@@ -201,5 +201,12 @@
     "icon": "ph-factory",
     "description": "Biểu mẫu và hướng dẫn cho môn Kiến tập công nghiệp.",
     "category": "other"
+  },
+  {
+    "id": "aptis",
+    "name": "Aptis ESOL",
+    "icon": "ph-translate",
+    "description": "Tài liệu ôn thi chứng chỉ tiếng Anh Aptis ESOL.",
+    "category": "other"
   }
 ]
