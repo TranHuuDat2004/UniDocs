@@ -563,6 +563,8 @@
 
             if (file.type === 'pdf') {
                 elements.pdf.style.display = 'block';
+                // Fix for iOS scrolling: Ensure the iframe is accessible or wrap if needed. 
+                // For the main viewer, it's just an iframe. We might need to ensure the container allows scrolling.
                 elements.pdf.src = file.url;
             }
             else if (file.type === 'word' || file.type === 'docx') {
