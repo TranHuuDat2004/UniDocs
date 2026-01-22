@@ -112,11 +112,11 @@
 
     <!-- MOBILE OVERLAY BACKDROP -->
     <div id="sidebarBackdrop" onclick="toggleSidebar()"
-        class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-40 hidden lg:hidden transition-opacity"></div>
+        class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-40 hidden min-[1400px]:hidden transition-opacity"></div>
 
     <!-- SIDEBAR -->
     <aside id="sidebar"
-        class="w-72 glass-panel h-full fixed lg:static inset-y-0 left-0 z-50 flex flex-col transform -translate-x-full lg:translate-x-0 transition-transform duration-300 shadow-xl lg:shadow-lg bg-white">
+        class="w-72 glass-panel h-full fixed min-[1400px]:static inset-y-0 left-0 z-50 flex flex-col transform -translate-x-full min-[1400px]:translate-x-0 transition-transform duration-300 shadow-xl min-[1400px]:shadow-lg bg-white">
         <!-- Logo -->
         <!-- Logo & Close Button -->
         <div class="p-6 flex items-center justify-between">
@@ -128,7 +128,7 @@
             </div>
             <!-- Close Sidebar Button (Mobile) -->
             <button onclick="toggleSidebar()"
-                class="lg:hidden p-2 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-lg transition">
+                class="min-[1400px]:hidden p-2 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-lg transition">
                 <i class="ph-bold ph-x text-xl"></i>
             </button>
         </div>
@@ -158,7 +158,7 @@
 
             <div class="flex items-center gap-3 overflow-hidden">
                 <button onclick="toggleSidebar()"
-                    class="lg:hidden p-2 -ml-2 text-slate-500 hover:bg-slate-100 rounded-lg">
+                    class="min-[1400px]:hidden p-2 -ml-2 text-slate-500 hover:bg-slate-100 rounded-lg">
                     <i class="ph-bold ph-list text-2xl"></i>
                 </button>
                 <h1 class="text-lg font-bold text-slate-800 flex items-center gap-2 truncate" id="pageTitle">
