@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pptxjs/1.21.1/css/pptxjs.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pptxjs/1.21.1/js/pptxjs.js"></script>
+    <!-- PDF.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    </script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap');
@@ -214,7 +219,7 @@
 
                     <!-- Viewers -->
                     <div class="flex-1 relative overflow-hidden">
-                        <iframe id="pdfFrame" class="w-full h-full hidden bg-white"></iframe>
+                        <div id="pdfFrame" class="w-full h-full hidden bg-white overflow-y-auto relative"></div>
                         <div id="docxFrame" class="w-full h-full hidden bg-white overflow-auto p-8"></div>
                         <div id="excelFrame" class="w-full h-full hidden bg-white overflow-auto p-4"></div>
                         <div id="pptFrame" class="w-full h-full hidden bg-white"></div>
@@ -512,44 +517,13 @@
             tempContainer.className = 'w-full h-full bg-white rounded-xl shadow-sm overflow-hidden';
             content.appendChild(tempContainer);
 
-            // Logic to reuse renderFileContent... 
-            // Since original logic used specific IDs, we'll adapt slightly here:
-
-            const loading = `<div class="flex h-full items-center justify-center text-slate-400 gap-2"><i class="ph ph-spinner animate-spin"></i> Đang tải tài liệu...</div>`;
-            tempContainer.innerHTML = loading;
-
-            if (file.type === 'pdf') {
-                const iframe = document.createElement('iframe');
-                iframe.src = file.url;
-                iframe.className = "w-full h-full border-none";
-                tempContainer.innerHTML = '';
-                tempContainer.appendChild(iframe);
-            }
-            else if (file.type === 'word' || file.type === 'docx') {
-                try {
-                    const blob = await (await fetch(file.url)).blob();
-                    tempContainer.innerHTML = '';
-                    await docx.renderAsync(blob, tempContainer, null, { inWrapper: false });
-                } catch (e) { tempContainer.innerHTML = 'Lỗi tải Word'; }
-            }
-            else if (file.type === 'excel') {
-                try {
-                    const ab = await (await fetch(file.url)).arrayBuffer();
-                    const wb = XLSX.read(ab);
-                    const html = XLSX.utils.sheet_to_html(wb.Sheets[wb.SheetNames[0]]);
-                    tempContainer.innerHTML = html;
-                    tempContainer.style.overflow = 'auto';
-                } catch (e) { tempContainer.innerHTML = 'Lỗi tải Excel'; }
-            }
-            else {
-                tempContainer.innerHTML = `
-                    <div class="flex flex-col items-center justify-center h-full text-slate-500">
-                        <i class="ph-duotone ph-file-arrow-down text-4xl mb-2"></i>
-                        <p>File không hỗ trợ xem trước.</p>
-                        <a href="${file.url}" class="text-indigo-600 hover:underline mt-2">Tải xuống</a>
-                    </div>
-                 `;
-            }
+            // Reuse generic renderer for consistent behavior (including PDF.js fix)
+            await renderFileContent(file, {
+                pdf: tempContainer,
+                docx: tempContainer,
+                excel: tempContainer,
+                ppt: tempContainer
+            });
         }
 
         function closeDocModal() {
@@ -563,9 +537,47 @@
 
             if (file.type === 'pdf') {
                 elements.pdf.style.display = 'block';
-                // Fix for iOS scrolling: Ensure the iframe is accessible or wrap if needed. 
-                // For the main viewer, it's just an iframe. We might need to ensure the container allows scrolling.
-                elements.pdf.src = file.url;
+                elements.pdf.innerHTML = loading;
+
+                try {
+                    const loadingTask = pdfjsLib.getDocument(file.url);
+                    const pdf = await loadingTask.promise;
+
+                    elements.pdf.innerHTML = '';
+                    elements.pdf.className = 'w-full h-full overflow-y-auto bg-slate-100 flex flex-col items-center gap-4 p-4';
+                    // Enable momentum scrolling for iOS
+                    elements.pdf.style.webkitOverflowScrolling = 'touch';
+
+                    for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+                        const page = await pdf.getPage(pageNum);
+
+                        // Scale based on container width
+                        const viewport = page.getViewport({ scale: 1.5 });
+                        const canvas = document.createElement('canvas');
+                        const context = canvas.getContext('2d');
+
+                        canvas.height = viewport.height;
+                        canvas.width = viewport.width;
+                        canvas.className = 'shadow-lg bg-white rounded-lg max-w-full';
+
+                        const renderContext = {
+                            canvasContext: context,
+                            viewport: viewport
+                        };
+
+                        await page.render(renderContext).promise;
+                        elements.pdf.appendChild(canvas);
+                    }
+                } catch (error) {
+                    console.error('PDF Render Error:', error);
+                    elements.pdf.innerHTML = `
+                        <div class="flex flex-col items-center justify-center h-full text-slate-500">
+                            <i class="ph-duotone ph-warning-circle text-4xl mb-2"></i>
+                            <p>Không thể xem trước file này.</p>
+                            <a href="${file.url}" class="text-indigo-600 hover:underline mt-2">Tải xuống để xem</a>
+                        </div>
+                    `;
+                }
             }
             else if (file.type === 'word' || file.type === 'docx') {
                 elements.docx.style.display = 'block';
