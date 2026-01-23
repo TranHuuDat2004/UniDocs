@@ -582,6 +582,11 @@
             else if (file.type === 'word' || file.type === 'docx') {
                 elements.docx.style.display = 'block';
                 elements.docx.innerHTML = loading;
+
+                // Fix for iOS scrolling
+                elements.docx.style.webkitOverflowScrolling = 'touch';
+                elements.docx.classList.add('overflow-y-auto');
+
                 try {
                     const blob = await (await fetch(file.url)).blob();
                     elements.docx.innerHTML = '';
@@ -591,6 +596,11 @@
             else if (file.type === 'excel') {
                 elements.excel.style.display = 'block';
                 elements.excel.innerHTML = loading;
+
+                // Fix for iOS scrolling
+                elements.excel.style.webkitOverflowScrolling = 'touch';
+                elements.excel.classList.add('overflow-y-auto');
+
                 try {
                     const ab = await (await fetch(file.url)).arrayBuffer();
                     const wb = XLSX.read(ab);
