@@ -208,5 +208,12 @@
     "icon": "ph-translate",
     "description": "Tài liệu ôn thi chứng chỉ tiếng Anh Aptis ESOL.",
     "category": "other"
+  },
+  {
+    "id": "knthcm",
+    "name": "Ôn tập KNTHCM",
+    "icon": "ph-check-circle",
+    "description": "Tài liệu ôn tập Kĩ năng thực hành chuyên môn.",
+    "category": "other"
   }
 ]

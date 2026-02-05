@@ -1,0 +1,20 @@
+{
+    "id": "knthcm",
+    "name": "Ôn tập Kĩ năng thực hành chuyên môn",
+    "files": [
+        {
+            "name": "Đề ôn tập KNTHCM 2024-2025.pdf",
+            "url": "documents/KNTHCM/Namhoc-2024-2025.pdf",
+            "type": "pdf",
+            "date": "05/02/2026",
+            "size": "151.31 KB"
+        },
+        {
+            "name": "Đề ôn tập KNTHCM 2023-2024.pdf",
+            "url": "documents/KNTHCM/Namhoc-2023-2024.pdf",
+            "type": "pdf",
+            "date": "05/02/2026",
+            "size": "178.33 KB"
+        }
+    ]
+}
