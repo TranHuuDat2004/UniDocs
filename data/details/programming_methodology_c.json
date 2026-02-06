@@ -1,0 +1,105 @@
+{
+    "id": "programming_methodology_c",
+    "name": "Phương pháp lập trình với Ngôn ngữ C",
+    "noteHtml": "Bạn có thể xem đoạn code tham khảo hoặc bài giải tham khảo ngay <a href=\"https://drive.google.com/drive/folders/1dwkHRdohibElajPpFCFy8vjkDDSBiuqQ?usp=sharing\" target=\"_blank\" class=\"text-indigo-600 hover:text-indigo-800 underline font-medium\">tại đây</a>.",
+    "files": [
+        {
+            "name": "BAI TAP LON PPLT.pdf",
+            "url": "documents/programming_methodology_code/BAI TAP LON PPLT.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "0.99 MB"
+        },
+        {
+            "name": "GIUA KY.pdf",
+            "url": "documents/programming_methodology_code/GIUA KY.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "608.96 KB"
+        },
+        {
+            "name": "Lab1.pdf",
+            "url": "documents/programming_methodology_code/Lab1.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "795.26 KB"
+        },
+        {
+            "name": "Lab2.pdf",
+            "url": "documents/programming_methodology_code/Lab2.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "2.20 MB"
+        },
+        {
+            "name": "Lab3.pdf",
+            "url": "documents/programming_methodology_code/Lab3.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "866.89 KB"
+        },
+        {
+            "name": "Lab4.pdf",
+            "url": "documents/programming_methodology_code/Lab4.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "451.02 KB"
+        },
+        {
+            "name": "Lab5.pdf",
+            "url": "documents/programming_methodology_code/Lab5.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "269.12 KB"
+        },
+        {
+            "name": "Lab5_Review.pdf",
+            "url": "documents/programming_methodology_code/Lab5_Review.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "153.73 KB"
+        },
+        {
+            "name": "Lab6.pdf",
+            "url": "documents/programming_methodology_code/Lab6.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "283.57 KB"
+        },
+        {
+            "name": "Lab7.pdf",
+            "url": "documents/programming_methodology_code/Lab7.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "1.30 MB"
+        },
+        {
+            "name": "Lab8.pdf",
+            "url": "documents/programming_methodology_code/Lab8.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "245.11 KB"
+        },
+        {
+            "name": "Lab9.pdf",
+            "url": "documents/programming_methodology_code/Lab9.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "242.18 KB"
+        },
+        {
+            "name": "Lab10.pdf",
+            "url": "documents/programming_methodology_code/Lab10.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "179.60 KB"
+        },
+        {
+            "name": "ON TAP GIUA KY MON PPLT HK 1 2022_2023.pdf",
+            "url": "documents/programming_methodology_code/ON TAP GIUA KY MON PPLT HK 1 2022_2023.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "754.14 KB"
+        }
+    ]
+}

@@ -1,0 +1,105 @@
+{
+    "id": "computer_organization_lab",
+    "name": "Thực hành Tổ chức máy tính",
+    "noteHtml": "Bạn có thể xem đoạn code tham khảo hoặc bài giải tham khảo ngay <a href=\"https://drive.google.com/drive/folders/1tZEOM5VMWx_elATzzw1FDcPn9xS-5MZ2?usp=sharing\" target=\"_blank\" class=\"text-indigo-600 hover:text-indigo-800 underline font-medium\">tại đây</a>.",
+    "files": [
+        {
+            "name": "ARRAY.pdf",
+            "url": "documents/computer_organization_code/ARRAY.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "107.31 KB"
+        },
+        {
+            "name": "Buoi 5 - Gioi thieu MIPS va cac lenh co ban.pdf",
+            "url": "documents/computer_organization_code/Buoi 5 - Gioi thieu MIPS va cac lenh co ban.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "796.21 KB"
+        },
+        {
+            "name": "Buoi 8 - Chuong trinh con.pdf",
+            "url": "documents/computer_organization_code/Buoi 8 - Chuong trinh con.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "81.23 KB"
+        },
+        {
+            "name": "Bai thuc hanh Tuan 03.pdf",
+            "url": "documents/computer_organization_code/Bai thuc hanh Tuan 03.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "165.77 KB"
+        },
+        {
+            "name": "Bai thuc hanh Tuan 3.pdf",
+            "url": "documents/computer_organization_code/Bai thuc hanh Tuan 3.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "126.00 KB"
+        },
+        {
+            "name": "Bai thuc hanh Tuan 4.pdf",
+            "url": "documents/computer_organization_code/Bai thuc hanh Tuan 4.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "114.37 KB"
+        },
+        {
+            "name": "Cau truc re nhanh va vong lap.pdf",
+            "url": "documents/computer_organization_code/Cau truc re nhanh va vong lap.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "126.13 KB"
+        },
+        {
+            "name": "Gioi thieu MIPS va cac thao tac co ban.pdf",
+            "url": "documents/computer_organization_code/Gioi thieu MIPS va cac thao tac co ban.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "229.70 KB"
+        },
+        {
+            "name": "Lab 1.1 Intro to Logism.pdf",
+            "url": "documents/computer_organization_code/Lab 1.1 Intro to Logism.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "282.02 KB"
+        },
+        {
+            "name": "Lab 1.2 Combination circuits.pdf",
+            "url": "documents/computer_organization_code/Lab 1.2 Combination circuits.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "260.00 KB"
+        },
+        {
+            "name": "Lab 1.3 Build and Use subcircuit.pdf",
+            "url": "documents/computer_organization_code/Lab 1.3 Build and Use subcircuit.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "300.00 KB"
+        },
+        {
+            "name": "Lab 2.1_Full Adder.pdf",
+            "url": "documents/computer_organization_code/Lab 2.1_Full Adder.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "280.00 KB"
+        },
+        {
+            "name": "Lab2.pdf",
+            "url": "documents/computer_organization_code/Lab2.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "253.49 KB"
+        },
+        {
+            "name": "STACK (NGAN XEP).pdf",
+            "url": "documents/computer_organization_code/STACK (NGAN XEP).pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "137.07 KB"
+        }
+    ]
+}

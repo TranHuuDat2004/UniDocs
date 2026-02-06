@@ -398,6 +398,18 @@
                      `;
                     list.appendChild(alert);
                 }
+
+                // --- GENERIC NOTE/LINK NOTIFICATION ---
+                if (data.noteHtml) {
+                    const note = document.createElement('div');
+                    note.className = "mb-4 p-4 bg-indigo-50 border border-indigo-200 rounded-lg text-sm text-indigo-800 flex gap-3";
+                    note.innerHTML = `
+                         <i class="ph-fill ph-info text-lg shrink-0 mt-0.5"></i>
+                         <div>${data.noteHtml}</div>
+                     `;
+                    list.appendChild(note);
+                }
+
                 if (data.files.length === 0) {
                     list.innerHTML = '<div class="p-4 text-center text-slate-400">Chưa có tài liệu.</div>';
                     return;

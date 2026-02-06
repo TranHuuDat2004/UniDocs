@@ -1,0 +1,84 @@
+{
+    "id": "calculus_python",
+    "name": "Thực hành Giải tích với Python",
+    "noteHtml": "Bạn có thể xem đoạn code tham khảo hoặc bài giải tham khảo ngay <a href=\"https://drive.google.com/drive/folders/1WJ5yXcXeoqBXlpNEQumeroUarrKV7cH3?usp=sharing\" target=\"_blank\" class=\"text-indigo-600 hover:text-indigo-800 underline font-medium\">tại đây</a>.",
+    "files": [
+        {
+            "name": "cheat_sheet.pdf",
+            "url": "documents/calculus-code/cheat_sheet.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "129.61 KB"
+        },
+        {
+            "name": "Lab01_Python1.pdf",
+            "url": "documents/calculus-code/Lab01_Python1.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "425.90 KB"
+        },
+        {
+            "name": "Lab02_Python2.pdf",
+            "url": "documents/calculus-code/Lab02_Python2.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "483.40 KB"
+        },
+        {
+            "name": "Lab03.pdf",
+            "url": "documents/calculus-code/Lab03.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "592.13 KB"
+        },
+        {
+            "name": "Lab04.ex.pdf",
+            "url": "documents/calculus-code/Lab04.ex.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "134.66 KB"
+        },
+        {
+            "name": "Lab04.guide.pdf",
+            "url": "documents/calculus-code/Lab04.guide.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "337.71 KB"
+        },
+        {
+            "name": "Lab05_06.pdf",
+            "url": "documents/calculus-code/Lab05_06.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "126.96 KB"
+        },
+        {
+            "name": "Lab07.pdf",
+            "url": "documents/calculus-code/Lab07.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "134.86 KB"
+        },
+        {
+            "name": "Lab08.pdf",
+            "url": "documents/calculus-code/Lab08.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "118.39 KB"
+        },
+        {
+            "name": "Lab09.pdf",
+            "url": "documents/calculus-code/Lab09.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "110.61 KB"
+        },
+        {
+            "name": "Lab10.pdf",
+            "url": "documents/calculus-code/Lab10.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "146.66 KB"
+        }
+    ]
+}

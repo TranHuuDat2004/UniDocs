@@ -7,6 +7,27 @@
     "category": "math_basic"
   },
   {
+    "id": "calculus_python",
+    "name": "Thực hành Giải tích với Python",
+    "icon": "ph-code",
+    "description": "Bài tập thực hành giải tích sử dụng ngôn ngữ Python.",
+    "category": "math_basic"
+  },
+  {
+    "id": "programming_methodology_c",
+    "name": "Phương pháp lập trình với Ngôn ngữ C",
+    "icon": "ph-code",
+    "description": "Thực hành phương pháp lập trình sử dụng ngôn ngữ C.",
+    "category": "programming_algo"
+  },
+  {
+    "id": "computer_organization_lab",
+    "name": "Thực hành Tổ chức máy tính",
+    "icon": "ph-circuitry",
+    "description": "Tập thiết kế mạch toán nhị phân như là OR, NOR, AND, XOR,... và code assembly.",
+    "category": "system_network"
+  },
+  {
     "id": "computer_organization",
     "name": "Tổ chức máy tính",
     "icon": "ph-cpu",
