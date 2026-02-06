@@ -28,6 +28,7 @@ We have completed a comprehensive update to the UniDocs application, adding a wi
     -   Implemented a **Responsive Preview Modal** for tablet/laptop screens (<1300px).
 -   **Mobile Enhancements**:
     -   Fixed Master-Detail layout and added hamburger menu toggle.
+    -   **Clickable File List**: Made the entire file row clickable for easier preview access (Desktop & Mobile).
 -   **Notification Feature**:
     -   Added blue notification box for external links (Google Drive) in subject headers.
 
