@@ -1,0 +1,56 @@
+{
+    "id": "sql_lab",
+    "name": "Thực hành Cơ sở dữ liệu",
+    "noteHtml": "Bạn có thể xem đoạn code tham khảo hoặc bài giải tham khảo ngay <a href=\"https://drive.google.com/drive/folders/1O4ohOWHTtA4hn0NiPoMCkBekh0QYwGv_?usp=drive_link\" target=\"_blank\" class=\"text-indigo-600 hover:text-indigo-800 underline font-medium\">tại đây</a>.",
+    "files": [
+        {
+            "name": "bai-tap-phan-ra-dang-chuan.pdf",
+            "url": "documents/SQL_code/bai-tap-phan-ra-dang-chuan.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "104.97 KB"
+        },
+        {
+            "name": "BaiTap-MH-TTLK.pdf",
+            "url": "documents/SQL_code/BaiTap-MH-TTLK.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "196.59 KB"
+        },
+        {
+            "name": "BT - DSQH- Luyen tap-1.pdf",
+            "url": "documents/SQL_code/BT - DSQH- Luyen tap-1.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "264.82 KB"
+        },
+        {
+            "name": "Chuong 4-SQL.pdf",
+            "url": "documents/SQL_code/Chuong 4-SQL.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "1.25 MB"
+        },
+        {
+            "name": "ERD-Vi-BaiTap-MH-TTLK.pdf",
+            "url": "documents/SQL_code/ERD-Vi-BaiTap-MH-TTLK.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "196.59 KB"
+        },
+        {
+            "name": "Final_Practice Test_CLC_2022.pdf",
+            "url": "documents/SQL_code/Final_Practice Test_CLC_2022.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "51.06 KB"
+        },
+        {
+            "name": "MidTerm-Review-2022.pdf",
+            "url": "documents/SQL_code/MidTerm-Review-2022.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "93.83 KB"
+        }
+    ]
+}

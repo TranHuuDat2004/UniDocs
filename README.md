@@ -1,8 +1,8 @@
-# UniDocs - Kho tài liệu môn học 📚
+# unidocs - Kho tài liệu môn học 📚
 
-**UniDocs** là hệ thống lưu trữ và chia sẻ tài liệu học tập miễn phí, giúp sinh viên truy cập giáo trình, đề thi và bài giảng chất lượng cao một cách nhanh chóng và tiện lợi.
+**unidocs** là hệ thống lưu trữ và chia sẻ tài liệu học tập miễn phí, giúp sinh viên truy cập giáo trình, đề thi và bài giảng chất lượng cao một cách nhanh chóng và tiện lợi.
 
-![UniDocs Preview](img/screenshot.png)
+![unidocs Preview](img/screenshot.png)
 
 ## ✨ Tính năng nổi bật
 
@@ -33,7 +33,7 @@ Dự án này là **Static Web**, bạn không cần cài đặt backend hay dat
 
 1.  **Clone dự án**:
     ```bash
-    git clone https://github.com/TranHuuDat2004/UniDocs.git
+    git clone https://github.com/TranHuuDat2004/unidocs.git
     ```
 2.  **Khởi chạy**:
     -   Dùng Live Server (VS Code) để mở file `index.html` .
@@ -60,4 +60,4 @@ Dữ liệu môn học được lưu trữ tại `data/subjects.json`. Để th�
 Developed by **TranHuuDat2004**.
 
 ---
-*UniDocs - Chia sẻ tri thức, kết nối thành công.*
+*unidocs - Chia sẻ tri thức, kết nối thành công.*

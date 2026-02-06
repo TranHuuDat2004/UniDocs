@@ -12,6 +12,8 @@ We have completed a comprehensive update to the UniDocs application, adding a wi
     -   **Thực hành Đại số tuyến tính với Python** (Linear Algebra Python).
     -   **Thực hành Hướng đối tượng** (OOP Lab).
     -   **Thực hành Hệ điều hành** (OS Lab).
+    -   **Thực hành CTDLGT** (DSA Lab).
+    -   **Thực hành Cơ sở dữ liệu** (SQL Lab) - converted DOCX to PDF.
 -   **Internship Subjects**:
     -   Added "Tập sự nghề nghiệp" (TSNN) and "Kiến tập công nghiệp" (KTCN).
     -   Restored "Cẩm nang thực tập".

@@ -1,0 +1,77 @@
+{
+    "id": "dsa_lab",
+    "name": "Thực hành CTDLGT",
+    "noteHtml": "Bạn có thể xem đoạn code tham khảo hoặc bài giải tham khảo ngay <a href=\"https://drive.google.com/drive/folders/10ph3SFs1vMoYtPfIkMdQkwX6DaZxCozz?usp=sharing\" target=\"_blank\" class=\"text-indigo-600 hover:text-indigo-800 underline font-medium\">tại đây</a>.",
+    "files": [
+        {
+            "name": "Lab1.pdf",
+            "url": "documents/DSA_code/Lab1.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "517.22 KB"
+        },
+        {
+            "name": "Lab2.pdf",
+            "url": "documents/DSA_code/Lab2.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "581.16 KB"
+        },
+        {
+            "name": "Lab3.pdf",
+            "url": "documents/DSA_code/Lab3.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "627.53 KB"
+        },
+        {
+            "name": "Lab4.pdf",
+            "url": "documents/DSA_code/Lab4.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "769.08 KB"
+        },
+        {
+            "name": "Lab5.pdf",
+            "url": "documents/DSA_code/Lab5.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "512.84 KB"
+        },
+        {
+            "name": "Lab6.pdf",
+            "url": "documents/DSA_code/Lab6.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "810.02 KB"
+        },
+        {
+            "name": "Lab7.pdf",
+            "url": "documents/DSA_code/Lab7.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "649.23 KB"
+        },
+        {
+            "name": "Lab8.pdf",
+            "url": "documents/DSA_code/Lab8.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "674.59 KB"
+        },
+        {
+            "name": "Lab9.pdf",
+            "url": "documents/DSA_code/Lab9.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "711.26 KB"
+        },
+        {
+            "name": "Lab10.pdf",
+            "url": "documents/DSA_code/Lab10.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "671.40 KB"
+        }
+    ]
+}

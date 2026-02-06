@@ -77,6 +77,13 @@
     "category": "programming_algo"
   },
   {
+    "id": "dsa_lab",
+    "name": "Thực hành CTDLGT",
+    "icon": "ph-tree-structure",
+    "description": "Bài tập thực hành Cấu trúc dữ liệu và giải thuật.",
+    "category": "programming_algo"
+  },
+  {
     "id": "os",
     "name": "Nhập môn hệ điều hành",
     "icon": "ph-desktop",
@@ -95,6 +102,13 @@
     "name": "Hệ cơ sở dữ liệu",
     "icon": "ph-database",
     "description": "Mô hình quan hệ, đại số quan hệ, SQL và chuẩn hóa dữ liệu.",
+    "category": "software_db"
+  },
+  {
+    "id": "sql_lab",
+    "name": "Thực hành Cơ sở dữ liệu",
+    "icon": "ph-database",
+    "description": "Bài tập thực hành SQL và thiết kế cơ sở dữ liệu.",
     "category": "software_db"
   },
   {
