@@ -1,0 +1,84 @@
+{
+    "id": "oop_lab",
+    "name": "Thực hành Hướng đối tượng",
+    "noteHtml": "Bạn có thể xem đoạn code tham khảo hoặc bài giải tham khảo ngay <a href=\"https://drive.google.com/drive/folders/1TFZsFSNwwcKxRxb7SEUL3AZlfaGMAiFB?usp=sharing\" target=\"_blank\" class=\"text-indigo-600 hover:text-indigo-800 underline font-medium\">tại đây</a>.",
+    "files": [
+        {
+            "name": "BaiTapLamThemNhomCa4.pdf",
+            "url": "documents/OOP_code/BaiTapLamThemNhomCa4.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "151.79 KB"
+        },
+        {
+            "name": "Lab1.pdf",
+            "url": "documents/OOP_code/Lab1.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "523.65 KB"
+        },
+        {
+            "name": "Lab2.pdf",
+            "url": "documents/OOP_code/Lab2.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "250.52 KB"
+        },
+        {
+            "name": "Lab3.pdf",
+            "url": "documents/OOP_code/Lab3.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "221.67 KB"
+        },
+        {
+            "name": "Lab4.pdf",
+            "url": "documents/OOP_code/Lab4.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "433.40 KB"
+        },
+        {
+            "name": "Lab5.pdf",
+            "url": "documents/OOP_code/Lab5.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "242.92 KB"
+        },
+        {
+            "name": "Lab6.pdf",
+            "url": "documents/OOP_code/Lab6.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "478.71 KB"
+        },
+        {
+            "name": "Lab7.pdf",
+            "url": "documents/OOP_code/Lab7.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "640.51 KB"
+        },
+        {
+            "name": "Lab8.pdf",
+            "url": "documents/OOP_code/Lab8.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "249.68 KB"
+        },
+        {
+            "name": "Lab9.pdf",
+            "url": "documents/OOP_code/Lab9.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "216.24 KB"
+        },
+        {
+            "name": "Lab10.pdf",
+            "url": "documents/OOP_code/Lab10.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "330.83 KB"
+        }
+    ]
+}

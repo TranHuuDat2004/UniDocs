@@ -1,0 +1,196 @@
+{
+    "id": "os_lab",
+    "name": "Thực hành Hệ điều hành",
+    "noteHtml": "Bạn có thể xem đoạn code tham khảo hoặc bài giải tham khảo ngay <a href=\"https://drive.google.com/drive/folders/1_RKhPMkUYXbAGWJ-Hnca9u3XM57I1MAM?usp=sharing\" target=\"_blank\" class=\"text-indigo-600 hover:text-indigo-800 underline font-medium\">tại đây</a>.",
+    "files": [
+        {
+            "name": "1.1-VN-VirtualBox setup with Ubuntu image.pdf",
+            "url": "documents/OS_code/1.1-VN-VirtualBox setup with Ubuntu image.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "754.00 KB"
+        },
+        {
+            "name": "1.2-VN-Linux Commands.pdf",
+            "url": "documents/OS_code/1.2-VN-Linux Commands.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "578.81 KB"
+        },
+        {
+            "name": "1.3-VN-UbuntuOnWindows10.pdf",
+            "url": "documents/OS_code/1.3-VN-UbuntuOnWindows10.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "509.27 KB"
+        },
+        {
+            "name": "2.1-VN-CompilewithGCC.pdf",
+            "url": "documents/OS_code/2.1-VN-CompilewithGCC.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "387.59 KB"
+        },
+        {
+            "name": "2.2-VN-Passing parameterr.pdf",
+            "url": "documents/OS_code/2.2-VN-Passing parameterr.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "303.65 KB"
+        },
+        {
+            "name": "2.3-VN-Static_vs_Dynamic_Linking.pdf",
+            "url": "documents/OS_code/2.3-VN-Static_vs_Dynamic_Linking.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "456.97 KB"
+        },
+        {
+            "name": "3.1-VN-Quanlytientrinh.pdf",
+            "url": "documents/OS_code/3.1-VN-Quanlytientrinh.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "637.20 KB"
+        },
+        {
+            "name": "3.2-VN-TaoTientrinh.pdf",
+            "url": "documents/OS_code/3.2-VN-TaoTientrinh.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "568.31 KB"
+        },
+        {
+            "name": "3.3-VN-Caytientrinh.pdf",
+            "url": "documents/OS_code/3.3-VN-Caytientrinh.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "341.29 KB"
+        },
+        {
+            "name": "3.4-VN-SyncChildProcess.pdf",
+            "url": "documents/OS_code/3.4-VN-SyncChildProcess.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "363.29 KB"
+        },
+        {
+            "name": "4.1-VN-ThreadCreate.pdf",
+            "url": "documents/OS_code/4.1-VN-ThreadCreate.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "400.29 KB"
+        },
+        {
+            "name": "4.2-VN-ThreadTiming.pdf",
+            "url": "documents/OS_code/4.2-VN-ThreadTiming.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "418.53 KB"
+        },
+        {
+            "name": "4.3-VN-Thaotactaptin.pdf",
+            "url": "documents/OS_code/4.3-VN-Thaotactaptin.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "321.26 KB"
+        },
+        {
+            "name": "5.1-VN-LienlacDuongong.pdf",
+            "url": "documents/OS_code/5.1-VN-LienlacDuongong.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "342.74 KB"
+        },
+        {
+            "name": "5.2-VN-DuongongDatten.pdf",
+            "url": "documents/OS_code/5.2-VN-DuongongDatten.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "542.00 KB"
+        },
+        {
+            "name": "5.3-VN-VungnhoChiase.pdf",
+            "url": "documents/OS_code/5.3-VN-VungnhoChiase.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "424.64 KB"
+        },
+        {
+            "name": "5.4-VN-Truyenthongdiep.pdf",
+            "url": "documents/OS_code/5.4-VN-Truyenthongdiep.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "322.80 KB"
+        },
+        {
+            "name": "6.1-VN-CPUAffinity.pdf",
+            "url": "documents/OS_code/6.1-VN-CPUAffinity.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "476.44 KB"
+        },
+        {
+            "name": "6.2-VN-CPUscheduling.pdf",
+            "url": "documents/OS_code/6.2-VN-CPUscheduling.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "406.18 KB"
+        },
+        {
+            "name": "6.3-VN-CPUScheduerFCFS.pdf",
+            "url": "documents/OS_code/6.3-VN-CPUScheduerFCFS.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "615.90 KB"
+        },
+        {
+            "name": "6.4-VN-CPUScheduerSJF.pdf",
+            "url": "documents/OS_code/6.4-VN-CPUScheduerSJF.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "320.35 KB"
+        },
+        {
+            "name": "6.5-VN-CPUScheduerRR.pdf",
+            "url": "documents/OS_code/6.5-VN-CPUScheduerRR.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "332.53 KB"
+        },
+        {
+            "name": "7.1-VN-Nhatquandulieu.pdf",
+            "url": "documents/OS_code/7.1-VN-Nhatquandulieu.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "313.85 KB"
+        },
+        {
+            "name": "7.2-VN-GiaiphapPeterson.pdf",
+            "url": "documents/OS_code/7.2-VN-GiaiphapPeterson.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "303.36 KB"
+        },
+        {
+            "name": "7.3-VN-HangraoBonho.pdf",
+            "url": "documents/OS_code/7.3-VN-HangraoBonho.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "406.37 KB"
+        },
+        {
+            "name": "7.4.-VN-Lenhphancung.pdf",
+            "url": "documents/OS_code/7.4.-VN-Lenhphancung.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "324.52 KB"
+        },
+        {
+            "name": "7.5-VN-ThuvienDonnguyen.pdf",
+            "url": "documents/OS_code/7.5-VN-ThuvienDonnguyen.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "306.29 KB"
+        }
+    ]
+}

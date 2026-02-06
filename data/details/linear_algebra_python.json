@@ -1,0 +1,77 @@
+{
+    "id": "linear_algebra_python",
+    "name": "Thực hành Đại số tuyến tính với Python",
+    "noteHtml": "Bạn có thể xem đoạn code tham khảo hoặc bài giải tham khảo ngay <a href=\"https://drive.google.com/drive/folders/1aoXq796lUMfjZDerUizwvlOa-YI5rhBm?usp=sharing\" target=\"_blank\" class=\"text-indigo-600 hover:text-indigo-800 underline font-medium\">tại đây</a>.",
+    "files": [
+        {
+            "name": "Essay_Algebra_2023.pdf",
+            "url": "documents/linear_algebra_code/Essay_Algebra_2023.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "374.79 KB"
+        },
+        {
+            "name": "lab07.pdf",
+            "url": "documents/linear_algebra_code/lab07.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "116.04 KB"
+        },
+        {
+            "name": "lab08-09.pdf",
+            "url": "documents/linear_algebra_code/lab08-09.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "211.03 KB"
+        },
+        {
+            "name": "Lab1.pdf",
+            "url": "documents/linear_algebra_code/Lab1.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "112.74 KB"
+        },
+        {
+            "name": "lab10.pdf",
+            "url": "documents/linear_algebra_code/lab10.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "109.62 KB"
+        },
+        {
+            "name": "Lab2_3.pdf",
+            "url": "documents/linear_algebra_code/Lab2_3.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "111.69 KB"
+        },
+        {
+            "name": "Lab4.pdf",
+            "url": "documents/linear_algebra_code/Lab4.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "149.38 KB"
+        },
+        {
+            "name": "Lab5.pdf",
+            "url": "documents/linear_algebra_code/Lab5.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "401.80 KB"
+        },
+        {
+            "name": "Lab6.pdf",
+            "url": "documents/linear_algebra_code/Lab6.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "138.62 KB"
+        },
+        {
+            "name": "Lab9_add.pdf",
+            "url": "documents/linear_algebra_code/Lab9_add.pdf",
+            "type": "pdf",
+            "date": "06/02/2026",
+            "size": "48.99 KB"
+        }
+    ]
+}

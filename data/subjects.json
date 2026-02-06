@@ -7,6 +7,13 @@
     "category": "math_basic"
   },
   {
+    "id": "linear_algebra_python",
+    "name": "Thực hành Đại số tuyến tính với Python",
+    "icon": "ph-code",
+    "description": "Làm quen với tính toán ma trận.",
+    "category": "math_basic"
+  },
+  {
     "id": "calculus_python",
     "name": "Thực hành Giải tích với Python",
     "icon": "ph-code",
@@ -24,7 +31,7 @@
     "id": "computer_organization_lab",
     "name": "Thực hành Tổ chức máy tính",
     "icon": "ph-circuitry",
-    "description": "Tập thiết kế mạch toán nhị phân như là OR, NOR, AND, XOR,... và code assembly.",
+    "description": "Thiết kế mạch toán nhị phân (OR, AND, XOR) và code assembly.",
     "category": "system_network"
   },
   {
@@ -56,6 +63,13 @@
     "category": "programming_algo"
   },
   {
+    "id": "oop_lab",
+    "name": "Thực hành Hướng đối tượng",
+    "icon": "ph-code",
+    "description": "Làm quen với lập trình hướng đối tượng.",
+    "category": "programming_algo"
+  },
+  {
     "id": "dsa",
     "name": "Cấu trúc dữ liệu và giải thuật",
     "icon": "ph-tree-structure",
@@ -67,6 +81,13 @@
     "name": "Nhập môn hệ điều hành",
     "icon": "ph-desktop",
     "description": "Quản lý tiến trình, bộ nhớ, file system và lập trình hệ thống.",
+    "category": "system_network"
+  },
+  {
+    "id": "os_lab",
+    "name": "Thực hành Hệ điều hành",
+    "icon": "ph-terminal-window",
+    "description": "Thực hành lệnh Linux, quản lý tiến trình, file system trên CocalC.",
     "category": "system_network"
   },
   {
