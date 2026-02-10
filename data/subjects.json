@@ -306,5 +306,19 @@
     "icon": "ph-chart-line-up",
     "description": "Phương pháp cải tiến liên tục và tổ chức nơi làm việc hiệu quả.",
     "category": "skills"
+  },
+  {
+    "id": "critical_thinking",
+    "name": "Tư duy phản biện",
+    "icon": "ph-brain",
+    "description": "Kỹ năng phân tích, đánh giá và lập luận logic.",
+    "category": "skills"
+  },
+  {
+    "id": "self_learning",
+    "name": "Kĩ năng tự học",
+    "icon": "ph-book-open",
+    "description": "Phương pháp tự nghiên cứu và học tập suốt đời.",
+    "category": "skills"
   }
 ]

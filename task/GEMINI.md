@@ -26,6 +26,8 @@ We have completed a comprehensive update to the UniDocs application, adding a wi
     -   Added **Thái độ sống 3** (Thai Do Song 3).
     -   Added **Kĩ năng đưa ra quyết định** (Decision Making).
     -   Added **Kĩ năng Kaizen & 5S** (Kaizen & 5S).
+    -   Added **Tư duy phản biện** (Critical Thinking).
+    -   Added **Kĩ năng tự học** (Self-learning).
     -   Organized internship subjects into new **Thực tập** (Internship) category.
 
 ### 2. UI/UX Improvements
@@ -37,6 +39,9 @@ We have completed a comprehensive update to the UniDocs application, adding a wi
     -   **Clickable File List**: Made the entire file row clickable for easier preview access (Desktop & Mobile).
 -   **Notification Feature**:
     -   Added blue notification box for external links (Google Drive) in subject headers.
+
+### 4. Git Operations
+-   Successfully added and pushed all changes to `origin main`.
 
 ### 3. Technical Enhancements
 -   **File Processing**:
