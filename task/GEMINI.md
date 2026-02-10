@@ -21,6 +21,8 @@ We have completed a comprehensive update to the UniDocs application, adding a wi
     -   Added **Aptis ESOL**.
 -   **Skill Review**:
     -   Added **Ôn tập Kĩ năng thực hành chuyên môn** (KNTHCM).
+    -   Added **Thái độ sống 2** (Thai Do Song 2) to new **Skills** category.
+    -   Added **Thái độ sống 1** (Thai Do Song 1).
 
 ### 2. UI/UX Improvements
 -   **Responsive Design**:
@@ -38,6 +40,7 @@ We have completed a comprehensive update to the UniDocs application, adding a wi
     -   Created scripts to **rename files** to remove Vietnamese accents (`rename_files_unsigned.py`) to fix web display issues.
 -   **PDF Rendering**:
     -   Integrated **PDF.js** to fix scrolling issues on iOS devices.
+    -   **Fixed Race Condition**: Implemented `currentRenderId` check to prevent overlapping pages when switching files quickly.
 -   **DOCX Preview**:
     -   Integrated `docx-preview` library.
 

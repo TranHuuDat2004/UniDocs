@@ -271,5 +271,19 @@
     "icon": "ph-check-circle",
     "description": "Tài liệu ôn tập Kĩ năng thực hành chuyên môn.",
     "category": "other"
+  },
+  {
+    "id": "thai_do_song1",
+    "name": "Thái độ sống 1",
+    "icon": "ph-users-three",
+    "description": "Môn học rèn luyện thái độ sống tích cực và kỹ năng mềm (Phần 1).",
+    "category": "skills"
+  },
+  {
+    "id": "thai_do_song2",
+    "name": "Thái độ sống 2",
+    "icon": "ph-users-three",
+    "description": "Môn học rèn luyện thái độ sống tích cực và kỹ năng mềm.",
+    "category": "skills"
   }
 ]

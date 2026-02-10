@@ -1,0 +1,34 @@
+{
+    "id": "thai_do_song1",
+    "name": "Thái độ sống 1",
+    "files": [
+        {
+            "name": "522H0081_TranHuuDat.pdf",
+            "type": "pdf",
+            "url": "documents/Thai_do_song_1/522H0081_TranHuuDat.pdf",
+            "date": "10/02/2026",
+            "size": "2.54 MB"
+        },
+        {
+            "name": "Thai_Do_Song1_Part1.pdf",
+            "type": "pdf",
+            "url": "documents/Thai_do_song_1/Thai_Do_Song1_Part1.pdf",
+            "date": "10/02/2026",
+            "size": "638.25 KB"
+        },
+        {
+            "name": "Thai_Do_Song1_Part2.pdf",
+            "type": "pdf",
+            "url": "documents/Thai_do_song_1/Thai_Do_Song1_Part2.pdf",
+            "date": "10/02/2026",
+            "size": "715.99 KB"
+        },
+        {
+            "name": "Thai_Do_Song1_Part3.pdf",
+            "type": "pdf",
+            "url": "documents/Thai_do_song_1/Thai_Do_Song1_Part3.pdf",
+            "date": "10/02/2026",
+            "size": "728.45 KB"
+        }
+    ]
+}

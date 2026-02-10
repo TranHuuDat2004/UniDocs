@@ -1,0 +1,48 @@
+{
+    "id": "thai_do_song2",
+    "name": "Thái độ sống 2",
+    "files": [
+        {
+            "name": "522H0081_TranHuuDat.pdf",
+            "type": "pdf",
+            "url": "documents/Thai_do_song_2/522H0081_TranHuuDat.pdf",
+            "date": "10/02/2026",
+            "size": "434.48 KB"
+        },
+        {
+            "name": "DaoDuc_24DiemManh.pdf",
+            "type": "pdf",
+            "url": "documents/Thai_do_song_2/DaoDuc_24DiemManh.pdf",
+            "date": "10/02/2026",
+            "size": "424.60 KB"
+        },
+        {
+            "name": "LongBietOn.pdf",
+            "type": "pdf",
+            "url": "documents/Thai_do_song_2/LongBietOn.pdf",
+            "date": "10/02/2026",
+            "size": "317.15 KB"
+        },
+        {
+            "name": "PhongTuc-TapQuan.pdf",
+            "type": "pdf",
+            "url": "documents/Thai_do_song_2/PhongTuc-TapQuan.pdf",
+            "date": "10/02/2026",
+            "size": "202.15 KB"
+        },
+        {
+            "name": "RaQuyetDinh.pdf",
+            "type": "pdf",
+            "url": "documents/Thai_do_song_2/RaQuyetDinh.pdf",
+            "date": "10/02/2026",
+            "size": "387.70 KB"
+        },
+        {
+            "name": "TrachNhiem.pdf",
+            "type": "pdf",
+            "url": "documents/Thai_do_song_2/TrachNhiem.pdf",
+            "date": "10/02/2026",
+            "size": "413.98 KB"
+        }
+    ]
+}

@@ -358,6 +358,7 @@
             "software_db": { name: "CNPM & Cơ sở dữ liệu", icon: "ph-database" },
             "app_dev": { name: "Lập trình Ứng dụng", icon: "ph-device-mobile" },
             "ai": { name: "Trí tuệ nhân tạo", icon: "ph-brain" },
+            "skills": { name: "Tổ bộ môn Kĩ năng", icon: "ph-users-three" },
             "other": { name: "Khác", icon: "ph-dots-three-circle" }
         };
 
@@ -408,7 +409,7 @@
             });
 
             // Order of categories to display
-            const order = ["math_basic", "programming_algo", "system_network", "software_db", "app_dev", "ai", "other"];
+            const order = ["math_basic", "programming_algo", "system_network", "software_db", "app_dev", "ai", "skills", "other"];
 
             // Filter empty categories
             const activeCategories = order.filter(k => grouped[k] && grouped[k].length > 0);

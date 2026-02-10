@@ -275,6 +275,8 @@
 
     <!-- JAVASCRIPT LOGIC -->
     <script>
+        let currentRenderId = 0;
+
         document.addEventListener('DOMContentLoaded', async () => {
             // 1. Lấy ID từ URL (Ví dụ: subject.html?id=web -> lấy được 'web')
             const params = new URLSearchParams(window.location.search);
@@ -547,6 +549,7 @@
 
         // Helper to keep main logic clean (renamed original logic for desktop context)
         async function renderFileContent(file, elements) {
+            const myRenderId = ++currentRenderId;
             const loading = `<div class="flex h-full items-center justify-center text-slate-400 gap-2"><i class="ph ph-spinner animate-spin"></i> Đang tải...</div>`;
 
             if (file.type === 'pdf') {
@@ -563,7 +566,10 @@
                     elements.pdf.style.webkitOverflowScrolling = 'touch';
 
                     for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+                        if (myRenderId !== currentRenderId) return; // Cancel if new render started
+
                         const page = await pdf.getPage(pageNum);
+                        if (myRenderId !== currentRenderId) return;
 
                         // Scale based on container width
                         const viewport = page.getViewport({ scale: 1.5 });
@@ -580,6 +586,8 @@
                         };
 
                         await page.render(renderContext).promise;
+                        if (myRenderId !== currentRenderId) return;
+
                         elements.pdf.appendChild(canvas);
                     }
                 } catch (error) {
