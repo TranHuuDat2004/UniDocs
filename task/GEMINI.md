@@ -23,6 +23,10 @@ We have completed a comprehensive update to the UniDocs application, adding a wi
     -   Added **Ôn tập Kĩ năng thực hành chuyên môn** (KNTHCM).
     -   Added **Thái độ sống 2** (Thai Do Song 2) to new **Skills** category.
     -   Added **Thái độ sống 1** (Thai Do Song 1).
+    -   Added **Thái độ sống 3** (Thai Do Song 3).
+    -   Added **Kĩ năng đưa ra quyết định** (Decision Making).
+    -   Added **Kĩ năng Kaizen & 5S** (Kaizen & 5S).
+    -   Organized internship subjects into new **Thực tập** (Internship) category.
 
 ### 2. UI/UX Improvements
 -   **Responsive Design**:

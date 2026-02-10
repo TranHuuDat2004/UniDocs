@@ -242,21 +242,21 @@
     "name": "Cẩm nang thực tập",
     "icon": "ph-briefcase",
     "description": "Tài liệu hướng dẫn, quy trình và biểu mẫu thực tập cho sinh viên.",
-    "category": "other"
+    "category": "intern"
   },
   {
     "id": "tsnn",
     "name": "Tập sự nghề nghiệp",
     "icon": "ph-briefcase",
     "description": "Biểu mẫu và hướng dẫn cho môn Tập sự nghề nghiệp.",
-    "category": "other"
+    "category": "intern"
   },
   {
     "id": "ktcn",
     "name": "Kiến tập công nghiệp",
     "icon": "ph-factory",
     "description": "Biểu mẫu và hướng dẫn cho môn Kiến tập công nghiệp.",
-    "category": "other"
+    "category": "intern"
   },
   {
     "id": "aptis",
@@ -270,20 +270,41 @@
     "name": "Ôn tập KNTHCM",
     "icon": "ph-check-circle",
     "description": "Tài liệu ôn tập Kĩ năng thực hành chuyên môn.",
-    "category": "other"
+    "category": "intern"
   },
   {
     "id": "thai_do_song1",
     "name": "Thái độ sống 1",
     "icon": "ph-users-three",
-    "description": "Môn học rèn luyện thái độ sống tích cực và kỹ năng mềm (Phần 1).",
+    "description": "Môn học rèn luyện thái độ sống tích cực và kỹ năng mềm với gia đình.",
     "category": "skills"
   },
   {
     "id": "thai_do_song2",
     "name": "Thái độ sống 2",
     "icon": "ph-users-three",
-    "description": "Môn học rèn luyện thái độ sống tích cực và kỹ năng mềm.",
+    "description": "Môn học rèn luyện thái độ sống tích cực và kỹ năng mềm trong môi trường đại học.",
+    "category": "skills"
+  },
+  {
+    "id": "thai_do_song3",
+    "name": "Thái độ sống 3",
+    "icon": "ph-users-three",
+    "description": "Môn học rèn luyện kỹ năng mềm trong môi trường doanh nghiệp.",
+    "category": "skills"
+  },
+  {
+    "id": "decision_making",
+    "name": "Kĩ năng đưa ra quyết định",
+    "icon": "ph-scales",
+    "description": "Kỹ năng phân tích, đánh giá và lựa chọn giải pháp tối ưu.",
+    "category": "skills"
+  },
+  {
+    "id": "kaizen_5s",
+    "name": "Kĩ năng Kaizen & 5S",
+    "icon": "ph-chart-line-up",
+    "description": "Phương pháp cải tiến liên tục và tổ chức nơi làm việc hiệu quả.",
     "category": "skills"
   }
 ]

@@ -1,0 +1,27 @@
+{
+    "id": "thai_do_song3",
+    "name": "Thái độ sống 3",
+    "files": [
+        {
+            "name": "Báo cáo kết quả rèn luyện tại nhà.pdf",
+            "type": "pdf",
+            "url": "documents/Thai_do_song_3/TDS3.BC. BAO CAO KET QUA REN LUYEN TAI NHA.pdf",
+            "date": "10/02/2026",
+            "size": "416.73 KB"
+        },
+        {
+            "name": "Báo cáo nhóm.pdf",
+            "type": "pdf",
+            "url": "documents/Thai_do_song_3/bao_cao_nhom.pdf",
+            "date": "10/02/2026",
+            "size": "178.72 KB"
+        },
+        {
+            "name": "Hướng dẫn thực hiện (hdtn).pdf",
+            "type": "pdf",
+            "url": "documents/Thai_do_song_3/hdtn.pdf",
+            "date": "10/02/2026",
+            "size": "731.45 KB"
+        }
+    ]
+}

@@ -52,14 +52,23 @@
             animation: fadeInUp 0.4s ease-out forwards;
         }
 
-        /* Hide Scrollbar for tabs */
-        .scrollbar-hide::-webkit-scrollbar {
-            display: none;
+        /* Custom Scrollbar for tabs */
+        .custom-scrollbar::-webkit-scrollbar {
+            height: 6px;
         }
 
-        .scrollbar-hide {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 4px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 4px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background-color: #94a3b8;
         }
     </style>
 </head>
@@ -201,7 +210,7 @@
         </div>
 
         <!-- TABS CONTAINER -->
-        <div id="categoryTabs" class="flex overflow-x-auto gap-2 mb-8 pb-2 border-b border-slate-200 scrollbar-hide">
+        <div id="categoryTabs" class="flex overflow-x-auto gap-2 mb-8 pb-4 border-b border-slate-200 custom-scrollbar">
             <!-- Tabs will be injected here -->
         </div>
 
@@ -355,10 +364,11 @@
             "math_basic": { name: "Toán & Cơ sở ngành", icon: "ph-function" },
             "programming_algo": { name: "Lập trình & Thuật toán", icon: "ph-code" },
             "system_network": { name: "Hệ thống & Mạng", icon: "ph-cpu" },
-            "software_db": { name: "CNPM & Cơ sở dữ liệu", icon: "ph-database" },
+            "software_db": { name: "Phần Mềm & Cơ sở dữ liệu", icon: "ph-database" },
             "app_dev": { name: "Lập trình Ứng dụng", icon: "ph-device-mobile" },
             "ai": { name: "Trí tuệ nhân tạo", icon: "ph-brain" },
             "skills": { name: "Tổ bộ môn Kĩ năng", icon: "ph-users-three" },
+            "intern": { name: "Thực tập", icon: "ph-buildings" },
             "other": { name: "Khác", icon: "ph-dots-three-circle" }
         };
 
@@ -409,7 +419,7 @@
             });
 
             // Order of categories to display
-            const order = ["math_basic", "programming_algo", "system_network", "software_db", "app_dev", "ai", "skills", "other"];
+            const order = ["math_basic", "programming_algo", "system_network", "software_db", "app_dev", "ai", "skills", "intern", "other"];
 
             // Filter empty categories
             const activeCategories = order.filter(k => grouped[k] && grouped[k].length > 0);
