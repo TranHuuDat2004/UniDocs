@@ -363,13 +363,17 @@
                 <div>
                     <h4 class="font-bold text-slate-800 mb-6 font-semibold">Danh mục nổi bật</h4>
                     <ul class="space-y-4 text-sm text-slate-600 font-medium tracking-wide">
-                        <li><a href="#subjects" class="hover:text-indigo-600 transition flex items-center gap-3"><i
+                        <li><a id="footer-link-programming_algo" href="#subjects"
+                                class="hover:text-indigo-600 transition flex items-center gap-3"><i
                                     class="ph-fill ph-code text-slate-800 text-lg"></i> Lập trình & Thuật toán</a></li>
-                        <li><a href="#subjects" class="hover:text-indigo-600 transition flex items-center gap-3"><i
+                        <li><a id="footer-link-system_network" href="#subjects"
+                                class="hover:text-indigo-600 transition flex items-center gap-3"><i
                                     class="ph-fill ph-cpu text-slate-800 text-lg"></i> Hệ thống & Mạng</a></li>
-                        <li><a href="#subjects" class="hover:text-indigo-600 transition flex items-center gap-3"><i
+                        <li><a id="footer-link-math_basic" href="#subjects"
+                                class="hover:text-indigo-600 transition flex items-center gap-3"><i
                                     class="ph-fill ph-function text-slate-800 text-lg"></i> Toán & Cơ sở ngành</a></li>
-                        <li><a href="#subjects" class="hover:text-indigo-600 transition flex items-center gap-3"><i
+                        <li><a id="footer-link-skills" href="#subjects"
+                                class="hover:text-indigo-600 transition flex items-center gap-3"><i
                                     class="ph-fill ph-users-three text-slate-800 text-lg"></i> Kĩ năng & Bổ trợ</a></li>
                     </ul>
                 </div>
@@ -379,12 +383,14 @@
                     <h4 class="font-bold text-slate-800 mb-6 font-semibold">Thông tin</h4>
                     <ul class="space-y-4 text-sm text-slate-600 font-medium tracking-wide">
                         <li class="flex items-center gap-3"><i class="ph-fill ph-user text-indigo-500 text-xl"></i>
-                            <span><strong>Triển khai phần mềm: </strong>Trần Hữu Đạt</span></li>
+                            <span><strong>Triển khai phần mềm: </strong>Trần Hữu Đạt</span>
+                        </li>
                         <li class="flex items-center gap-3"><i
                                 class="ph-fill ph-chalkboard-teacher text-indigo-500 text-xl"></i> <span><strong>Nguồn
-                                    tài liệu: </strong>Cộng đồng chia sẻ</span></li>
+                                    tài liệu: </strong>Sinh viên TDTU & Tham khảo</span></li>
                         <li class="flex items-center gap-3"><i class="ph-fill ph-columns text-indigo-500 text-xl"></i>
-                            <span><strong>Cập nhật tài liệu: </strong>Liên tục</span></li>
+                            <span><strong>Cập nhật tài liệu: </strong>Liên tục</span>
+                        </li>
                         <li class="flex items-center gap-3"><i
                                 class="ph-fill ph-git-branch text-indigo-500 text-xl"></i> <span><strong>Phiên bản mới
                                     nhất: </strong>
@@ -488,6 +494,15 @@
                 const cat = sub.category || 'other';
                 if (!grouped[cat]) grouped[cat] = [];
                 grouped[cat].push(sub);
+            });
+
+            // Update footer links to point to the first subject of each category
+            const footerCats = ['programming_algo', 'system_network', 'math_basic', 'skills'];
+            footerCats.forEach(cat => {
+                const linkEl = document.getElementById(`footer-link-${cat}`);
+                if (linkEl && grouped[cat] && grouped[cat].length > 0) {
+                    linkEl.href = `subject.html?id=${grouped[cat][0].id}`;
+                }
             });
 
             // Order of categories to display
