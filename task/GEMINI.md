@@ -43,7 +43,7 @@ We have completed a comprehensive update to the UniDocs application, adding a wi
 ### 4. Git Operations
 -   Successfully added and pushed all changes to `origin main`.
 -   Pushed Critical Thinking and Self-learning subjects (PDF format).
--   Pushed additional files for Thái độ sống 3 and Kaizen & 5S.
+-   Pushed additional files for Thái độ sống 3, Kaizen & 5S, and Kĩ năng đưa ra quyết định.
 
 ### 3. Technical Enhancements
 -   **File Processing**:

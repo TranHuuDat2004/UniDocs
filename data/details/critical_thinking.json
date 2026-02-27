@@ -8,6 +8,34 @@
             "url": "documents/Tu_duy_phan_bien/L00046_522H0081_TranHuuDat.pdf",
             "date": "10/02/2026",
             "size": "220.34 KB"
+        },
+        {
+            "name": "Giới thiệu tư duy phản biện.pdf",
+            "type": "pdf",
+            "url": "documents/Tu_duy_phan_bien/gioi-thieu.pdf",
+            "date": "27/02/2026",
+            "size": "706.27 KB"
+        },
+        {
+            "name": "Phát triển kĩ năng.pdf",
+            "type": "pdf",
+            "url": "documents/Tu_duy_phan_bien/phat-trien-ki-nang.pdf",
+            "date": "27/02/2026",
+            "size": "2.80 MB"
+        },
+        {
+            "name": "Thực hành.pdf",
+            "type": "pdf",
+            "url": "documents/Tu_duy_phan_bien/thuc-hanh.pdf",
+            "date": "27/02/2026",
+            "size": "5.05 MB"
+        },
+        {
+            "name": "Tổng quan tư duy phản biện.pdf",
+            "type": "pdf",
+            "url": "documents/Tu_duy_phan_bien/tong-quan.pdf",
+            "date": "27/02/2026",
+            "size": "1.75 MB"
         }
     ]
 }
