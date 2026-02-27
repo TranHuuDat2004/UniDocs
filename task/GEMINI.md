@@ -24,7 +24,7 @@ We have completed a comprehensive update to the UniDocs application, adding a wi
     -   Added **Thái độ sống 2** (Thai Do Song 2) to new **Skills** category.
     -   Added **Thái độ sống 1** (Thai Do Song 1).
     -   Added **Thái độ sống 3** (Thai Do Song 3) and updated with 5 new documents.
-    -   Added **Kĩ năng đưa ra quyết định** (Decision Making).
+    -   Added **Kĩ năng đưa ra quyết định** (Decision Making) and updated with 4 new documents.
     -   Added **Kĩ năng Kaizen & 5S** (Kaizen & 5S) and updated with 4 new documents.
     -   Added **Tư duy phản biện** (Critical Thinking).
     -   Added **Kĩ năng tự học** (Self-learning).
@@ -42,6 +42,8 @@ We have completed a comprehensive update to the UniDocs application, adding a wi
 
 ### 4. Git Operations
 -   Successfully added and pushed all changes to `origin main`.
+-   Pushed Critical Thinking and Self-learning subjects (PDF format).
+-   Pushed additional files for Thái độ sống 3 and Kaizen & 5S.
 
 ### 3. Technical Enhancements
 -   **File Processing**:
