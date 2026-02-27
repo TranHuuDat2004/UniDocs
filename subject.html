@@ -309,33 +309,150 @@
             }
         }
 
+        // --- CATEGORY CONFIG ---
+        const CATEGORIES = {
+            "math_basic": { name: "Toán & Cơ sở ngành", icon: "ph-function" },
+            "programming_algo": { name: "Lập trình & Thuật toán", icon: "ph-code" },
+            "system_network": { name: "Hệ thống & Mạng", icon: "ph-cpu" },
+            "software_db": { name: "Phần Mềm & Cơ sở dữ liệu", icon: "ph-database" },
+            "app_dev": { name: "Lập trình Ứng dụng", icon: "ph-device-mobile" },
+            "ai": { name: "Trí tuệ nhân tạo", icon: "ph-brain" },
+            "skills": { name: "Tổ bộ môn Kĩ năng", icon: "ph-users-three" },
+            "intern": { name: "Thực tập", icon: "ph-buildings" },
+            "other": { name: "Khác", icon: "ph-dots-three-circle" }
+        };
+
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            const icon = document.getElementById('icon-' + id);
+
+            let openCats = JSON.parse(sessionStorage.getItem('openCategories') || '[]');
+
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                setTimeout(() => {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    content.style.opacity = "1";
+                    icon.classList.add('rotate-180');
+                }, 10);
+
+                if (!openCats.includes(id)) {
+                    openCats.push(id);
+                    sessionStorage.setItem('openCategories', JSON.stringify(openCats));
+                }
+            } else {
+                content.style.maxHeight = "0px";
+                content.style.opacity = "0";
+                icon.classList.remove('rotate-180');
+                setTimeout(() => {
+                    content.classList.add('hidden');
+                }, 300); // 300ms matches Tailwind's duration-300
+
+                openCats = openCats.filter(catId => catId !== id);
+                sessionStorage.setItem('openCategories', JSON.stringify(openCats));
+            }
+        }
+
         // --- LOAD SIDEBAR ---
         async function loadSidebar(activeId) {
             try {
-                // Tải file subjects.json nhẹ hều
+                // Tải file subjects.json
                 const res = await fetch('data/subjects.json');
                 const subjects = await res.json();
 
                 const container = document.getElementById('sidebarList');
                 container.innerHTML = '';
+                container.className = "flex flex-col gap-2"; // Remove space-y-1 padding
 
+                // Nhóm theo category
+                const grouped = {};
                 subjects.forEach(sub => {
-                    const isActive = sub.id === activeId;
-                    // Chú ý: href trỏ về chính file này nhưng đổi tham số ?id=...
-                    const link = document.createElement('a');
-                    link.href = `subject.html?id=${sub.id}`;
-                    link.className = `flex items-center gap-3 px-4 py-3 rounded-xl transition mb-1 ${isActive ? 'bg-indigo-50 text-indigo-700 font-semibold' : 'text-slate-500 hover:bg-slate-50'}`;
-                    // Close sidebar on mobile when clicked
-                    link.onclick = (e) => {
-                        if (window.innerWidth < 768) {
-                            toggleSidebar();
-                        }
-                    };
-                    link.innerHTML = `
-                        <i class="${sub.icon || 'ph-folder'} text-lg"></i>
-                        <span class="truncate">${sub.name}</span>
+                    const cat = sub.category || 'other';
+                    if (!grouped[cat]) grouped[cat] = [];
+                    grouped[cat].push(sub);
+                });
+
+                const order = ["math_basic", "programming_algo", "system_network", "software_db", "app_dev", "ai", "skills", "intern", "other"];
+                const activeCategories = order.filter(k => grouped[k] && grouped[k].length > 0);
+
+                let categoryToOpen = null;
+
+                activeCategories.forEach((catKey) => {
+                    const subs = grouped[catKey];
+                    const catInfo = CATEGORIES[catKey] || CATEGORIES['other'];
+
+                    const hasActiveChild = subs.some(sub => sub.id === activeId);
+                    if (hasActiveChild) {
+                        categoryToOpen = `cat-${catKey}`;
+                    }
+
+                    const wrapper = document.createElement('div');
+                    wrapper.className = "flex flex-col";
+
+                    wrapper.innerHTML = `
+                        <button onclick="toggleAccordion('cat-${catKey}')" class="w-full flex items-center justify-between px-4 py-2.5 ${hasActiveChild ? 'bg-indigo-50 text-indigo-700' : 'bg-transparent hover:bg-slate-100 text-slate-700'} rounded-xl transition font-semibold">
+                            <div class="flex items-center gap-3">
+                                <i class="ph-bold ${catInfo.icon} ${hasActiveChild ? 'text-indigo-600' : 'text-slate-500'} text-lg"></i> 
+                                <span class="text-sm truncate">${catInfo.name}</span>
+                            </div>
+                            <i id="icon-cat-${catKey}" class="ph-bold ph-caret-down text-slate-400 transition-transform duration-300"></i>
+                        </button>
+                        <div id="cat-${catKey}" class="hidden overflow-hidden transition-all duration-300" style="max-height: 0px; opacity: 0;">
+                            <div class="pl-2 pr-1 py-1 mt-1 space-y-1"></div>
+                        </div>
                     `;
-                    container.appendChild(link);
+
+                    const linksContainer = wrapper.querySelector(`#cat-${catKey} > div`);
+
+                    subs.forEach(sub => {
+                        const isActive = sub.id === activeId;
+                        const link = document.createElement('a');
+                        link.href = `subject.html?id=${sub.id}`;
+                        link.className = `flex items-center gap-3 px-3 py-2 rounded-lg transition text-sm ${isActive ? 'bg-indigo-100/50 text-indigo-700 font-bold ml-1' : 'text-slate-500 hover:bg-slate-100 hover:text-slate-800 ml-1 border-l-2 border-transparent hover:border-indigo-300'}`;
+                        if (isActive) {
+                            link.style.borderLeft = "2px solid #4f46e5";
+                        }
+
+                        link.onclick = (e) => {
+                            if (window.innerWidth < 1400) {
+                                toggleSidebar();
+                            }
+                        };
+                        link.innerHTML = `
+                            <i class="${sub.icon || 'ph-folder'} text-lg ${isActive ? 'text-indigo-600' : 'text-slate-400'}"></i>
+                            <span class="truncate">${sub.name}</span>
+                        `;
+                        linksContainer.appendChild(link);
+                    });
+
+                    container.appendChild(wrapper);
+                });
+
+                // Mở category chứa activeId hoặc category đầu tiên
+                const targetCat = categoryToOpen || (activeCategories.length > 0 ? `cat-${activeCategories[0]}` : null);
+
+                let openCats = JSON.parse(sessionStorage.getItem('openCategories') || 'null');
+
+                if (!openCats) {
+                    openCats = targetCat ? [targetCat] : [];
+                    sessionStorage.setItem('openCategories', JSON.stringify(openCats));
+                } else if (targetCat && !openCats.includes(targetCat)) {
+                    // Đảm bảo category đang active luôn mở
+                    openCats.push(targetCat);
+                    sessionStorage.setItem('openCategories', JSON.stringify(openCats));
+                }
+
+                openCats.forEach(catId => {
+                    const content = document.getElementById(catId);
+                    const icon = document.getElementById('icon-' + catId);
+                    if (content) {
+                        content.classList.remove('hidden');
+                        setTimeout(() => {
+                            content.style.maxHeight = content.scrollHeight + "px";
+                            content.style.opacity = "1";
+                            icon.classList.add('rotate-180');
+                        }, 50);
+                    }
                 });
 
                 // Restore scroll position
@@ -392,12 +509,12 @@
                     const alert = document.createElement('div');
                     alert.className = "mb-4 p-4 bg-amber-50 border border-amber-200 rounded-lg text-sm text-amber-800 flex gap-3";
                     alert.innerHTML = `
-                         <i class="ph-fill ph-warning-circle text-lg shrink-0 mt-0.5"></i>
-                         <div>
-                             <strong>Lưu ý:</strong> Đây là biểu mẫu áp dụng cho <br><strong>HK2/2025-2026</strong>. <br/>
-                             Các học kỳ khác vui lòng chỉ tham khảo, biểu mẫu có thể thay đổi tùy theo quy định của Khoa tại từng thời điểm.
-                         </div>
-                     `;
+                    <i class="ph-fill ph-warning-circle text-lg shrink-0 mt-0.5"></i>
+                        <div>
+                            <strong>Lưu ý:</strong> Đây là biểu mẫu áp dụng cho <br><strong>HK2/2025-2026</strong>. <br />
+                                Các học kỳ khác vui lòng chỉ tham khảo, biểu mẫu có thể thay đổi tùy theo quy định của Khoa tại từng thời điểm.
+                        </div>
+                `;
                     list.appendChild(alert);
                 }
 
@@ -406,9 +523,9 @@
                     const note = document.createElement('div');
                     note.className = "mb-4 p-4 bg-indigo-50 border border-indigo-200 rounded-lg text-sm text-indigo-800 flex gap-3";
                     note.innerHTML = `
-                         <i class="ph-fill ph-info text-lg shrink-0 mt-0.5"></i>
-                         <div>${data.noteHtml}</div>
-                     `;
+                    <i class="ph-fill ph-info text-lg shrink-0 mt-0.5"></i>
+                        <div>${data.noteHtml}</div>
+                `;
                     list.appendChild(note);
                 }
 
@@ -430,7 +547,7 @@
                     el.onclick = (e) => previewFile(window.currentSubjectFiles[index]);
 
                     el.innerHTML = `
-                        <div class="flex items-center gap-3 overflow-hidden">
+                    <div class="flex items-center gap-3 overflow-hidden">
                             <div class="w-10 h-10 rounded-lg ${icon.bg} ${icon.text} flex items-center justify-center shrink-0">
                                 <i class="${icon.class} text-xl"></i>
                             </div>
@@ -439,16 +556,16 @@
                                 <span class="text-xs text-slate-400"><span id="${sizeId}">${file.size || 'Checking...'}</span> - ${file.date || ''}</span>
                             </div>
                         </div>
-                        <div class="flex items-center gap-2">
+                    <div class="flex items-center gap-2">
                              <!-- Preview Button (Popup) - Visible on small screens -->
-                             <button onclick="event.stopPropagation(); openDocModal(window.currentSubjectFiles[${index}])" class="min-[1300px]:hidden p-2 text-slate-400 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition" title="Xem trước">
-                                <i class="ph-bold ph-eye text-lg"></i>
-                            </button>
-                             <a href="${file.url}" download onclick="event.stopPropagation()" class="p-2 text-slate-400 hover:bg-slate-100 hover:text-slate-600 rounded-lg transition" title="Tải xuống">
-                                <i class="ph-bold ph-download-simple text-lg"></i>
-                            </a>
-                        </div>
-                    `;
+                        <button onclick="event.stopPropagation(); openDocModal(window.currentSubjectFiles[${index}])" class="min-[1300px]:hidden p-2 text-slate-400 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition" title="Xem trước">
+                            <i class="ph-bold ph-eye text-lg"></i>
+                        </button>
+                        <a href="${file.url}" download onclick="event.stopPropagation()" class="p-2 text-slate-400 hover:bg-slate-100 hover:text-slate-600 rounded-lg transition" title="Tải xuống">
+                            <i class="ph-bold ph-download-simple text-lg"></i>
+                        </a>
+                    </div>
+                `;
                     list.appendChild(el);
 
                     // --- TỰ ĐỘNG LẤY SIZE ---
@@ -522,7 +639,7 @@
 
             document.getElementById('modalFileName').innerText = file.name;
             document.getElementById('modalDownloadBtn').href = file.url;
-            document.getElementById('modalFileIcon').className = `ph-fill ${getIcon(file.type)} text-lg`;
+            document.getElementById('modalFileIcon').className = `ph - fill ${getIcon(file.type)} text - lg`;
 
             content.innerHTML = ''; // Clear previous content
 
@@ -593,7 +710,7 @@
                 } catch (error) {
                     console.error('PDF Render Error:', error);
                     elements.pdf.innerHTML = `
-                        <div class="flex flex-col items-center justify-center h-full text-slate-500">
+                    <div class="flex flex-col items-center justify-center h-full text-slate-500">
                             <i class="ph-duotone ph-warning-circle text-4xl mb-2"></i>
                             <p>Không thể xem trước file này.</p>
                             <a href="${file.url}" class="text-indigo-600 hover:underline mt-2">Tải xuống để xem</a>
@@ -707,9 +824,9 @@
                         const blob = await response.blob();
                         folder.file(file.name, blob);
                     } catch (e) {
-                        console.error(`Lỗi tải file ${file.name}:`, e);
+                        console.error(`Lỗi tải file ${file.name}: `, e);
                         // Optional: Write an error log file in the zip
-                        folder.file(`ERROR_${file.name}.txt`, `Không thể tải file này: ${e.message}`);
+                        folder.file(`ERROR_${file.name}.txt`, `Không thể tải file này: ${e.message} `);
                     }
                 };
 
