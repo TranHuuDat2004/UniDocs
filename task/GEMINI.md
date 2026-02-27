@@ -25,7 +25,7 @@ We have completed a comprehensive update to the UniDocs application, adding a wi
     -   Added **Thái độ sống 1** (Thai Do Song 1).
     -   Added **Thái độ sống 3** (Thai Do Song 3) and updated with 5 new documents.
     -   Added **Kĩ năng đưa ra quyết định** (Decision Making).
-    -   Added **Kĩ năng Kaizen & 5S** (Kaizen & 5S).
+    -   Added **Kĩ năng Kaizen & 5S** (Kaizen & 5S) and updated with 4 new documents.
     -   Added **Tư duy phản biện** (Critical Thinking).
     -   Added **Kĩ năng tự học** (Self-learning).
     -   Organized internship subjects into new **Thực tập** (Internship) category.

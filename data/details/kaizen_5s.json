@@ -22,6 +22,34 @@
             "url": "documents/Kaizen_5S/TIEU CHI DANH GIA.pdf",
             "date": "10/02/2026",
             "size": "134.74 KB"
+        },
+        {
+            "name": "Giới thiệu 5S.pdf",
+            "type": "pdf",
+            "url": "documents/Kaizen_5S/gioi-thieu.pdf",
+            "date": "27/02/2026",
+            "size": "2.83 MB"
+        },
+        {
+            "name": "Khái niệm 5S.pdf",
+            "type": "pdf",
+            "url": "documents/Kaizen_5S/khai-niem.pdf",
+            "date": "27/02/2026",
+            "size": "1.03 MB"
+        },
+        {
+            "name": "Thực hiện 5S.pdf",
+            "type": "pdf",
+            "url": "documents/Kaizen_5S/thuc-hieen-5S.pdf",
+            "date": "27/02/2026",
+            "size": "2.34 MB"
+        },
+        {
+            "name": "Tổng quan 5S.pdf",
+            "type": "pdf",
+            "url": "documents/Kaizen_5S/tong-quan-5s.pdf",
+            "date": "27/02/2026",
+            "size": "2.97 MB"
         }
     ]
 }
