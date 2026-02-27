@@ -23,7 +23,7 @@ We have completed a comprehensive update to the UniDocs application, adding a wi
     -   Added **Ôn tập Kĩ năng thực hành chuyên môn** (KNTHCM).
     -   Added **Thái độ sống 2** (Thai Do Song 2) to new **Skills** category.
     -   Added **Thái độ sống 1** (Thai Do Song 1).
-    -   Added **Thái độ sống 3** (Thai Do Song 3).
+    -   Added **Thái độ sống 3** (Thai Do Song 3) and updated with 5 new documents.
     -   Added **Kĩ năng đưa ra quyết định** (Decision Making).
     -   Added **Kĩ năng Kaizen & 5S** (Kaizen & 5S).
     -   Added **Tư duy phản biện** (Critical Thinking).
