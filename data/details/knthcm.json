@@ -57,6 +57,21 @@
             "type": "pdf",
             "date": "20/03/2026",
             "size": "191.62 KB"
+        },
+        {
+            "name": "File thực hành chia Header-Footer.docx",
+            "url": "documents/KNTHCM/FileThucHanhChiaHeaderFooter.docx",
+            "type": "docx",
+            "date": "23/03/2026",
+            "size": "119.10 KB",
+            "description": "Tài liệu hỗ trợ thực hành câu 2 (Đề ôn 2023-2024). Lưu ý: Để tránh tình trạng hiển thị sai định dạng trên trình duyệt, bạn vui lòng tải file về máy. Khuyến nghị xem kèm file 'Hướng dẫn tạo Header-Footer chuẩn TDTU.pdf' để đạt kết quả thực hành tốt nhất nhé!"
+        },
+        {
+            "name": "Hướng dẫn tạo Header-Footer chuẩn TDTU.pdf",
+            "url": "documents/KNTHCM/HuongDanTaoHeaderFooterChuanTDTU.pdf",
+            "type": "pdf",
+            "date": "23/03/2026",
+            "size": "192.94 KB"
         }
     ]
 }

@@ -554,6 +554,7 @@
                             <div class="flex flex-col min-w-0">
                                 <span class="font-medium text-slate-700 truncate text-sm">${file.name}</span>
                                 <span class="text-xs text-slate-400"><span id="${sizeId}">${file.size || 'Checking...'}</span> - ${file.date || ''}</span>
+                                ${file.description ? `<span class="text-[11px] text-amber-600 mt-1 leading-relaxed bg-amber-50/50 p-1.5 rounded-lg border border-amber-100/50"><i class="ph-bold ph-info mr-1"></i>${file.description}</span>` : ''}
                             </div>
                         </div>
                     <div class="flex items-center gap-2">
