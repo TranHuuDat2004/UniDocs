@@ -72,6 +72,27 @@
             "type": "pdf",
             "date": "23/03/2026",
             "size": "192.94 KB"
+        },
+        {
+            "name": "MYTDTU.pdf",
+            "url": "documents/KNTHCM/MYTDTU.pdf",
+            "type": "pdf",
+            "date": "24/03/2026",
+            "size": "327.23 KB"
+        },
+        {
+            "name": "MYTDTU.pptx",
+            "url": "documents/KNTHCM/MYTDTU.pptx",
+            "type": "ppt",
+            "date": "24/03/2026",
+            "size": "124.80 KB"
+        },
+        {
+            "name": "Thực hành chia Header-Footer PPTX.pdf",
+            "url": "documents/KNTHCM/ThucHanhChiaHeaderFooterPPTX.pdf",
+            "type": "pdf",
+            "date": "24/03/2026",
+            "size": "188.01 KB"
         }
     ]
 }
