@@ -95,6 +95,11 @@
                     <h3 id="modalFileName" class="font-semibold text-slate-800 truncate">Filename.pdf</h3>
                 </div>
                 <div class="flex items-center gap-2 shrink-0">
+                    <a id="modalReaderModeBtn" href="#" target="_blank"
+                        class="hidden p-2 text-indigo-500 hover:text-indigo-600 hover:bg-indigo-50 rounded-lg transition"
+                        title="Chế độ đọc sách">
+                        <i class="ph-bold ph-book-open text-xl"></i>
+                    </a>
                     <a id="modalDownloadBtn" href="#"
                         class="p-2 text-slate-500 hover:text-indigo-600 hover:bg-indigo-50 rounded-lg transition"
                         title="Tải xuống">
@@ -210,7 +215,13 @@
                         </button>
                         <span id="previewName" class="font-medium text-sm truncate max-w-xs">Filename</span>
                         <div class="flex gap-2">
-                            <a id="downloadBtn" href="#" class="p-2 hover:bg-slate-100 rounded"><i
+                            <a id="readerModeBtn" href="#" target="_blank"
+                                class="hidden p-2 hover:bg-slate-100 text-indigo-600 rounded transition flex items-center gap-2"
+                                title="Chế độ đọc sách">
+                                <i class="ph ph-book-open text-lg"></i>
+                                <span class="text-xs font-semibold hidden lg:inline">Chế độ đọc</span>
+                            </a>
+                            <a id="downloadBtn" href="#" class="p-2 hover:bg-slate-100 rounded text-slate-500"><i
                                     class="ph ph-download-simple"></i></a>
                             <button onclick="closePreview()" class="p-2 hover:bg-red-50 text-red-500 rounded"><i
                                     class="ph ph-x"></i></button>
@@ -614,6 +625,18 @@
                 document.getElementById('previewName').innerText = file.name;
                 document.getElementById('downloadBtn').href = file.url;
 
+                // Reader Mode button logic
+                const readerBtn = document.getElementById('readerModeBtn');
+                const params = new URLSearchParams(window.location.search);
+                const subjectId = params.get('id');
+
+                if (file.type === 'pdf') {
+                    readerBtn.classList.remove('hidden');
+                    readerBtn.href = `reader.html?file=${encodeURIComponent(file.url)}${subjectId ? `&id=${subjectId}` : ''}`;
+                } else {
+                    readerBtn.classList.add('hidden');
+                }
+
                 // Clear and Render
                 ['pdfFrame', 'docxFrame', 'excelFrame', 'pptFrame'].forEach(id => {
                     const el = document.getElementById(id);
@@ -640,7 +663,19 @@
 
             document.getElementById('modalFileName').innerText = file.name;
             document.getElementById('modalDownloadBtn').href = file.url;
-            document.getElementById('modalFileIcon').className = `ph - fill ${getIcon(file.type)} text - lg`;
+            document.getElementById('modalFileIcon').className = `ph-fill ${getIcon(file.type).class} text-lg`;
+
+            // Modal Reader Mode button
+            const modalReaderBtn = document.getElementById('modalReaderModeBtn');
+            const paramsModal = new URLSearchParams(window.location.search);
+            const subjectIdModal = paramsModal.get('id');
+
+            if (file.type === 'pdf') {
+                modalReaderBtn.classList.remove('hidden');
+                modalReaderBtn.href = `reader.html?file=${encodeURIComponent(file.url)}${subjectIdModal ? `&id=${subjectIdModal}` : ''}`;
+            } else {
+                modalReaderBtn.classList.add('hidden');
+            }
 
             content.innerHTML = ''; // Clear previous content
 
