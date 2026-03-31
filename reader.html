@@ -32,13 +32,41 @@
         .flip-book {
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
             margin: auto;
-            visibility: hidden; /* Hidden until loaded */
+            visibility: hidden;
+            /* Hidden until loaded */
         }
 
         .page {
             background-color: white;
             overflow: hidden;
         }
+
+        /* Spine Shadow Effect */
+        .page::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 8%;
+            pointer-events: none;
+            z-index: 5;
+            opacity: 0.8;
+        }
+
+        /* Mình đã tinh chỉnh lại bóng gáy sách dựa trên thông số của TDTU */
+        .page-left::after {
+            right: 0;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 70%, rgba(0, 0, 0, 0.2) 100%);
+            width: 60px;
+            /* Độ rộng bóng đổ gáy */
+        }
+
+        .page-right::after {
+            left: 0;
+            background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 70%, rgba(0, 0, 0, 0.2) 100%);
+            width: 60px;
+        }
+
 
         .page-content {
             width: 100%;
@@ -146,14 +174,16 @@
     <div class="reader-container">
         <!-- Exit -->
         <div class="exit-btn">
-            <button onclick="closeReader();" class="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full text-white transition backdrop-blur-sm border border-white/10">
+            <button onclick="closeReader();"
+                class="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full text-white transition backdrop-blur-sm border border-white/10">
                 <i class="ph ph-arrow-left"></i> Thoát
             </button>
         </div>
 
         <!-- Loader -->
         <div id="loader" class="loader-overlay">
-            <div class="w-16 h-16 bg-indigo-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-indigo-500/20 mb-6 animate-bounce">
+            <div
+                class="w-16 h-16 bg-indigo-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-indigo-500/20 mb-6 animate-bounce">
                 <i class="ph-fill ph-book-open text-3xl"></i>
             </div>
             <h2 class="text-xl font-bold text-white mb-2">Đang chuẩn bị sách...</h2>
@@ -229,7 +259,7 @@
 
                 // 2. Render Pages to Canvases
                 loadingStatus.innerText = `Đang xử lý ${numPages} trang...`;
-                
+
                 // We need to know the dimensions of the first page to set the book size
                 const firstPage = await pdf.getPage(1);
                 const baseViewport = firstPage.getViewport({ scale: 1.5 });
@@ -238,30 +268,37 @@
 
                 for (let i = 1; i <= numPages; i++) {
                     const page = await pdf.getPage(i);
-                    const viewport = page.getViewport({ scale: 1.5 }); // Balanced scale
-                    
+
                     const canvas = document.createElement('canvas');
                     const context = canvas.getContext('2d');
-                    canvas.height = viewport.height;
-                    canvas.width = viewport.width;
 
-                    await page.render({ canvasContext: context, viewport: viewport }).promise;
+                    // Use the book's aspect ratio to ensure all pages are uniform
+                    canvas.style.width = '100%';
+                    canvas.style.height = '100%';
+                    canvas.style.objectFit = 'contain';
+
+                    // Render at high resolution
+                    const renderViewport = page.getViewport({ scale: 1.5 });
+                    canvas.height = renderViewport.height;
+                    canvas.width = renderViewport.width;
+
+                    await page.render({ canvasContext: context, viewport: renderViewport }).promise;
 
                     const pageDiv = document.createElement('div');
-                    pageDiv.className = 'page';
-                    
+                    pageDiv.className = `page ${i % 2 === 0 ? 'page-left' : 'page-right'}`;
+
                     // Cover pages use hard density
                     if (i === 1 || i === numPages) {
                         pageDiv.setAttribute('data-density', 'hard');
                     } else {
                         pageDiv.setAttribute('data-density', 'soft');
                     }
-                    
+
                     const contentDiv = document.createElement('div');
                     contentDiv.className = 'page-content';
                     contentDiv.appendChild(canvas);
                     pageDiv.appendChild(contentDiv);
-                    
+
                     bookContainer.appendChild(pageDiv);
 
                     // Update Progress
@@ -292,7 +329,7 @@
         function initPageFlip(width, height) {
             // Adjust width/height based on screen
             const isMobile = window.innerWidth < 768;
-            
+
             pageFlip = new St.PageFlip(bookContainer, {
                 width: width,
                 height: height,
