@@ -18,34 +18,110 @@
             background: linear-gradient(135deg, #e0e7ff 0%, #f0fdf4 100%);
         }
 
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(1deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+
         .animate-float {
             animation: float 6s ease-in-out infinite;
         }
 
-        @keyframes float {
-            0% {
-                transform: translateY(0px);
-            }
+        /* Device Frames */
+        .laptop-frame {
+            position: relative;
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 10px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            border: 2px solid #334155;
+        }
 
-            50% {
-                transform: translateY(-20px);
-            }
+        .laptop-screen {
+            background: #fff;
+            border-radius: 4px;
+            overflow: hidden;
+            aspect-ratio: 16/10;
+        }
 
-            100% {
-                transform: translateY(0px);
+        .laptop-base {
+            height: 10px;
+            background: #334155;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            width: 110%;
+            margin-left: -5%;
+            margin-top: 2px;
+            position: relative;
+        }
+
+        .laptop-base::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20%;
+            height: 4px;
+            background: #1e293b;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+        .phone-frame {
+            width: 120px;
+            background: #0f172a;
+            border-radius: 20px;
+            padding: 8px;
+            border: 3px solid #1e293b;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+            z-index: 20;
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        .phone-screen {
+            background: #f8fafc; /* Match app background */
+            border-radius: 12px;
+            overflow: hidden;
+            aspect-ratio: 9/19;
+            padding-top: 20px; /* Safe Area for Notch/Dynamic Island */
+        }
+
+        .phone-notch {
+            position: absolute;
+            top: 14px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 32px;
+            height: 10px;
+            background: #0f172a;
+            border-radius: 5px;
+            z-index: 30;
+        }
+
+        @media (min-width: 768px) {
+            .phone-frame {
+                width: 165px;
+                padding: 10px;
+                border-radius: 24px;
+            }
+            .phone-screen {
+                border-radius: 16px;
+                padding-top: 26px;
+            }
+            .phone-notch {
+                width: 44px;
+                height: 12px;
+                top: 18px;
+                border-radius: 6px;
             }
         }
 
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         .animate-fade-in {
@@ -120,7 +196,7 @@
                     </p>
 
                     <!-- Buttons -->
-                    <div class="flex flex-wrap items-center gap-4 mb-12">
+                    <div class="flex flex-wrap items-center gap-4 mb-10">
                         <a href="#subjects" id="exploreBtn"
                             class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3.5 rounded-full font-bold shadow-lg shadow-indigo-200 transition-all hover:-translate-y-1 flex items-center gap-2">
                             <i class="ph-bold ph-rocket-launch"></i> Khám phá ngay
@@ -130,6 +206,19 @@
                             class="bg-white text-indigo-600 border border-indigo-100 hover:bg-indigo-50 px-8 py-3.5 rounded-full font-bold transition-all flex items-center gap-2">
                             <i class="ph-bold ph-github-logo"></i> Đóng góp
                         </a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="flex items-center gap-8 mb-12 border-l-4 border-indigo-500 pl-6 py-2">
+                        <div>
+                            <div class="text-3xl font-black text-slate-900">500+</div>
+                            <div class="text-sm font-medium text-slate-500">Tài liệu học tập</div>
+                        </div>
+                        <div class="w-px h-10 bg-slate-200"></div>
+                        <div>
+                            <div class="text-3xl font-black text-slate-900">50+</div>
+                            <div class="text-sm font-medium text-slate-500">Sinh viên đóng góp</div>
+                        </div>
                     </div>
 
                     <!-- Mini Feature Cards -->
@@ -161,33 +250,34 @@
                     </div>
                 </div>
 
-                <!-- RIGHT CONTENT (Illustration) -->
+                <!-- RIGHT CONTENT (Showcase) -->
                 <div class="w-full md:w-1/2 flex justify-center relative">
-                    <div
-                        class="relative w-[350px] h-[350px] md:w-[450px] md:h-[450px] bg-white rounded-[40px] shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-slate-100 flex items-center justify-center animate-float z-10">
-                        <div class="relative">
-                            <div class="absolute inset-0 bg-indigo-200 rounded-full blur-2xl opacity-50"></div>
-                            <i class="ph-fill ph-books text-[120px] text-indigo-600 relative z-10 drop-shadow-xl"></i>
+                    <div class="relative w-full max-w-[600px] flex items-end justify-center gap-2 md:gap-6 animate-float">
+                        
+                        <!-- Laptop Showcase -->
+                        <div class="laptop-frame decoration-indigo-500 flex-1 min-w-0">
+                            <div class="laptop-screen">
+                                <img src="img/pc-layout.jpg" alt="Desktop Layout" class="w-full h-full object-cover">
+                            </div>
+                            <div class="laptop-base"></div>
                         </div>
 
-                        <div class="absolute -top-6 -right-6 bg-white p-4 rounded-2xl shadow-xl border border-slate-50 animate-bounce"
-                            style="animation-duration: 3s;">
-                            <i class="ph-fill ph-file-pdf text-3xl text-red-500"></i>
+                        <!-- Phone Showcase -->
+                        <div class="phone-frame relative">
+                            <div class="phone-notch"></div>
+                            <div class="phone-screen text-black">
+                                <img src="img/mobile-layout.jpg" alt="Mobile Layout" class="w-full h-full object-cover">
+                            </div>
                         </div>
-                        <div class="absolute -bottom-8 -left-8 bg-white p-4 rounded-2xl shadow-xl border border-slate-50 animate-bounce"
-                            style="animation-duration: 4s;">
-                            <i class="ph-fill ph-file-doc text-3xl text-blue-500"></i>
-                        </div>
-                        <div
-                            class="absolute top-1/2 -right-12 bg-white px-4 py-2 rounded-xl shadow-lg border border-slate-50 flex items-center gap-2">
-                            <span class="w-2 h-2 rounded-full bg-green-500"></span>
-                            <span class="text-xs font-bold text-slate-600">Free 100%</span>
+
+                        <!-- Badge Decorations -->
+                        <div class="absolute -top-10 left-10 bg-white p-3 rounded-2xl shadow-xl border border-indigo-50 z-30 animate-pulse hidden md:block">
+                            <i class="ph-fill ph-check-circle text-2xl text-emerald-500"></i>
                         </div>
                     </div>
 
-                    <div
-                        class="absolute -bottom-10 left-1/2 -translate-x-1/2 w-2/3 h-10 bg-black/5 blur-2xl rounded-full">
-                    </div>
+                    <!-- Subtle reflection under -->
+                    <div class="absolute -bottom-16 left-1/2 -translate-x-1/2 w-full h-12 bg-indigo-900/5 blur-3xl rounded-full"></div>
                 </div>
 
             </div>
@@ -252,7 +342,7 @@
                     </p>
                     <div class="flex gap-3 mt-auto">
                         <a href="#"
-                            class="flex-1 text-center py-2 text-sm font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 transition">
+                            class="flex-1 flex items-center justify-center py-2 text-sm font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 transition">
                             Đang xem
                         </a>
                         <a href="https://github.com/TranHuuDat2004/UniDocs" target="_blank"
@@ -282,7 +372,7 @@
                     </p>
                     <div class="flex gap-3 mt-auto">
                         <a href="https://tranhuudat2004.github.io/Slidify/" target="_blank"
-                            class="flex-1 text-center py-2 text-sm font-semibold text-slate-700 bg-white border border-slate-200 rounded-lg hover:border-orange-500 hover:text-orange-600 transition">
+                            class="flex-1 flex items-center justify-center py-2 text-sm font-semibold text-slate-700 bg-white border border-slate-200 rounded-lg hover:border-orange-500 hover:text-orange-600 transition">
                             Truy cập Web
                         </a>
                         <a href="https://github.com/TranHuuDat2004/Slidify" target="_blank"
@@ -312,7 +402,7 @@
                     </p>
                     <div class="flex gap-3 mt-auto">
                         <a href="https://tranhuudat2004.github.io/aptis-practice/" target="_blank"
-                            class="flex-1 text-center py-2 text-sm font-semibold text-slate-700 bg-white border border-slate-200 rounded-lg hover:border-emerald-500 hover:text-emerald-600 transition">
+                            class="flex-1 flex items-center justify-center py-2 text-sm font-semibold text-slate-700 bg-white border border-slate-200 rounded-lg hover:border-emerald-500 hover:text-emerald-600 transition">
                             Luyện ngay
                         </a>
                         <a href="https://github.com/TranHuuDat2004/aptis-practice" target="_blank"
